@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Links section 1 */}
           <div>
-            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Páginas</h3>
+            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Terapia</h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-white transition-colors">
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Links section 2 */}
           <div>
-            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Más</h3>
+            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Enfoque</h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/problemas-relacionales" className="text-gray-400 hover:text-white transition-colors">
@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="py-6 text-center">
           <p className="text-xs text-gray-400">
-            © {currentYear} Esteban Siracusa. La información contenida en este sitio tiene fines educativos e informativos.
+            © {currentYear} Esteban Siracusa
           </p>
         </div>
       </div>

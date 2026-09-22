@@ -24,17 +24,18 @@ export default function CTAWhatsApp({
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-  const baseClasses = 'inline-flex items-center justify-center px-6 py-3 rounded font-medium transition-colors';
+  const baseClasses = 'inline-flex items-center justify-center px-6 py-3 rounded font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2';
   const variantClasses =
     variant === 'primary'
-      ? 'bg-green-600 text-white hover:bg-green-700'
-      : 'bg-gray-200 text-gray-900 hover:bg-gray-300';
+      ? 'bg-teal-700 hover:bg-teal-800 focus-visible:outline-teal-700'
+      : 'bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:outline-gray-200';
 
   return (
     <a
       href={whatsappUrl}
       onClick={handleClick}
       className={`${baseClasses} ${variantClasses} ${className}`}
+      style={variant === 'primary' ? { color: 'white' } : undefined}
     >
       {text}
     </a>

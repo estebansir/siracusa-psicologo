@@ -21,6 +21,12 @@
   --color-gray-800: #2a2622;
   --color-gray-900: #0a0a0a;
 
+  /* Text colors (critical for Tailwind v4) */
+  --text-white: #ffffff;
+  --text-black: #0a0a0a;
+  --text-teal-700: #0d8b7f;
+  --text-gray-900: #1a1a1a;
+
   --spacing-0: 0;
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
