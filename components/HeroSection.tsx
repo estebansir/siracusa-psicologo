@@ -20,14 +20,14 @@ export default function HeroSection({
   secondaryCtaHref,
 }: HeroSectionProps) {
   return (
-    <section className="relative bg-gradient-to-br from-gray-50 to-white pt-20 pb-24 sm:pt-32 sm:pb-32 lg:pt-40 lg:pb-44 overflow-hidden">
-      {/* Subtle background pattern */}
+    <section className="relative bg-gradient-to-br from-gray-50 to-white py-20 sm:py-32 lg:py-40 overflow-hidden">
+      {/* Background pattern - simplified decorative elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute top-20 right-0 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl"></div>
-        <div className="absolute -bottom-8 left-20 w-80 h-80 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-teal-100 mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute -bottom-10 left-10 w-56 h-56 rounded-full bg-teal-100 mix-blend-multiply filter blur-3xl"></div>
       </div>
 
-      <div className="section-container relative z-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           {/* Subtitle/Eyebrow */}
           {subtitle && (
@@ -49,7 +49,7 @@ export default function HeroSection({
           )}
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center sm:items-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <CTAButton
               whatsapp={true}
               message={ctaMessage}
