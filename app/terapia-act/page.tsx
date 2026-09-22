@@ -74,6 +74,19 @@ export default function TerapiaACT() {
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             ACT propone ampliar la pregunta:
           </p>
+          
+          <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded mb-8 text-center">
+            <p className="text-lg font-semibold text-gray-900">
+              ¿Qué tipo de vida querés construir y qué está interfiriendo actualmente con que avances hacia ella?
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto bg-teal-50 rounded-lg border-l-4 border-teal-700 p-6 sm:p-8 mb-8 text-center">
+            <p className="text-gray-800">
+              ACT busca desarrollar una relación más flexible con pensamientos y emociones difíciles para que no necesites esperar a sentirte de determinada manera antes de hacer aquello que es importante para vos.
+            </p>
+          </div>
+
           <div className="cta-group mb-8">
             <CTAWhatsApp 
               location="hero"

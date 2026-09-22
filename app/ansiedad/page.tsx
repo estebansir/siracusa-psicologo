@@ -201,7 +201,7 @@ export default function Ansiedad() {
 
             <div>
               <h3 className="mb-4">¿La terapia funciona online?</h3>
-              <p className="text-gray-700">Sí. La modalidad online funciona muy bien para ansiedad y otros problemas psicológicos. Las sesiones por videollamada permiten trabajar con la misma efectividad que presencialmente.</p>
+              <p className="text-gray-700">Sí. La modalidad online funciona muy bien para ansiedad y otros problemas psicológicos.</p>
             </div>
 
             <div>
