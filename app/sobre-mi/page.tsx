@@ -29,7 +29,7 @@ export default function SobreMi() {
       <Schema schema={personSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Soy Esteban Siracusa, psicólogo</h1>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
@@ -51,9 +51,9 @@ export default function SobreMi() {
       </section>
 
       {/* Forma de entender */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Mi forma de entender la terapia</h2>
+          <h2 className="text-left mb-12">Mi forma de entender la terapia</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No pienso la terapia como un lugar en el que el terapeuta tiene todas las respuestas y le dice a otra persona qué debería hacer.
@@ -85,9 +85,9 @@ export default function SobreMi() {
       </section>
 
       {/* Enfoque terapéutico */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Mi enfoque terapéutico</h2>
+          <h2 className="text-left mb-12">Mi enfoque terapéutico</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.
@@ -119,7 +119,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer más sobre ACT
             </Link>
@@ -128,9 +128,9 @@ export default function SobreMi() {
       </section>
 
       {/* Formación */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Formación</h2>
+          <h2 className="text-left mb-12">Formación</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Soy Licenciado en Psicología por la Universidad de Palermo.
@@ -155,9 +155,9 @@ export default function SobreMi() {
       </section>
 
       {/* Adaptación */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Una terapia adaptada a la persona, no una persona adaptada al modelo</h2>
+          <h2 className="text-left mb-12">Una terapia adaptada a la persona, no una persona adaptada al modelo</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Una persona no llega a consulta siendo "un caso de ACT", "un problema de ansiedad" o "un perfeccionista".
@@ -174,9 +174,9 @@ export default function SobreMi() {
       </section>
 
       {/* Experiencia de migración */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">También conozco la experiencia de vivir afuera</h2>
+          <h2 className="text-left mb-12">También conozco la experiencia de vivir afuera</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Viví varios años en Dinamarca y posteriormente en España, antes de regresar a Argentina.
@@ -193,7 +193,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/psicologo-migrantes"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Psicólogo para migrantes
             </Link>
@@ -202,9 +202,9 @@ export default function SobreMi() {
       </section>
 
       {/* Qué esperar */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Qué podés esperar de mí como terapeuta?</h2>
+          <h2 className="text-left mb-12">¿Qué podés esperar de mí como terapeuta?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Podés esperar que te escuche, pero también que te pregunte, señale patrones, formule hipótesis y te proponga probar cosas diferentes.
@@ -229,9 +229,9 @@ export default function SobreMi() {
       </section>
 
       {/* La relación terapéutica */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">La relación terapéutica importa</h2>
+          <h2 className="text-left mb-12">La relación terapéutica importa</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Necesitamos suficiente confianza para hablar de cosas difíciles y también suficiente libertad para no estar siempre de acuerdo.
@@ -260,9 +260,9 @@ export default function SobreMi() {
       </section>
 
       {/* Sesiones */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cómo son las sesiones</h2>
+          <h2 className="text-left mb-12">Cómo son las sesiones</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Modalidad 100% online para adultos.
@@ -283,7 +283,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/psicologo-online"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Más sobre la terapia online
             </Link>
@@ -292,7 +292,7 @@ export default function SobreMi() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">No necesitás saber qué enfoque necesitás ni llegar con una explicación perfectamente ordenada de lo que te pasa.</h2>
           

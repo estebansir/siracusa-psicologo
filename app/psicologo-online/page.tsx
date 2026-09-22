@@ -12,7 +12,7 @@ export default function PsicologoOnline() {
   return (
     <>
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Psicólogo online: terapia desde donde estés</h1>
           
@@ -36,9 +36,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* When to start therapy */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cuándo puede tener sentido empezar terapia?</h2>
+          <h2 className="text-left mb-12">¿Cuándo puede tener sentido empezar terapia?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No necesitás estar atravesando una crisis ni tener un diagnóstico para consultar.
@@ -88,9 +88,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* How I work */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo trabajo en terapia?</h2>
+          <h2 className="text-left mb-12">¿Cómo trabajo en terapia?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No parto de la idea de que determinados pensamientos o emociones sean necesariamente un problema que haya que eliminar.
@@ -117,7 +117,7 @@ export default function PsicologoOnline() {
 
           <Link 
             href="/terapia-act"
-            className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+            className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
           >
             Conocer mi enfoque terapéutico
           </Link>
@@ -125,9 +125,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* How online therapy works */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo funciona la terapia psicológica online?</h2>
+          <h2 className="text-left mb-12">¿Cómo funciona la terapia psicológica online?</h2>
           
           <p className="text-gray-700 mb-8">
             Las sesiones se realizan mediante videollamada y duran aproximadamente 50 minutos.
@@ -152,9 +152,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* Online from anywhere */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Terapia online desde Argentina o el exterior</h2>
+          <h2 className="text-left mb-12">Terapia online desde Argentina o el exterior</h2>
           
           <p className="text-gray-700 mb-8">
             Trabajo de manera 100% online.
@@ -170,7 +170,7 @@ export default function PsicologoOnline() {
 
           <Link 
             href="/psicologo-migrantes"
-            className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+            className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
           >
             Psicoterapia para personas que viven en el exterior
           </Link>
@@ -178,9 +178,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* What you need */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Qué necesitás?</h2>
+          <h2 className="text-left mb-12">¿Qué necesitás?</h2>
           
           <p className="text-gray-700 mb-8">
             Una conexión estable a internet, un dispositivo con cámara y un lugar donde puedas hablar con privacidad durante la sesión.
@@ -193,9 +193,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* First session */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">La primera sesión</h2>
+          <h2 className="text-left mb-12">La primera sesión</h2>
           
           <p className="text-gray-700 mb-8">
             La primera entrevista no implica comprometerte a comenzar un tratamiento.
@@ -221,9 +221,9 @@ export default function PsicologoOnline() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -255,7 +255,7 @@ export default function PsicologoOnline() {
       </section>
 
       {/* Final CTA */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">Empezar terapia online</h2>
           

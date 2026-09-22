@@ -177,6 +177,88 @@ li {
   line-height: 1.625;
 }
 
+/* ===== CONTAINER RESPONSIVE COMMON ===== */
+/* Used in all internal pages for consistent gutters */
+.prose-section-full {
+  padding-inline: 20px; /* ~20-24px on small mobile */
+}
+
+@media (min-width: 640px) {
+  .prose-section-full {
+    padding-inline: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prose-section-full {
+    padding-inline: 32px;
+  }
+}
+
+/* Content container with max-width constraint */
+.content-container {
+  max-width: 56rem; /* ~896px - reading width for editorial content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-container-wide {
+  max-width: 64rem; /* ~1024px - wider container for mixed content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-container {
+  max-width: 80rem; /* ~1280px - full site width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+/* Adjust body copy and headings for better reading on mobile */
+
+body {
+  font-size: 1.0625rem; /* 17px on mobile (base is 1.125rem = 18px, reduced slightly) */
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem; /* 18px on tablet+ */
+    line-height: 1.65;
+  }
+}
+
+/* H1 Mobile: 36-40px depending on content */
+h1 {
+  font-size: clamp(2.0rem, 5vw, 3.25rem); /* 32px to 52px fluid */
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-gray-800, #2a2622);
+}
+
+/* H2 Mobile: 28-32px, not too close to H1 */
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem); /* 24px to 36px fluid */
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--color-gray-800, #2a2622);
+}
+
+/* H3 */
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-gray-800, #2a2622);
+}
+
+/* Paragraph fine-tuning */
+p {
+  line-height: 1.6;
+  text-align: left; /* Force left alignment by default */
+}
+
 /* Code blocks */
 code {
   background-color: #f5f3f0;

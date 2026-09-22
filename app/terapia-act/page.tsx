@@ -62,16 +62,16 @@ export default function TerapiaACT() {
       <Schema schema={faqSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Terapia de Aceptación y Compromiso (ACT) online</h1>
-          <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
             Muchas personas empiezan terapia con un objetivo comprensible:
           </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed font-medium italic">
+          <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed font-medium italic">
             "Quiero dejar de sentirme así."
           </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
             ACT propone ampliar la pregunta:
           </p>
           
@@ -97,9 +97,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Qué es ACT */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Qué es ACT?</h2>
+          <h2 className="text-left mb-12">¿Qué es ACT?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             La Terapia de Aceptación y Compromiso es un enfoque perteneciente a las terapias conductuales contextuales.
@@ -116,9 +116,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Aceptar */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Aceptar no significa resignarse</h2>
+          <h2 className="text-left mb-12">Aceptar no significa resignarse</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Aceptar no significa aprobar, conformarse ni permanecer pasivamente.
@@ -135,9 +135,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* No todo lo que pensás */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">No todo lo que pensás necesita ser resuelto</h2>
+          <h2 className="text-left mb-12">No todo lo que pensás necesita ser resuelto</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             ACT trabaja, entre otras cosas, sobre defusión cognitiva: observar pensamientos como pensamientos sin tratarlos automáticamente como descripciones literales u órdenes.
@@ -150,9 +150,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Pregunta central */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Pregunta central</h2>
+          <h2 className="text-left mb-12">Pregunta central</h2>
           
           <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded">
             <p className="text-lg text-gray-700 font-medium">
@@ -167,9 +167,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Valores */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Valores</h2>
+          <h2 className="text-left mb-12">Valores</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No se trata solamente de reducir síntomas.
@@ -182,9 +182,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Flexibilidad psicológica */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Flexibilidad psicológica</h2>
+          <h2 className="text-left mb-12">Flexibilidad psicológica</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             La flexibilidad psicológica implica ampliar el repertorio de respuestas disponibles y responder según el contexto, en lugar de quedar atrapado siempre en la misma respuesta automática.
@@ -193,9 +193,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* En una sesión */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo se ve ACT dentro de una sesión?</h2>
+          <h2 className="text-left mb-12">¿Cómo se ve ACT dentro de una sesión?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Trabajamos con situaciones concretas, observación en sesión, ejercicios experienciales y acciones fuera de sesión.
@@ -216,9 +216,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* ACT para ansiedad y sobrepensamiento */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">ACT para ansiedad y sobrepensamiento</h2>
+          <h2 className="text-left mb-12">ACT para ansiedad y sobrepensamiento</h2>
           
           <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded mb-8">
             <p className="text-lg text-gray-700 font-medium">
@@ -229,13 +229,13 @@ export default function TerapiaACT() {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
             <Link 
               href="/sobrepensamiento"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre sobrepensamiento
             </Link>
@@ -244,9 +244,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Cambio */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿ACT significa que nunca intentamos cambiar?</h2>
+          <h2 className="text-left mb-12">¿ACT significa que nunca intentamos cambiar?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No.
@@ -263,9 +263,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* Mi forma de trabajar */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Mi forma de trabajar</h2>
+          <h2 className="text-left mb-12">Mi forma de trabajar</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Mi orientación principal es ACT dentro de un marco de terapias conductuales contextuales.
@@ -286,7 +286,7 @@ export default function TerapiaACT() {
           <div className="cta-group justify-start">
             <Link 
               href="/sobre-mi"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Más sobre mí
             </Link>
@@ -295,9 +295,9 @@ export default function TerapiaACT() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -329,7 +329,7 @@ export default function TerapiaACT() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">No necesitás esperar a sentirte diferente para empezar a actuar diferente.</h2>
           

@@ -62,7 +62,7 @@ export default function PsicologoMigrantes() {
       <Schema schema={faqSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Psicólogo online para argentinos y latinoamericanos que viven en el exterior</h1>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
@@ -87,9 +87,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Estar bien */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Estar bien afuera no significa que tenga que ser fácil</h2>
+          <h2 className="text-left mb-12">Estar bien afuera no significa que tenga que ser fácil</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Podés estar contento con la decisión y extrañar.
@@ -110,9 +110,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Decisiones difíciles */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cuando ninguna opción parece completamente correcta</h2>
+          <h2 className="text-left mb-12">Cuando ninguna opción parece completamente correcta</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Quedarte o volver.
@@ -137,9 +137,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Vínculos a distancia */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Vínculos a distancia</h2>
+          <h2 className="text-left mb-12">Vínculos a distancia</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Amistades, familia, padres que envejecen, momentos importantes en los que no podés estar y la necesidad simultánea de construir vínculos nuevos.
@@ -148,7 +148,7 @@ export default function PsicologoMigrantes() {
           <div className="cta-group justify-start">
             <Link 
               href="/problemas-relacionales"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre problemas relacionales
             </Link>
@@ -157,9 +157,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Presión */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">La presión de que migrar "haya valido la pena"</h2>
+          <h2 className="text-left mb-12">La presión de que migrar "haya valido la pena"</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Después de invertir tiempo, dinero y energía, cambiar de dirección puede sentirse como fracaso.
@@ -172,9 +172,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Identidad */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Construir identidad entre distintos lugares</h2>
+          <h2 className="text-left mb-12">Construir identidad entre distintos lugares</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             No necesariamente hace falta resolver la experiencia eligiendo una única identidad o respondiendo definitivamente dónde pertenecés.
@@ -183,9 +183,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Ansiedad y migración */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Ansiedad, sobrepensamiento y migración</h2>
+          <h2 className="text-left mb-12">Ansiedad, sobrepensamiento y migración</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Podemos trabajar tanto sobre la situación concreta como sobre la manera en que estás respondiendo a la incertidumbre que genera.
@@ -194,13 +194,13 @@ export default function PsicologoMigrantes() {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
             <Link 
               href="/sobrepensamiento"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre sobrepensamiento
             </Link>
@@ -209,9 +209,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Experiencia */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Entiendo algunas de estas preguntas también desde la experiencia</h2>
+          <h2 className="text-left mb-12">Entiendo algunas de estas preguntas también desde la experiencia</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Viví varios años en Dinamarca y posteriormente en España, antes de regresar a Argentina.
@@ -232,9 +232,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Terapia en español */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Terapia en español viviendo en el exterior</h2>
+          <h2 className="text-left mb-12">Terapia en español viviendo en el exterior</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Sesiones online de aproximadamente 50 minutos, habitualmente semanales.
@@ -247,9 +247,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Cómo trabajo */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo trabajo?</h2>
+          <h2 className="text-left mb-12">¿Cómo trabajo?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             ACT como orientación principal, integrando FAP y mindfulness cuando resultan relevantes.
@@ -264,7 +264,7 @@ export default function PsicologoMigrantes() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer mi enfoque terapéutico
             </Link>
@@ -273,9 +273,9 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -307,7 +307,7 @@ export default function PsicologoMigrantes() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">Vivir entre países también puede significar construir algo propio entre ellos.</h2>
           

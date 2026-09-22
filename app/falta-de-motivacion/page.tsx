@@ -62,7 +62,7 @@ export default function FaltadeMotivacion() {
       <Schema schema={faqSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Psicólogo online para falta de motivación y bloqueo</h1>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
@@ -84,9 +84,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Sé lo que tengo que hacer */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">"Sé lo que tengo que hacer, pero no lo hago"</h2>
+          <h2 className="text-left mb-12">"Sé lo que tengo que hacer, pero no lo hago"</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Entre querer hacer algo y hacerlo pueden estar ocurriendo muchas cosas:
@@ -103,9 +103,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Esperar a tener ganas */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Esperar a tener ganas</h2>
+          <h2 className="text-left mb-12">Esperar a tener ganas</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             La motivación puede convertirse en requisito:
@@ -128,9 +128,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Procrastinar */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Procrastinar no siempre es organización</h2>
+          <h2 className="text-left mb-12">Procrastinar no siempre es organización</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Puede existir:
@@ -147,9 +147,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Perfeccionismo */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Perfeccionismo y parálisis</h2>
+          <h2 className="text-left mb-12">Perfeccionismo y parálisis</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Cuanto más importante es hacerlo bien, más difícil puede volverse empezar.
@@ -162,9 +162,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Pensar como postergar */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Pensar como forma de postergar</h2>
+          <h2 className="text-left mb-12">Pensar como forma de postergar</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Investigar, planificar, comparar y comprender pueden ser útiles.
@@ -183,7 +183,7 @@ export default function FaltadeMotivacion() {
           <div className="cta-group justify-start mt-8">
             <Link 
               href="/sobrepensamiento"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre sobrepensamiento
             </Link>
@@ -192,9 +192,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Motivación o dirección */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Motivación o dirección?</h2>
+          <h2 className="text-left mb-12">¿Motivación o dirección?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Desde ACT también exploramos qué merece tu esfuerzo.
@@ -207,9 +207,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Acción y motivación */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">La acción no siempre viene después de la motivación</h2>
+          <h2 className="text-left mb-12">La acción no siempre viene después de la motivación</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             También puede ocurrir:
@@ -228,9 +228,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Qué podemos trabajar */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Qué podemos trabajar?</h2>
+          <h2 className="text-left mb-12">¿Qué podemos trabajar?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Procrastinación, bloqueo, perfeccionismo, autoexigencia, miedo al fracaso, decisiones, abandono de proyectos, pérdida de dirección, evitación y hábitos.
@@ -251,9 +251,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Cómo trabajo */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo trabajo?</h2>
+          <h2 className="text-left mb-12">¿Cómo trabajo?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             ACT como orientación principal, integrando FAP y mindfulness cuando resulten relevantes.
@@ -266,7 +266,7 @@ export default function FaltadeMotivacion() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer mi enfoque terapéutico
             </Link>
@@ -275,9 +275,9 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -309,7 +309,7 @@ export default function FaltadeMotivacion() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">No siempre necesitás sentirte motivado para empezar a moverte.</h2>
           

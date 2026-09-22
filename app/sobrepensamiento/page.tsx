@@ -62,7 +62,7 @@ export default function Sobrepensamiento() {
       <Schema schema={faqSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Cuando no podés dejar de pensar</h1>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
@@ -81,9 +81,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Pensar mucho vs sobrepensar */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Pensar mucho o sobrepensar?</h2>
+          <h2 className="text-left mb-12">¿Pensar mucho o sobrepensar?</h2>
           <p className="text-lg text-gray-700 mb-8">
             La diferencia está en qué efecto tiene ese pensamiento sobre tu vida.
           </p>
@@ -139,9 +139,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Si lo pienso un poco más */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">"Si lo pienso un poco más, quizás encuentre la respuesta"</h2>
+          <h2 className="text-left mb-12">"Si lo pienso un poco más, quizás encuentre la respuesta"</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             El problema aparece cuando la pregunta que intentás resolver no admite el nivel de certeza que estás buscando.
@@ -163,9 +163,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Sobrepensamiento y ansiedad */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Sobrepensamiento, ansiedad y búsqueda de certeza</h2>
+          <h2 className="text-left mb-12">Sobrepensamiento, ansiedad y búsqueda de certeza</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Si cada vez que aparece incertidumbre necesitás resolverla pensando, comprobando o buscando seguridad, tu tolerancia a no saber puede ir disminuyendo.
@@ -174,7 +174,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
@@ -183,9 +183,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Cuando entenderte no alcanza */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cuando entenderte no alcanza para cambiar</h2>
+          <h2 className="text-left mb-12">Cuando entenderte no alcanza para cambiar</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Podés conocer tus patrones, leer psicología y comprender racionalmente lo que ocurre.
@@ -198,9 +198,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Pregunta diferente */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">De "¿cómo dejo de pensar?" a una pregunta diferente</h2>
+          <h2 className="text-left mb-12">De "¿cómo dejo de pensar?" a una pregunta diferente</h2>
           
           <p className="text-gray-700 mb-8">
             En lugar de:
@@ -225,9 +225,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Cómo trabajamos */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Cómo trabajamos el sobrepensamiento?</h2>
+          <h2 className="text-left mb-12">¿Cómo trabajamos el sobrepensamiento?</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Desde ACT y las terapias conductuales contextuales podemos trabajar sobre incertidumbre, necesidad de certeza, decisiones, rumiación, preocupación, autoexigencia y evitación.
@@ -240,7 +240,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer mi enfoque terapéutico
             </Link>
@@ -249,9 +249,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Bloqueo */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cuando el sobrepensamiento termina en bloqueo</h2>
+          <h2 className="text-left mb-12">Cuando el sobrepensamiento termina en bloqueo</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             A veces pensar demasiado no produce una mala decisión.
@@ -268,7 +268,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/falta-de-motivacion"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre bloqueo y falta de motivación
             </Link>
@@ -277,9 +277,9 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -311,7 +311,7 @@ export default function Sobrepensamiento() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">No necesitás tener todo resuelto para poder avanzar.</h2>
           

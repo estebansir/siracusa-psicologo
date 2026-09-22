@@ -11,7 +11,7 @@ export const metadata = generatePageMetadata({
 export default function Ansiedad() {
   return (
     <>
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Psicólogo online para ansiedad</h1>
           
@@ -34,9 +34,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cuando la ansiedad empieza a ocupar demasiado espacio</h2>
+          <h2 className="text-left mb-12">Cuando la ansiedad empieza a ocupar demasiado espacio</h2>
           
           <p className="text-gray-700 mb-8 font-semibold">Quizás te pasa que:</p>
 
@@ -59,9 +59,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">"Sé que no tiene sentido, pero igual me pasa"</h2>
+          <h2 className="text-left mb-12">"Sé que no tiene sentido, pero igual me pasa"</h2>
           
           <p className="text-gray-700 mb-8">
             Podés entender perfectamente que una preocupación es exagerada y seguir preocupado.
@@ -81,9 +81,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">El ciclo de la ansiedad</h2>
+          <h2 className="text-left mb-12">El ciclo de la ansiedad</h2>
           
           <div className="bg-white p-8 border border-gray-200 rounded mb-8 text-center">
             <p className="text-lg font-semibold text-gray-900">
@@ -97,9 +97,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Trabajar con la ansiedad no significa eliminarla</h2>
+          <h2 className="text-left mb-12">Trabajar con la ansiedad no significa eliminarla</h2>
           
           <p className="text-gray-700 mb-8">
             Mi objetivo terapéutico no es conseguir que nunca vuelvas a sentir ansiedad.
@@ -118,16 +118,16 @@ export default function Ansiedad() {
 
           <Link 
             href="/terapia-act"
-            className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+            className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
           >
             Conocer qué es ACT
           </Link>
         </div>
       </section>
 
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Ansiedad y sobrepensamiento</h2>
+          <h2 className="text-left mb-12">Ansiedad y sobrepensamiento</h2>
           
           <p className="text-gray-700 mb-8">
             Ante la incertidumbre, pensar puede convertirse en una forma de intentar conseguir seguridad.
@@ -143,16 +143,16 @@ export default function Ansiedad() {
 
           <Link 
             href="/sobrepensamiento"
-            className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+            className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
           >
             Leer sobre sobrepensamiento
           </Link>
         </div>
       </section>
 
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">¿Qué podemos trabajar?</h2>
+          <h2 className="text-left mb-12">¿Qué podemos trabajar?</h2>
           
           <p className="text-gray-700">
             Preocupación excesiva, evitación, miedo a equivocarte, necesidad de control, búsqueda de certeza, ansiedad frente a decisiones, autoexigencia, síntomas físicos y dificultad para desconectar.
@@ -160,9 +160,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Terapia para ansiedad, 100% online</h2>
+          <h2 className="text-left mb-12">Terapia para ansiedad, 100% online</h2>
           
           <p className="text-gray-700 mb-8">
             Sesiones por videollamada de aproximadamente 50 minutos. Trabajo con adultos en Argentina y personas que viven en el exterior.
@@ -179,9 +179,9 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -212,7 +212,7 @@ export default function Ansiedad() {
         </div>
       </section>
 
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">Que la ansiedad aparezca no significa que tenga que decidir por vos.</h2>
           

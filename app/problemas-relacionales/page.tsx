@@ -62,7 +62,7 @@ export default function ProblemasRelacionales() {
       <Schema schema={faqSchema} />
 
       {/* Hero */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="mb-6">Psicólogo online para problemas relacionales</h1>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
@@ -84,9 +84,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Dificultades */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Cuando relacionarte implica dejarte de lado</h2>
+          <h2 className="text-left mb-12">Cuando relacionarte implica dejarte de lado</h2>
           <p className="text-lg text-gray-700 mb-8">
             Puede aparecer dificultad para:
           </p>
@@ -137,9 +137,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Sé que debería */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">"Sé que debería poner límites, pero no puedo"</h2>
+          <h2 className="text-left mb-12">"Sé que debería poner límites, pero no puedo"</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Saber qué deberías hacer no significa poder hacerlo cuando llega el momento.
@@ -158,9 +158,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Búsqueda de aprobación */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Búsqueda de aprobación</h2>
+          <h2 className="text-left mb-12">Búsqueda de aprobación</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             La dificultad aparece cuando necesitás suficiente aprobación externa para poder confiar en tus propias decisiones.
@@ -173,9 +173,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Evitar conflicto */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Evitar el conflicto también tiene un costo</h2>
+          <h2 className="text-left mb-12">Evitar el conflicto también tiene un costo</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Trabajar estas dificultades no significa aprender a confrontar permanentemente.
@@ -188,9 +188,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Mismo patrón */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">El mismo patrón con personas diferentes</h2>
+          <h2 className="text-left mb-12">El mismo patrón con personas diferentes</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Cuando algo se repite en contextos diferentes, puede ser útil observar qué patrón relacional llevamos nosotros de una relación a otra.
@@ -203,9 +203,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* La relación terapéutica */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">La relación terapéutica también puede mostrarnos algo</h2>
+          <h2 className="text-left mb-12">La relación terapéutica también puede mostrarnos algo</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Algunos de estos patrones pueden aparecer conmigo durante la sesión: buscar aprobación, evitar desacuerdo, minimizar necesidades o temer decepcionar.
@@ -218,9 +218,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* FAP */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">FAP: trabajar los vínculos dentro del vínculo terapéutico</h2>
+          <h2 className="text-left mb-12">FAP: trabajar los vínculos dentro del vínculo terapéutico</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             La Psicoterapia Analítico Funcional (FAP) presta especial atención a los comportamientos que aparecen dentro de la relación entre terapeuta y paciente.
@@ -233,7 +233,7 @@ export default function ProblemasRelacionales() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer mi enfoque terapéutico
             </Link>
@@ -242,9 +242,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Relaciones, ansiedad y sobrepensamiento */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Relaciones, ansiedad y sobrepensamiento</h2>
+          <h2 className="text-left mb-12">Relaciones, ansiedad y sobrepensamiento</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Podemos trabajar tanto sobre lo que hacés durante el vínculo como sobre lo que ocurre después dentro de tu cabeza.
@@ -253,13 +253,13 @@ export default function ProblemasRelacionales() {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
             <Link 
               href="/sobrepensamiento"
-              className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded font-medium hover:bg-gray-800 no-underline"
+              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre sobrepensamiento
             </Link>
@@ -268,9 +268,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Terapia individual */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Terapia individual</h2>
+          <h2 className="text-left mb-12">Terapia individual</h2>
           
           <p className="text-lg text-gray-700 mb-8">
             Actualmente no ofrezco terapia de pareja.
@@ -287,9 +287,9 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* FAQ */}
-      <section className="prose-section-full py-16 sm:py-24">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center mb-12">Preguntas frecuentes</h2>
+          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
           
           <div className="space-y-8">
             <div>
@@ -321,7 +321,7 @@ export default function ProblemasRelacionales() {
       </section>
 
       {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-16 sm:py-24">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-8">Relacionarte con los demás no debería requerir desaparecer vos de la relación.</h2>
           
