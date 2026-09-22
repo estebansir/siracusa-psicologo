@@ -15,15 +15,12 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-100 mt-20 sm:mt-24 lg:mt-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-8 py-8 sm:py-12">
           {/* About section */}
           <div>
             <h3 className="text-sm font-semibold text-white mb-3">Esteban Siracusa</h3>
-            <p className="text-xs text-gray-400 leading-relaxed mb-3">
-              Lic. en Psicología, MN 85046
-            </p>
-            <p className="text-xs text-gray-400">
-              Universidad de Palermo
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Lic. en Psicología · MN 85046
             </p>
           </div>
 
