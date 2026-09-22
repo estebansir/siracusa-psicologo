@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
 import { usePathname } from 'next/navigation';
@@ -88,13 +89,20 @@ export default function HeroSectionV3({
             )}
           </div>
 
-          {/* Right column: photo placeholder */}
-          <div className="flex items-center justify-center">
-            <div className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
-              <div className="text-center">
-                <p className="text-gray-500 text-sm font-medium mb-2">Fotografía profesional</p>
-                <p className="text-gray-400 text-xs">Próximamente</p>
-              </div>
+          {/* Right column: photo */}
+          <div className="flex items-center justify-center lg:h-96">
+            <div className="w-full aspect-square lg:aspect-auto lg:h-full relative">
+              <Image
+                src="/images/esteban-siracusa-psicologo.jpg"
+                alt="Esteban Siracusa, psicólogo"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover rounded-lg"
+                style={{
+                  objectPosition: 'center 30%',
+                }}
+              />
             </div>
           </div>
         </div>

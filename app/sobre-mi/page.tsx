@@ -1,4 +1,5 @@
 import { generatePageMetadata } from '@/lib/metadata';
+import Image from 'next/image';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 import Schema from '@/components/Schema';
@@ -30,22 +31,49 @@ export default function SobreMi() {
 
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="mb-6">Soy Esteban Siracusa, psicólogo</h1>
-          <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            Trabajo con adultos que buscan comprender y modificar patrones que están interfiriendo con la vida que quieren construir.
-          </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Me interesa especialmente trabajar con ansiedad, sobrepensamiento, autoexigencia, perfeccionismo, bloqueo, dificultades relacionales y momentos de cambio o incertidumbre.
-          </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Mi forma de trabajar parte de una idea relativamente sencilla: entender lo que nos pasa es importante, pero muchas veces entender no alcanza para cambiar.
-          </p>
-          <div className="cta-group mb-8">
-            <CTAWhatsApp 
-              location="hero"
-              text="Consultar por WhatsApp"
-            />
+        <div className="max-w-6xl mx-auto">
+          {/* Main hero grid: 2-col desktop, stack mobile */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 lg:items-start mb-12">
+            {/* Left column: H1 + intro paragraphs */}
+            <div className="flex flex-col">
+              <h1 className="mb-8 text-left lg:text-left">Soy Esteban Siracusa, psicólogo</h1>
+              
+              {/* Desktop only: show P1 and P2 in left column */}
+              <div className="hidden lg:flex flex-col gap-6">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Trabajo con adultos que buscan comprender y modificar patrones que están interfiriendo con la vida que quieren construir.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Me interesa especialmente trabajar con ansiedad, sobrepensamiento, autoexigencia, perfeccionismo, bloqueo, dificultades relacionales y momentos de cambio o incertidumbre.
+                </p>
+              </div>
+            </div>
+
+            {/* Right column: Photo (vertical aspect) */}
+            <div className="flex items-start justify-center lg:justify-end">
+              <div className="w-64 sm:w-72 aspect-[3/4] relative">
+                <Image
+                  src="/images/esteban-siracusa-psicologo.jpg"
+                  alt="Esteban Siracusa, psicólogo"
+                  fill
+                  sizes="(max-width: 1024px) 288px, 288px"
+                  className="object-cover rounded-lg"
+                  style={{
+                    objectPosition: 'center 15%',
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile only: show P1 and P2 here */}
+          <div className="lg:hidden space-y-6">
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Trabajo con adultos que buscan comprender y modificar patrones que están interfiriendo con la vida que quieren construir.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Me interesa especialmente trabajar con ansiedad, sobrepensamiento, autoexigencia, perfeccionismo, bloqueo, dificultades relacionales y momentos de cambio o incertidumbre.
+            </p>
           </div>
         </div>
       </section>
