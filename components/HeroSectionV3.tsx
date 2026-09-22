@@ -51,7 +51,7 @@ export default function HeroSectionV3({
             </h1>
 
             {/* Description */}
-            <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl leading-relaxed">
+            <p className="sm:text-lg text-gray-700 mb-8 max-w-2xl leading-relaxed">
               {description}
             </p>
 

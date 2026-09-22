@@ -81,7 +81,7 @@ export default function TerapiaACT() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto bg-teal-50 rounded-lg border-l-4 border-teal-700 p-6 sm:p-8 mb-8 text-center">
+          <div className="max-w-2xl mx-auto bg-teal-50 rounded-lg border-l-4 border-teal-700 p-4 sm:p-6 mb-8 text-center">
             <p className="text-gray-800">
               ACT busca desarrollar una relación más flexible con pensamientos y emociones difíciles para que no necesites esperar a sentirte de determinada manera antes de hacer aquello que es importante para vos.
             </p>
@@ -229,13 +229,13 @@ export default function TerapiaACT() {
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
             <Link 
               href="/sobrepensamiento"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre sobrepensamiento
             </Link>
@@ -286,7 +286,7 @@ export default function TerapiaACT() {
           <div className="cta-group justify-start">
             <Link 
               href="/sobre-mi"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Más sobre mí
             </Link>

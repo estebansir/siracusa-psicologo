@@ -41,7 +41,7 @@ export default function ProblemLanding({
             <h1 className="text-4xl sm:text-5xl font-semibold text-gray-900 mb-6">
               {title}
             </h1>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="sm:text-lg text-gray-700 mb-8 leading-relaxed">
               {intro}
             </p>
             <a

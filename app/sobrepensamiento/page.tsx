@@ -174,7 +174,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/ansiedad"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre ansiedad
             </Link>
@@ -240,7 +240,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer mi enfoque terapéutico
             </Link>
@@ -268,7 +268,7 @@ export default function Sobrepensamiento() {
           <div className="cta-group justify-start">
             <Link 
               href="/falta-de-motivacion"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Leer sobre bloqueo y falta de motivación
             </Link>

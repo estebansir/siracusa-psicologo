@@ -237,9 +237,9 @@ h1 {
   color: var(--color-gray-800, #2a2622);
 }
 
-/* H2 Mobile: 28-32px, not too close to H1 */
+/* H2 Mobile: 22-26px, mejor escala en mobile */
 h2 {
-  font-size: clamp(1.5rem, 4vw, 2.25rem); /* 24px to 36px fluid */
+  font-size: clamp(1.375rem, 3.5vw, 2.25rem); /* 22px to 36px fluid (reducido de 1.75rem = 28px) */
   line-height: 1.25;
   font-weight: 600;
   color: var(--color-gray-800, #2a2622);

@@ -119,7 +119,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/terapia-act"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Conocer más sobre ACT
             </Link>
@@ -193,7 +193,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/psicologo-migrantes"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Psicólogo para migrantes
             </Link>
@@ -283,7 +283,7 @@ export default function SobreMi() {
           <div className="cta-group justify-start">
             <Link 
               href="/psicologo-online"
-              className="inline-flex items-center px-6 py-3 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
+              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
             >
               Más sobre la terapia online
             </Link>

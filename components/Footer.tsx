@@ -15,10 +15,10 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-100 mt-20 sm:mt-24 lg:mt-32">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-8 py-6 sm:py-10">
           {/* About section */}
           <div>
-            <h3 className="text-sm font-semibold text-white mb-3">Esteban Siracusa</h3>
+            <h3 className="text-sm font-semibold mb-3" style={{ color: 'white' }}>Esteban Siracusa</h3>
             <p className="text-xs text-gray-400 leading-relaxed">
               Lic. en Psicología · MN 85046
             </p>
@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Links section 1 */}
           <div>
-            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Terapia</h3>
+            <h3 className="text-xs font-semibold mb-4 uppercase tracking-wide" style={{ color: 'white' }}>Terapia</h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-white transition-colors">
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* Links section 2 */}
           <div>
-            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">Enfoque</h3>
+            <h3 className="text-xs font-semibold mb-4 uppercase tracking-wide" style={{ color: 'white' }}>Enfoque</h3>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/problemas-relacionales" className="text-gray-400 hover:text-white transition-colors">
@@ -80,7 +80,7 @@ export default function Footer() {
 
           {/* International */}
           <div>
-            <h3 className="text-xs font-semibold text-white mb-4 uppercase tracking-wide">En el exterior</h3>
+            <h3 className="text-xs font-semibold mb-4 uppercase tracking-wide" style={{ color: 'white' }}>En el exterior</h3>
             <Link href="/psicologo-migrantes" className="text-xs text-gray-400 hover:text-white transition-colors">
               Psicólogo para personas en el exterior
             </Link>
