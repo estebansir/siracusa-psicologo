@@ -6,8 +6,6 @@ export function trackWhatsAppClick(ctaLocation: string, pagePath: string) {
     window.gtag('event', 'whatsapp_click', {
       page_path: pagePath,
       cta_location: ctaLocation,
-      event_category: 'conversion',
-      event_label: 'whatsapp_engagement',
     });
   }
 }

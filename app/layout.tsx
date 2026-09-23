@@ -11,21 +11,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
+  const ga4MeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   return (
     <html lang="es">
       <head>
-        {ga4Id && (
+        {ga4MeasurementId && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} />
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4MeasurementId}`} />
             <script
               dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', '${ga4Id}');
+                  gtag('config', '${ga4MeasurementId}');
                 `,
               }}
             />
