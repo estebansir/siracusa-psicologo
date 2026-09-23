@@ -9,7 +9,7 @@ import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online especializado en ansiedad y sobrepensamiento',
+  title: 'Psicólogo Online | Esteban Siracusa',
   description: 'Terapia individual online para adultos en Argentina y exterior. Especialista en ansiedad, sobrepensamiento y bloqueo emocional.',
   pathname: '/',
 });

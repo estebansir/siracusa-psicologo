@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online para falta de motivación y procrastinación',
+  title: 'Terapia para Falta de Motivación y Bloqueo | Esteban Siracusa',
   description: 'Terapia para motivación, procrastinación, perfeccionismo. Abordaje contextual conductual online.',
   pathname: '/falta-de-motivacion',
 });

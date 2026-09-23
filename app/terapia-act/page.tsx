@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Terapia ACT online',
+  title: 'Terapia ACT Online | Aceptación y Compromiso',
   description: 'Terapia de Aceptación y Compromiso. Abordaje contextual conductual para cambio psicológico.',
   pathname: '/terapia-act',
 });

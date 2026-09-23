@@ -14,17 +14,17 @@ export function generatePageMetadata({
   pathname,
   ogImage,
 }: PageMetadataProps): Metadata {
-  const fullTitle = `${title} | ${SITE_NAME}`;
+  // title ya viene con el formato exacto deseado
   const fullUrl = `${SITE_URL}${pathname}`;
 
   return {
-    title: fullTitle,
+    title,
     description,
     alternates: {
       canonical: fullUrl,
     },
     openGraph: {
-      title: fullTitle,
+      title,
       description,
       url: fullUrl,
       type: 'website',
@@ -42,7 +42,7 @@ export function generatePageMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: fullTitle,
+      title,
       description,
       images: ogImage ? [ogImage] : [],
     },
@@ -58,14 +58,9 @@ export function generatePageMetadata({
 
 export const DEFAULT_METADATA: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
-  },
+  title: 'Psicólogo Online | Esteban Siracusa',
   description: 'Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional. Terapia de Aceptación y Compromiso (ACT) para adultos en Argentina y exterior.',
   keywords: ['psicólogo online', 'terapia online', 'ansiedad', 'sobrepensamiento', 'ACT', 'psicoterapia'],
-  viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
-  colorScheme: 'light dark',
   formatDetection: {
     telephone: true,
     email: true,

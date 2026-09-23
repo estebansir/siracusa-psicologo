@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online - Terapia por videollamada',
+  title: 'Psicólogo Online para Adultos | Esteban Siracusa',
   description: 'Terapia psicológica online para adultos. Sesiones de 50 minutos por videollamada con especialista en ansiedad y sobrepensamiento.',
   pathname: '/psicologo-online',
 });

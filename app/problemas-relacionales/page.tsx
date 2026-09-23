@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online para problemas relacionales',
+  title: 'Psicólogo para Problemas Relacionales | Esteban Siracusa',
   description: 'Terapia para relaciones, límites, comunicación. Abordaje contextual conductual online.',
   pathname: '/problemas-relacionales',
 });

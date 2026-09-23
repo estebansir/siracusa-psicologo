@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online para ansiedad',
+  title: 'Psicólogo Online para Ansiedad | Esteban Siracusa',
   description: 'Terapia para ansiedad, preocupación y anticipación. Especialista en ACT y terapias contextuales.',
   pathname: '/ansiedad',
 });

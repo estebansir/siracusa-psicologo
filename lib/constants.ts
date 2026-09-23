@@ -1,5 +1,5 @@
 export const SITE_NAME = 'Esteban Siracusa - Psicólogo Online';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://siracusa-psicologo.vercel.app';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.estebansiracusa.com';
 export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5491139003698';
 
 export const THERAPY_AREAS = [

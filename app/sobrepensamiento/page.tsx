@@ -3,7 +3,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Sobrepensamiento: cuando no podés dejar de pensar',
+  title: 'Terapia para Sobrepensamiento | Esteban Siracusa',
   description: 'Terapia para sobrepensamiento, rumiación y búsqueda de certeza. Abordaje contextual conductual online.',
   pathname: '/sobrepensamiento',
 });

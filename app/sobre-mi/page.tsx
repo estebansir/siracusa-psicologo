@@ -4,7 +4,7 @@ import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
-  title: 'Sobre mí | Esteban Siracusa, Psicólogo',
+  title: 'Esteban Siracusa | Psicólogo Online',
   description: 'Psicólogo especializado en ansiedad, sobrepensamiento y problemas relacionales. Terapia ACT online.',
   pathname: '/sobre-mi',
 });
