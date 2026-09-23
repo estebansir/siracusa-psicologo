@@ -12,93 +12,70 @@ export default function Ansiedad() {
   return (
     <>
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Psicólogo online para ansiedad</h1>
           
-          <p className="text-xl text-gray-600 mb-6">
-            La ansiedad puede aparecer como preocupación constante, tensión, miedo, necesidad de anticipar lo que puede pasar o una sensación de que es difícil bajar la guardia.
-          </p>
-          
-          <p className="text-lg text-gray-600 mb-8">
-            A veces sabés que estás pensando de más. Incluso podés reconocer que aquello que temés probablemente no ocurra. Pero entenderlo racionalmente no siempre alcanza para dejar de sentirlo.
-          </p>
+          <div className="space-y-6">
+            <p className="text-xl text-gray-600">
+              La ansiedad puede aparecer como preocupación constante, tensión, miedo, necesidad de control o anticipación de que algo puede salir mal.
+            </p>
 
-          <p className="text-lg text-gray-600 mb-8">
-            En terapia podemos trabajar sobre cómo funciona la ansiedad en tu caso particular y, especialmente, sobre qué empezás a hacer cuando aparece.
-          </p>
+            <p className="text-xl text-gray-600">
+              A veces entendés racionalmente que una situación no debería preocuparte tanto y, sin embargo, tu cabeza y tu cuerpo siguen reaccionando como si hubiera algo que resolver o evitar.
+            </p>
 
-          <CTAWhatsApp 
-            location="hero"
-            text="Consultar por WhatsApp"
-          />
+            <p className="text-xl text-gray-600">
+              En terapia podemos trabajar para entender cómo funciona esa ansiedad en tu caso y, especialmente, qué hacés cuando aparece.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-left mb-12">Cuando la ansiedad empieza a ocupar demasiado espacio</h2>
           
-          <p className="text-gray-700 mb-8 font-semibold">Quizás te pasa que:</p>
-
           <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Anticipás escenarios negativos.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Necesitás certeza antes de decidir.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Evitás situaciones.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Repasás conversaciones.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Buscás tranquilidad o confirmación de otras personas.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Postergás esperando sentirte preparado.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Aparecen síntomas físicos.</span></li>
-            <li className="flex gap-3"><span className="text-green-600 font-bold flex-shrink-0">•</span><span>Una preocupación es reemplazada rápidamente por otra.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Anticipás constantemente lo que podría salir mal.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Necesitás certeza antes de poder avanzar.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Evitás situaciones porque las anticipás como amenazantes.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Te cuesta desconectarte de preocupaciones incluso cuando las cosas van bien.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Buscás constantemente tranquilización de otras personas.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Postergás iniciativas esperando sentirte menos ansioso.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Aparecen síntomas físicos como tensión, falta de aire o taquicardia.</span></li>
+            <li className="flex gap-3"><span className="text-teal-700 font-bold flex-shrink-0">•</span><span>Experimentás impaciencia o irritabilidad.</span></li>
           </ul>
 
-          <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded">
-            <p className="text-gray-700">
-              En ese punto, el intento de no sentir ansiedad puede empezar a limitar más tu vida que la propia ansiedad.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">"Sé que no tiene sentido, pero igual me pasa"</h2>
-          
-          <p className="text-gray-700 mb-8">
-            Podés entender perfectamente que una preocupación es exagerada y seguir preocupado.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Podés saber que no necesitás hacer algo perfecto y seguir sintiendo que equivocarte sería insoportable.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Esto ocurre, entre otras cosas, porque no todo problema psicológico se resuelve encontrando un argumento mejor.
-          </p>
-
-          <p className="text-gray-700">
-            También observamos qué relación establecés con tus pensamientos y qué hacés cuando aparecen.
-          </p>
-        </div>
-      </section>
-
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">El ciclo de la ansiedad</h2>
-          
-          <div className="bg-white p-8 border border-gray-200 rounded mb-8 text-center">
-            <p className="text-lg font-semibold text-gray-900">
-              Ansiedad → intento de control o evitación → alivio → más dependencia de esa estrategia → nueva ansiedad.
-            </p>
-          </div>
-
-          <p className="text-gray-700">
-            Parte del trabajo terapéutico consiste en reconocer estos ciclos y desarrollar respuestas más flexibles.
+          <p className="text-gray-700 font-semibold mb-0">
+            <strong>A veces, el intento constante de no sentir ansiedad termina limitando más tu vida que la ansiedad misma.</strong>
           </p>
         </div>
       </section>
 
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-12">Cuando entender lo que te pasa no alcanza para cambiar</h2>
+          
+          <p className="text-gray-700 mb-8">
+            A veces podés entender perfectamente que una preocupación es exagerada, que una situación probablemente no sea peligrosa o que estás anticipando demasiado y, aun así, la ansiedad sigue apareciendo.
+          </p>
+
+          <p className="text-gray-700 mb-8">
+            Intentar convencerte, distraerte o encontrar certeza puede aliviar durante un rato, pero no siempre cambia el problema.
+          </p>
+
+          <p className="text-gray-700 mb-8">
+            <strong>No todo problema psicológico se resuelve encontrando un argumento mejor.</strong>
+          </p>
+
+          <p className="text-gray-700">
+            Por eso en terapia no trabajamos solamente sobre lo que pensás, sino también sobre cómo respondés cuando aparecen la ansiedad, la incertidumbre o el miedo.
+          </p>
+        </div>
+      </section>
+
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-left mb-12">Trabajar con la ansiedad no significa eliminarla</h2>
           
           <p className="text-gray-700 mb-8">
@@ -109,24 +86,25 @@ export default function Ansiedad() {
             El trabajo apunta a que puedas hacer lo que necesitás o querés hacer incluso cuando aparecen ansiedad, miedo o incertidumbre.
           </p>
 
-          <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded mb-8">
-            <p className="text-gray-700 font-semibold mb-2">¿Cómo trabajo?</p>
-            <p className="text-gray-700 mb-4">Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.</p>
-            <p className="text-gray-700 font-semibold mb-2">Una pregunta importante es:</p>
-            <p className="text-gray-700 mb-0">¿Qué estoy dejando de hacer mientras intento no sentirlo?</p>
-          </div>
+          <p className="text-gray-700 mb-8">
+            <strong>La pregunta no es solamente '¿cómo hago para que esta ansiedad se vaya?', sino también '¿qué estoy dejando de hacer mientras intento no sentirla?'</strong>
+          </p>
+
+          <p className="text-gray-700 mb-8">
+            Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.
+          </p>
 
           <Link 
             href="/terapia-act"
             className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
           >
-            Conocer qué es ACT
+            Conocer mi enfoque
           </Link>
         </div>
       </section>
 
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-left mb-12">Ansiedad y sobrepensamiento</h2>
           
           <p className="text-gray-700 mb-8">
@@ -151,71 +129,13 @@ export default function Ansiedad() {
       </section>
 
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">¿Qué podemos trabajar?</h2>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="mb-8">Que la ansiedad aparezca no significa que tenga que decidir por vos</h2>
           
-          <p className="text-gray-700">
-            Preocupación excesiva, evitación, miedo a equivocarte, necesidad de control, búsqueda de certeza, ansiedad frente a decisiones, autoexigencia, síntomas físicos y dificultad para desconectar.
-          </p>
-        </div>
-      </section>
-
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Terapia para ansiedad, 100% online</h2>
-          
-          <p className="text-gray-700 mb-8">
-            Sesiones por videollamada de aproximadamente 50 minutos. Trabajo con adultos en Argentina y personas que viven en el exterior.
+          <p className="text-lg text-gray-700 mb-8">
+            Si sentís que la ansiedad está condicionando demasiado tus decisiones, relaciones o actividades, podemos evaluar juntos qué está pasando y cómo trabajarlo.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            No necesitás un diagnóstico previo.
-          </p>
-
-          <CTAWhatsApp 
-            location="mid_page"
-            text="Consultar disponibilidad"
-          />
-        </div>
-      </section>
-
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
-          
-          <div className="space-y-8">
-            <div>
-              <h3 className="mb-4">¿Necesito diagnóstico?</h3>
-              <p className="text-gray-700">No. Muchas personas consultan porque hay algo que les genera malestar o preocupación, sin tener un diagnóstico previo.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Cuál es el objetivo respecto de la ansiedad?</h3>
-              <p className="text-gray-700">El objetivo no es que nunca vuelvas a sentir ansiedad, sino que aprendas a actuar según lo que te importa incluso cuando la ansiedad está presente.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Qué pasa con los ataques de pánico?</h3>
-              <p className="text-gray-700">Los ataques de pánico pueden trabajarse en terapia. Si es la primera vez que te ocurre o hay síntomas físicos intensos, puede ser útil una evaluación médica complementaria.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿La terapia funciona online?</h3>
-              <p className="text-gray-700">Sí. La modalidad online funciona muy bien para ansiedad y otros problemas psicológicos.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Cuánto duran las sesiones?</h3>
-              <p className="text-gray-700">Aproximadamente 50 minutos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="mb-8">Que la ansiedad aparezca no significa que tenga que decidir por vos.</h2>
-          
           <CTAWhatsApp 
             location="footer_cta"
             text="Consultar por WhatsApp"

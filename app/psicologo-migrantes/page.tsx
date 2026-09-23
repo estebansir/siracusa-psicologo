@@ -4,323 +4,164 @@ import Link from 'next/link';
 import Schema from '@/components/Schema';
 
 export const metadata = generatePageMetadata({
-  title: 'Psicólogo online para argentinos en el exterior y migrantes',
-  description: 'Terapia en español para argentinos y latinoamericanos que viven fuera. Migración, identidad, vínculos a distancia.',
+  title: 'Psicólogo online para argentinos y latinoamericanos en el exterior',
+  description: 'Terapia online para migrantes, mudanzas internacionales. Abordaje contextual conductual.',
   pathname: '/psicologo-migrantes',
 });
 
 export default function PsicologoMigrantes() {
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: '¿No hace falta tener un "duelo migratorio"?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. Cada persona vive la migración de manera diferente. No es necesario pasar por etapas específicas ni nombrarlo de una manera particular.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: '¿Atendés solamente argentinos?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. Trabajo con argentinos y otros hispanohablantes residentes en el exterior. La condición es sesiones en español.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: '¿Se puede trabajar con alguien que quiera quedarse definitivamente?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Sí. La consulta no requiere indefinición sobre el futuro. Se puede trabajar independientemente de si la decisión es quedarse, volver o estar explorando.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: '¿Se puede trabajar la indecisión quedarse/volver?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Sí. Una de las dificultades que muchas personas atraviesan es no poder resolver esa pregunta. En terapia podemos trabajar el proceso de decisión sin exigir que la respuesta aparezca antes de empezar a trabajar.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: '¿Las sesiones son en español?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Sí. Las sesiones son en español. Trabajo en rioplatense, pero entiendo y puedo adaptar a otros registros del español.'
-        }
-      }
-    ]
-  };
-
   return (
     <>
-      <Schema schema={faqSchema} />
-
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Psicólogo online para argentinos y latinoamericanos que viven en el exterior</h1>
-          <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            Mudarte a otro país puede ser algo que elegiste, deseaste durante años y que sigue teniendo sentido para vos.
+          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+            Vivir en otro país puede ser una decisión elegida, deseada y aun así traer dificultades.
+
+Cambian los vínculos, las rutinas, las referencias culturales y, muchas veces, también la forma en que pensás quién sos, dónde querés estar y qué querés construir.
+
+Trabajo online y en español con argentinos y otros latinoamericanos que viven en el exterior.
           </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Y al mismo tiempo puede ser difícil.
-          </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Cambian vínculos, rutinas, referencias culturales y, muchas veces, la forma en que pensás quién sos y dónde querés construir tu vida.
-          </p>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            Trabajo online con argentinos y otros hispanohablantes que viven en el exterior y quieren hacer terapia en español.
-          </p>
-          <div className="cta-group mb-8">
-            <CTAWhatsApp 
-              location="hero"
-              text="Consultar por WhatsApp"
-            />
-          </div>
         </div>
       </section>
 
-      {/* Estar bien */}
+      {/* Estar bien afuera */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-left mb-12">Estar bien afuera no significa que tenga que ser fácil</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Podés estar contento con la decisión y extrañar.
+
+          <p className="text-gray-700 mb-8">
+            Podés estar contento con la decisión de haberte ido y extrañar. Tener una buena vida afuera y sentirte solo. Querer quedarte y preguntarte cómo sería volver.
           </p>
 
           <p className="text-gray-700 mb-8">
-            Tener una buena vida y sentirte solo.
+            Esas experiencias no necesariamente se contradicen.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Haber conseguido lo que buscabas y preguntarte si querés quedarte.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Estas experiencias no son contradictorias.
+          <p className="text-gray-700">
+            Algunas dificultades aparecen precisamente porque hay varias cosas importantes para vos al mismo tiempo: una pareja en un país, una familia en otro, una carrera que construiste afuera, amistades que quedaron lejos o distintas ideas sobre dónde querés vivir.
           </p>
         </div>
       </section>
 
-      {/* Decisiones difíciles */}
+      {/* Cuando ninguna opción */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-left mb-12">Cuando ninguna opción parece completamente correcta</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Quedarte o volver.
+
+          <p className="text-gray-700 mb-8">
+            ¿Me quedo o vuelvo? ¿Sigo invirtiendo en la vida que construí acá? ¿Me acerco a mi familia? ¿Priorizo mi relación o mi carrera?
           </p>
 
           <p className="text-gray-700 mb-8">
-            Trabajo o familia.
+            Algunas decisiones migratorias tienen algo particularmente difícil: elegir una opción también implica renunciar a algo valioso de la otra.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Una relación o un país.
+          <p className="text-gray-700">
+            En esos casos, seguir pensando no siempre produce una respuesta completamente segura. Podemos trabajar para distinguir qué información necesitás realmente y qué parte de la decisión requiere tolerar incertidumbre y elegir.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Seguir invirtiendo en la vida que construiste o empezar nuevamente.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            La terapia puede ayudar a tomar decisiones importantes sin exigir que primero desaparezca toda incertidumbre.
-          </p>
+          <Link
+            href="/sobrepensamiento"
+            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline mt-6"
+          >
+            Leer sobre sobrepensamiento
+          </Link>
         </div>
       </section>
 
-      {/* Vínculos a distancia */}
+      {/* Vínculos, distancia, pertenencia */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Vínculos a distancia</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Amistades, familia, padres que envejecen, momentos importantes en los que no podés estar y la necesidad simultánea de construir vínculos nuevos.
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-12">Vínculos, distancia y pertenencia</h2>
+
+          <p className="text-gray-700 mb-8">
+            Vivir afuera también puede cambiar tu manera de relacionarte.
           </p>
 
-          <div className="cta-group justify-start">
-            <Link 
-              href="/problemas-relacionales"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Leer sobre problemas relacionales
-            </Link>
-          </div>
+          <p className="text-gray-700 mb-8">
+            Amistades que se sostienen por mensajes. Padres que envejecen mientras estás lejos. Eventos familiares a los que no llegás. Nuevas relaciones en un contexto cultural diferente. La sensación de volver a Argentina y descubrir que vos cambiaste y el lugar al que volvés también.
+          </p>
+
+          <p className="text-gray-700">
+            A veces aparece la sensación de pertenecer a dos lugares y, al mismo tiempo, no pertenecer completamente a ninguno.
+
+No necesariamente necesitás elegir una única identidad o un único lugar para poder construir una vida que tenga sentido para vos.
+          </p>
         </div>
       </section>
 
-      {/* Presión */}
+      {/* La presión de que valga la pena */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">La presión de que migrar "haya valido la pena"</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Después de invertir tiempo, dinero y energía, cambiar de dirección puede sentirse como fracaso.
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-12">La presión de que migrar haya valido la pena</h2>
+
+          <p className="text-gray-700 mb-8">
+            Cuando invertiste tiempo, dinero y esfuerzo en irte, puede aparecer una presión adicional: 'después de todo lo que hice para estar acá, debería estar bien'.
           </p>
 
           <p className="text-gray-700 mb-8">
-            Puede aparecer una presión adicional: además de estar atravesando una dificultad, sentís que no deberías estar atravesándola.
+            Volver puede sentirse como fracasar. Quedarte puede sentirse como abandonar algo importante. Cambiar de país puede parecer empezar otra vez.
+          </p>
+
+          <p className="text-gray-700">
+            En terapia podemos intentar separar lo que realmente querés de lo que sentís que deberías querer por las decisiones que tomaste, las expectativas de otros o el esfuerzo ya realizado.
           </p>
         </div>
       </section>
 
-      {/* Identidad */}
+      {/* Mi experiencia */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Construir identidad entre distintos lugares</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            No necesariamente hace falta resolver la experiencia eligiendo una única identidad o respondiendo definitivamente dónde pertenecés.
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-12">Conozco algunas de estas preguntas también desde la experiencia</h2>
+
+          <p className="text-gray-700">
+            Viví varios años en Dinamarca y posteriormente en España antes de volver a Argentina.
+          </p>
+
+          <p className="text-gray-700 mt-6">
+            Esa experiencia despertó en mí un interés particular por las preguntas que pueden aparecer alrededor de migrar, pertenecer, construir vínculos a distancia y decidir dónde vivir.
+          </p>
+
+          <p className="text-gray-700 mt-6">
+            Mi experiencia no es necesariamente la misma que la de quien consulta, pero me permite conocer de cerca algunas de esas situaciones.
           </p>
         </div>
       </section>
 
-      {/* Ansiedad y migración */}
+      {/* Cómo podemos trabajarlo */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Ansiedad, sobrepensamiento y migración</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Podemos trabajar tanto sobre la situación concreta como sobre la manera en que estás respondiendo a la incertidumbre que genera.
-          </p>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-12">Cómo podemos trabajarlo</h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <Link 
-              href="/ansiedad"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Leer sobre ansiedad
-            </Link>
-            <Link 
-              href="/sobrepensamiento"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Leer sobre sobrepensamiento
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Experiencia */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Entiendo algunas de estas preguntas también desde la experiencia</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Viví varios años en Dinamarca y posteriormente en España, antes de regresar a Argentina.
+          <p className="text-gray-700 mb-8">
+            Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales, integrando FAP y mindfulness cuando resultan útiles.
           </p>
 
           <p className="text-gray-700 mb-8">
-            Atravesé personalmente aspectos prácticos y humanos de construir una vida en otro país.
+            Podemos trabajar sobre ansiedad, sobrepensamiento, relaciones, decisiones o bloqueo dentro del contexto particular de vivir afuera.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Eso no significa que mi experiencia sea igual a la tuya.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Pero significa que estas cuestiones no me resultan conocidas únicamente desde la teoría clínica.
+          <p className="text-gray-700 font-semibold">
+            <strong>¿Qué vida querés construir y qué estás dispuesto a experimentar mientras la construís?</strong>
           </p>
         </div>
       </section>
 
-      {/* Terapia en español */}
+      {/* Final CTA */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Terapia en español viviendo en el exterior</h2>
-          
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="mb-8">No necesitás tener decidido dónde vas a vivir dentro de cinco años para trabajar sobre cómo querés vivir hoy</h2>
+
           <p className="text-lg text-gray-700 mb-8">
-            Sesiones online de aproximadamente 50 minutos, habitualmente semanales.
+            Si estás viviendo en el exterior y sentís que alguna de estas dificultades está ocupando demasiado espacio, podés contarme brevemente qué estás atravesando.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            La posibilidad concreta de atención depende también de la jurisdicción desde la que se realice la prestación.
-          </p>
-        </div>
-      </section>
-
-      {/* Cómo trabajo */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">¿Cómo trabajo?</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            ACT como orientación principal, integrando FAP y mindfulness cuando resultan relevantes.
-          </p>
-
-          <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded mb-8">
-            <p className="text-lg text-gray-700 font-medium">
-              ¿Qué vida querés construir y qué estás dispuesto a experimentar mientras la construís?
-            </p>
-          </div>
-
-          <div className="cta-group justify-start">
-            <Link 
-              href="/terapia-act"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Conocer mi enfoque terapéutico
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-left mb-12">Preguntas frecuentes</h2>
-          
-          <div className="space-y-8">
-            <div>
-              <h3 className="mb-4">¿No hace falta tener un "duelo migratorio"?</h3>
-              <p className="text-gray-700">No. Cada persona vive la migración de manera diferente. No es necesario pasar por etapas específicas ni nombrarlo de una manera particular.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Atendés solamente argentinos?</h3>
-              <p className="text-gray-700">No. Trabajo con argentinos y otros hispanohablantes residentes en el exterior. La condición es sesiones en español.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Se puede trabajar con alguien que quiera quedarse definitivamente?</h3>
-              <p className="text-gray-700">Sí. La consulta no requiere indefinición sobre el futuro. Se puede trabajar independientemente de si la decisión es quedarse, volver o estar explorando.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Se puede trabajar la indecisión quedarse/volver?</h3>
-              <p className="text-gray-700">Sí. Una de las dificultades que muchas personas atraviesan es no poder resolver esa pregunta. En terapia podemos trabajar el proceso de decisión sin exigir que la respuesta aparezca antes de empezar a trabajar.</p>
-            </div>
-
-            <div>
-              <h3 className="mb-4">¿Las sesiones son en español?</h3>
-              <p className="text-gray-700">Sí. Las sesiones son en español. Trabajo en rioplatense, pero entiendo y puedo adaptar a otros registros del español.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cierre */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="mb-8">Vivir entre países también puede significar construir algo propio entre ellos.</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            No necesitás tener decidido dónde vas a vivir dentro de cinco años para empezar a trabajar sobre cómo querés vivir hoy.
-          </p>
-
-          <div className="cta-group justify-center">
-            <CTAWhatsApp 
-              location="bottom_cta"
-              text="Consultar por WhatsApp"
-            />
-          </div>
+          <CTAWhatsApp
+            location="footer_cta"
+            text="Consultar por WhatsApp"
+          />
         </div>
       </section>
     </>

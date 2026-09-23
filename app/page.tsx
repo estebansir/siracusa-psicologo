@@ -1,6 +1,5 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
-import Schema from '@/components/Schema';
 import HeroSectionV3 from '@/components/HeroSectionV3';
 import ProblemCard from '@/components/ProblemCard';
 import Callout from '@/components/Callout';
@@ -16,18 +15,6 @@ export const metadata = generatePageMetadata({
 });
 
 export default function Home() {
-  const personSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Esteban Siracusa',
-    description: 'Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional',
-    telephone: '+5491139003698',
-    areaServed: {
-      '@type': 'Country',
-      name: 'AR',
-    },
-  };
-
   const problemAreas = [
     {
       title: 'Ansiedad',
@@ -124,17 +111,15 @@ export default function Home() {
 
   return (
     <>
-      <Schema schema={personSchema} />
-      
       {/* Hero */}
       <HeroSectionV3
         eyebrow="Terapia profesional online"
-        title="Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional"
-        description="Si sentís que tu cabeza no para, te exigís demasiado o sabés lo que querés hacer pero algo te frena, la terapia puede ayudarte a entender qué está manteniendo ese patrón y empezar a relacionarte de otra manera con lo que pensás y sentís."
+        title="Psicólogo especializado en ansiedad, sobrepensamiento y bloqueo emocional"
+        description="Si sentís que tu cabeza no para, te exigís demasiado o hay situaciones en las que sabés qué querés hacer pero la ansiedad, el miedo o la inseguridad terminan frenándote, la terapia puede ayudarte a entender qué está manteniendo ese patrón y empezar a responder de otra manera."
         primaryCtaText="Consultar por WhatsApp"
         secondaryCtaText="Conocer más"
         secondaryCtaHref="/psicologo-online"
-        microcopy="Terapia individual online para adultos en Argentina y en el exterior."
+        microcopy="Atiendo a adultos en Argentina y en el exterior."
       />
 
       {/* Editorial block 1: When overthinking becomes a problem */}
@@ -164,7 +149,7 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Postergando decisiones por miedo a equivocarte.</span>
+                <span>Postergando tareas o decisiones, distrayéndote con facilidad o esperando a sentirte más motivado para empezar.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-teal-700 font-bold flex-shrink-0">•</span>
@@ -176,9 +161,14 @@ export default function Home() {
               </li>
             </ul>
 
-            <Callout>
-              La terapia no busca que dejes de pensar ni que nunca vuelvas a sentir ansiedad. Busca que esos pensamientos y emociones dejen de decidir tanto por vos.
-            </Callout>
+            <div className="max-w-xl mx-auto text-center my-12 space-y-4">
+              <p className="text-lg text-gray-800 leading-relaxed">
+                <strong>La terapia no busca que dejes de pensar ni que nunca vuelvas a sentir ansiedad.</strong>
+              </p>
+              <p className="text-lg text-gray-800 leading-relaxed">
+                <strong>Busca que esos pensamientos y emociones dejen de decidir tanto por vos.</strong>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -213,7 +203,7 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Muchas veces el problema no es solamente lo que pensamos o sentimos, sino todo lo que empezamos a hacer para intentar controlarlo.
+              <strong>Muchas veces el problema no es solamente lo que pensamos o sentimos, sino todo lo que empezamos a hacer para intentar controlarlo.</strong>
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -221,7 +211,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              En terapia trabajamos para identificar esos patrones y desarrollar formas más flexibles de responder. El objetivo es que puedas hacer más lugar a experiencias internas difíciles cuando aparezcan, sin que eso implique quedar atrapado en ellas, y recuperar capacidad para actuar en función de lo que realmente te importa.
+              <strong>En terapia trabajamos para identificar esos patrones y desarrollar formas más flexibles de responder.</strong> El objetivo es que puedas hacer más lugar a experiencias internas difíciles cuando aparezcan, sin que eso implique quedar atrapado en ellas, y recuperar capacidad para actuar en función de lo que realmente te importa.
             </p>
 
             <div className="flex justify-center">
@@ -241,19 +231,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
-              Terapia basada en evidencia, adaptada a cada persona
+              Mi orientación terapéutica
             </h2>
 
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Mi enfoque principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y <strong>las terapias conductuales contextuales.</strong>
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              En términos simples, esto significa que no vamos a trabajar solamente sobre qué pensás, sino también sobre qué hacés cuando aparecen determinados pensamientos, emociones o sensaciones y qué consecuencias tiene eso en tu vida.
+              Esto significa que no vamos a trabajar solamente sobre qué pensás, sino también sobre qué hacés cuando aparecen determinados pensamientos, emociones o sensaciones y qué consecuencias tiene eso en tu vida.
             </p>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              No trabajo con recetas idénticas para todo el mundo. La terapia parte de entender tu situación particular, qué querés cambiar y qué patrones pueden estar alejándote de la vida que querés construir.
+              No trabajo con recetas idénticas para todo el mundo. Primero necesitamos entender tu situación, qué querés cambiar y qué patrones pueden estar alejándote de la vida que querés construir.
             </p>
 
             <div className="flex justify-center">
@@ -261,7 +251,7 @@ export default function Home() {
                 href="/terapia-act"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               >
-                Conocer qué es la Terapia de Aceptación y Compromiso
+                Conocer mi forma de trabajar
               </Link>
             </div>
           </div>
@@ -271,42 +261,29 @@ export default function Home() {
       {/* About me snippet */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
-            {/* Photo placeholder */}
-            <div className="flex items-center justify-center order-2 lg:order-1">
-              <div className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
-                <div className="text-center">
-                  <p className="text-gray-500 text-sm font-medium mb-2">Fotografía profesional</p>
-                  <p className="text-gray-400 text-xs">Próximamente</p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
+              Sobre mí
+            </h2>
 
-            {/* About text */}
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
-                Soy Esteban Siracusa
-              </h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Trabajo principalmente con adultos que consultan por <strong>ansiedad, sobrepensamiento, autoexigencia, perfeccionismo, procrastinación, bloqueo y dificultades en sus relaciones.</strong>
+            </p>
 
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Me recibí de Licenciado en Psicología en la Universidad de Palermo y desde entonces continué mi formación en psicoterapia, especializándome en Psicoterapia Cognitiva Integrativa en Fundación AIGLÉ y profundizando especialmente en Terapia de Aceptación y Compromiso (ACT), Psicoterapia Analítico Funcional (FAP) y terapias conductuales contextuales.
-              </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Me interesa una terapia en la que podamos entender con precisión qué está pasando, pero que <strong>no se quede solamente en entender.</strong> Busco que lo que trabajemos en sesión pueda traducirse en cambios concretos en tu manera de relacionarte con tus pensamientos, tus emociones y las situaciones difíciles de tu vida.
+            </p>
 
-              <p className="text-gray-700 mb-8 leading-relaxed">
-                Viví varios años en Europa y actualmente trabajo de manera online con personas en Argentina y en el exterior.
-              </p>
+            <p className="text-gray-700 mb-8 leading-relaxed">
+              Viví varios años en Europa y actualmente atiendo online a personas en Argentina y en el exterior.
+            </p>
 
-              <p className="text-gray-700 mb-8 leading-relaxed">
-                Me interesa especialmente trabajar con personas que lidian con ansiedad, sobrepensamiento, autoexigencia, perfeccionismo y dificultades para avanzar frente a situaciones emocionalmente difíciles.
-              </p>
-
-              <Link
-                href="/sobre-mi"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-              >
-                Más sobre mí
-              </Link>
-            </div>
+            <Link
+              href="/sobre-mi"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            >
+              Conocer más sobre mí
+            </Link>
           </div>
         </div>
       </section>
@@ -320,11 +297,11 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              La terapia es 100% online, mediante videollamada.
+              <strong>La terapia es 100% online, mediante videollamada.</strong>
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Las primeras sesiones están orientadas a entender qué te está pasando, qué te gustaría cambiar y cómo funcionan actualmente las dificultades que te traen a consulta.
+              Las primeras sesiones están orientadas a entender <strong>qué te está pasando y qué te gustaría cambiar</strong> y cómo funcionan actualmente las dificultades que te traen a consulta.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -332,7 +309,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700">
-              No necesitás llegar sabiendo exactamente "qué te pasa" ni tener un diagnóstico para consultar.
+              <strong>No necesitás llegar sabiendo exactamente "qué te pasa" ni tener un diagnóstico para consultar.</strong>
             </p>
           </div>
         </div>

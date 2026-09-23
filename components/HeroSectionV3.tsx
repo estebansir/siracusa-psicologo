@@ -34,7 +34,7 @@ export default function HeroSectionV3({
   };
 
   return (
-    <section className="bg-white pt-12 sm:pt-16 lg:pt-20">
+    <section className="bg-white pt-9 sm:pt-12 lg:pt-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
           {/* Left column: content */}
