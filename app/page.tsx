@@ -10,7 +10,7 @@ import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online | Esteban Siracusa',
-  description: 'Terapia individual online para adultos en Argentina y exterior. Especialista en ansiedad, sobrepensamiento y bloqueo emocional.',
+  description: 'Psicólogo online para adultos. Terapia de Aceptación y Compromiso (ACT) para ansiedad, sobrepensamiento, autoexigencia y bloqueo emocional.',
   pathname: '/',
 });
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Terapia ACT Online | Aceptación y Compromiso',
-  description: 'Terapia de Aceptación y Compromiso. Abordaje contextual conductual para cambio psicológico.',
+  description: 'Terapia ACT online para adultos. Un enfoque basado en Aceptación y Compromiso para relacionarte de otra manera con pensamientos y emociones difíciles.',
   pathname: '/terapia-act',
 });
 

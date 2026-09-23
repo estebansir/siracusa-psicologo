@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Ansiedad | Esteban Siracusa',
-  description: 'Terapia para ansiedad, preocupación y anticipación. Especialista en ACT y terapias contextuales.',
+  description: 'Psicólogo online para ansiedad. Terapia para comprender qué mantiene la preocupación, el miedo, la necesidad de control y la evitación.',
   pathname: '/ansiedad',
 });
 

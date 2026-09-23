@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Terapia para Falta de Motivación y Bloqueo | Esteban Siracusa',
-  description: 'Terapia para motivación, procrastinación, perfeccionismo. Abordaje contextual conductual online.',
+  description: 'Terapia online para procrastinación, falta de motivación y bloqueo. Trabajá sobre lo que interfiere entre lo que querés hacer y lo que finalmente hacés.',
   pathname: '/falta-de-motivacion',
 });
 

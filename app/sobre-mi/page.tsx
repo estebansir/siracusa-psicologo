@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Esteban Siracusa | Psicólogo Online',
-  description: 'Psicólogo especializado en ansiedad, sobrepensamiento y problemas relacionales. Terapia ACT online.',
+  description: 'Conocé a Esteban Siracusa, psicólogo especializado en terapias conductuales contextuales, ACT y FAP. Atención online a adultos.',
   pathname: '/sobre-mi',
 });
 

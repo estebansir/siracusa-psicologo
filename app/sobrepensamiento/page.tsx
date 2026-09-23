@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Terapia para Sobrepensamiento | Esteban Siracusa',
-  description: 'Terapia para sobrepensamiento, rumiación y búsqueda de certeza. Abordaje contextual conductual online.',
+  description: 'Terapia online para sobrepensamiento, rumiación e indecisión. Trabajá sobre los patrones que te mantienen atrapado pensando sin encontrar claridad.',
   pathname: '/sobrepensamiento',
 });
 

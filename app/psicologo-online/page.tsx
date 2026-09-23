@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Adultos | Esteban Siracusa',
-  description: 'Terapia psicológica online para adultos. Sesiones de 50 minutos por videollamada con especialista en ansiedad y sobrepensamiento.',
+  description: 'Psicólogo online para adultos en Argentina y el exterior. Terapia para ansiedad, sobrepensamiento, procrastinación, bloqueo y dificultades relacionales.',
   pathname: '/psicologo-online',
 });
 

@@ -5,7 +5,7 @@ import Schema from '@/components/Schema';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Argentinos en el Exterior',
-  description: 'Terapia online para migrantes, mudanzas internacionales. Abordaje contextual conductual.',
+  description: 'Psicólogo online para argentinos y latinoamericanos en el exterior. Terapia en español para migración, vínculos, pertenencia y decisiones sobre dónde vivir.',
   pathname: '/psicologo-migrantes',
 });
 
