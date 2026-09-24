@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from './constants';
 
+const DEFAULT_OG_IMAGE = '/images/og-esteban-siracusa.png';
+
 interface PageMetadataProps {
   title: string;
   description: string;
@@ -16,6 +18,7 @@ export function generatePageMetadata({
 }: PageMetadataProps): Metadata {
   // title ya viene con el formato exacto deseado
   const fullUrl = `${SITE_URL}${pathname}`;
+  const socialImage = ogImage || DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -29,22 +32,20 @@ export function generatePageMetadata({
       url: fullUrl,
       type: 'website',
       siteName: SITE_NAME,
-      images: ogImage
-        ? [
-            {
-              url: ogImage,
-              width: 1200,
-              height: 630,
-              alt: title,
-            },
-          ]
-        : [],
+      images: [
+        {
+          url: socialImage,
+          width: 1200,
+          height: 630,
+          alt: `${title} — Psicólogo online`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ogImage ? [ogImage] : [],
+      images: [socialImage],
     },
     robots: {
       index: true,
