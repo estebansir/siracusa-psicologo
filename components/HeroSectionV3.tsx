@@ -6,24 +6,18 @@ import { trackWhatsAppClick } from '@/lib/analytics';
 import { usePathname } from 'next/navigation';
 
 type HeroSectionV3Props = {
-  eyebrow?: string;
   title: string;
   description: string;
   primaryCtaText?: string;
   primaryCtaMessage?: string;
-  secondaryCtaText?: string;
-  secondaryCtaHref?: string;
   microcopy?: string;
 };
 
 export default function HeroSectionV3({
-  eyebrow,
   title,
   description,
   primaryCtaText = 'Consultar por WhatsApp',
   primaryCtaMessage = WHATSAPP_MESSAGE_DEFAULT,
-  secondaryCtaText = 'Conocer más',
-  secondaryCtaHref = '/psicologo-online',
   microcopy = 'Terapia individual online para adultos en Argentina y en el exterior.',
 }: HeroSectionV3Props) {
   const pathname = usePathname();
@@ -39,13 +33,6 @@ export default function HeroSectionV3({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
           {/* Left column: content */}
           <div className="flex flex-col">
-            {/* Eyebrow */}
-            {eyebrow && (
-              <p className="text-sm font-semibold text-teal-700 uppercase tracking-wide mb-4">
-                {eyebrow}
-              </p>
-            )}
-
             {/* H1 - reduced 10-15% from V3 for better balance */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6 leading-tight">
               {title}
@@ -56,7 +43,7 @@ export default function HeroSectionV3({
               {description}
             </p>
 
-            {/* CTAs */}
+            {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href={whatsappUrl}
@@ -71,14 +58,6 @@ export default function HeroSectionV3({
                 </svg>
                 {primaryCtaText}
               </a>
-              {secondaryCtaHref && (
-                <a
-                  href={secondaryCtaHref}
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-                >
-                  {secondaryCtaText}
-                </a>
-              )}
             </div>
 
             {/* Microcopy */}

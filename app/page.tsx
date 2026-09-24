@@ -2,11 +2,7 @@ import { generatePageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
 import HeroSectionV3 from '@/components/HeroSectionV3';
 import ProblemCard from '@/components/ProblemCard';
-import Callout from '@/components/Callout';
-import Accordion from '@/components/Accordion';
-import Steps from '@/components/Steps';
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
-import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online | Esteban Siracusa',
@@ -18,7 +14,7 @@ export default function Home() {
   const problemAreas = [
     {
       title: 'Ansiedad',
-      description: 'Cuando la preocupación, anticipación o necesidad de control empiezan a ocupar demasiado espacio.',
+      description: 'Preocupación constante, anticipación y necesidad de control.',
       href: '/ansiedad',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,7 +24,7 @@ export default function Home() {
     },
     {
       title: 'Sobrepensamiento',
-      description: 'Cuando analizar deja de ayudarte a resolver y empieza a impedirte avanzar.',
+      description: 'Rumiación, dudas y decisiones que no terminan de resolverse.',
       href: '/sobrepensamiento',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,7 +34,7 @@ export default function Home() {
     },
     {
       title: 'Bloqueo y falta de motivación',
-      description: 'Cuando sabés lo que querés hacer pero seguís esperando a sentirte preparado para empezar.',
+      description: 'Procrastinación, perfeccionismo y dificultad para sostener lo que empezás.',
       href: '/falta-de-motivacion',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,7 +44,7 @@ export default function Home() {
     },
     {
       title: 'Problemas relacionales',
-      description: 'Cuando poner límites, expresar necesidades o sostener tu posición frente a otros se vuelve difícil.',
+      description: 'Límites, necesidad de aprobación y dificultad para expresar lo que necesitás.',
       href: '/problemas-relacionales',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,71 +54,34 @@ export default function Home() {
     },
   ];
 
-  const faqItems = [
-    {
-      id: 'sessions-online',
-      question: '¿Las sesiones son únicamente online?',
-      answer: 'Sí. Actualmente mi práctica clínica es 100% online.',
-    },
-    {
-      id: 'session-duration',
-      question: '¿Cuánto dura una sesión?',
-      answer: 'Aproximadamente 50 minutos.',
-    },
-    {
-      id: 'frequency',
-      question: '¿Con qué frecuencia son?',
-      answer: 'Habitualmente comenzamos con una frecuencia semanal. Esto puede variar según cada situación y momento del proceso.',
-    },
-    {
-      id: 'diagnosis-required',
-      question: '¿Necesito tener un diagnóstico?',
-      answer: 'No. Muchas personas consultan porque hay algo que les genera malestar, se repite o les impide avanzar, sin tener un diagnóstico previo.',
-    },
-    {
-      id: 'international',
-      question: '¿Atendés personas que viven fuera de Argentina?',
-      answer: 'Sí. Trabajo online con personas que viven en Argentina y en el exterior, incluyendo argentinos y otros hispanohablantes que atraviesan procesos de migración o adaptación a otro país.',
-    },
-    {
-      id: 'approach-fit',
-      question: '¿Cómo sé si tu enfoque es adecuado para mí?',
-      answer: 'No necesitás saberlo antes de consultar. En las primeras entrevistas podemos evaluar qué estás buscando, cómo trabajo y si tiene sentido iniciar un proceso terapéutico juntos.',
-    },
+  const identificationItems = [
+    'Le das vueltas durante horas a conversaciones, decisiones o errores.',
+    'Anticipás constantemente lo que podría salir mal.',
+    'Te exigís mucho y sentís que nunca es suficiente.',
+    'Postergás tareas o decisiones, te distraés o esperás a sentirte preparado.',
+    'Sabés racionalmente qué querés hacer, pero a la hora de hacerlo te bloqueás.',
   ];
 
   const startingSteps = [
-    {
-      number: '01',
-      title: 'Me escribís por WhatsApp',
-      description: 'Podés contarme brevemente qué te trae a consulta.',
-    },
-    {
-      number: '02',
-      title: 'Coordinamos una primera sesión',
-      description: 'Buscamos un horario y tenemos una primera entrevista online.',
-    },
-    {
-      number: '03',
-      title: 'Evaluamos cómo seguir',
-      description: 'La primera sesión también sirve para evaluar si mi forma de trabajar encaja con lo que estás buscando.',
-    },
+    'Me escribís por WhatsApp',
+    'Coordinamos una primera sesión',
+    'Evaluamos cómo seguir',
   ];
+
+  const textLinkClassName =
+    'inline-flex items-center text-teal-700 font-medium hover:text-teal-800 hover:underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700 rounded-sm';
 
   return (
     <>
       {/* Hero */}
       <HeroSectionV3
-        eyebrow="Terapia profesional online"
-        title="Psicólogo especializado en ansiedad, sobrepensamiento y bloqueo emocional"
-        description="Si sentís que tu cabeza no para, te exigís demasiado o hay situaciones en las que sabés qué querés hacer pero la ansiedad, el miedo o la inseguridad terminan frenándote, la terapia puede ayudarte a entender qué está manteniendo ese patrón y empezar a responder de otra manera."
+        title="Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional"
+        description="Si la ansiedad, la autoexigencia o darle vueltas a todo te están frenando, en terapia podemos entender qué está manteniendo ese patrón y empezar a responder de otra manera."
         primaryCtaText="Consultar por WhatsApp"
-        secondaryCtaText="Conocer más"
-        secondaryCtaHref="/psicologo-online"
-        microcopy="Atiendo a adultos en Argentina y en el exterior."
+        microcopy="Atiendo online a adultos en Argentina y a personas de habla hispana en todo el mundo."
       />
 
-      {/* Editorial block 1: When overthinking becomes a problem */}
+      {/* Identification */}
       <section className="bg-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
@@ -131,41 +90,23 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Pensar, anticipar y exigirte probablemente te haya servido muchas veces. El problema aparece cuando esas mismas estrategias empiezan a ocupar demasiado espacio.
+              Pensar, anticipar y exigirte probablemente te haya servido muchas veces. <strong>El problema aparece cuando esas mismas estrategias empiezan a ocupar demasiado espacio.</strong>
             </p>
 
-            <ul className="space-y-4 mb-12 text-gray-700">
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Dándole vueltas durante horas a conversaciones, decisiones o errores.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Anticipando constantemente lo que podría salir mal.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Exigiéndote mucho y sintiendo que nunca es suficiente.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Postergando tareas o decisiones, distrayéndote con facilidad o esperando a sentirte más motivado para empezar.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Intentando controlar pensamientos o emociones que vuelven una y otra vez.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
-                <span>Sabiendo racionalmente qué querés hacer, pero sintiéndote bloqueado a la hora de hacerlo.</span>
-              </li>
+            <ul className="space-y-4 text-gray-700">
+              {identificationItems.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-teal-700 font-bold flex-shrink-0">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
 
-            <div className="max-w-xl mx-auto text-center my-12 space-y-4">
-              <p className="text-lg text-gray-800 leading-relaxed">
+            <div className="max-w-lg mx-auto text-center mt-14 sm:mt-16 space-y-4">
+              <p className="text-xl text-gray-900 text-center! leading-relaxed!">
                 <strong>La terapia no busca que dejes de pensar ni que nunca vuelvas a sentir ansiedad.</strong>
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed">
+              <p className="text-xl text-gray-900 text-center! leading-relaxed!">
                 <strong>Busca que esos pensamientos y emociones dejen de decidir tanto por vos.</strong>
               </p>
             </div>
@@ -176,8 +117,8 @@ export default function Home() {
       {/* Problem areas */}
       <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-12 text-center">
-            Terapia para los problemas que más ocupan
+          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-10 sm:mb-12 text-center">
+            ¿Qué podemos trabajar?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -194,72 +135,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How we work */}
+      {/* How I work */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
-              ¿Cómo podemos trabajarlo?
+              ¿Cómo trabajo en terapia?
             </h2>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              <strong>Muchas veces el problema no es solamente lo que pensamos o sentimos, sino todo lo que empezamos a hacer para intentar controlarlo.</strong>
+              Muchas veces el problema no es solamente lo que pensás o sentís, sino <strong>qué hacés cuando aparecen esos pensamientos y emociones.</strong>
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Evitar. Postergar. Revisar una decisión diez veces. Buscar certezas. Exigirse más. Esperar a sentirse preparado. Intentar sacar de la cabeza un pensamiento que vuelve constantemente.
+              Evitar, postergar o buscar certezas puede aliviar en el momento y, al mismo tiempo, mantener el problema.
             </p>
 
-            <p className="text-gray-700 mb-8 leading-relaxed">
-              <strong>En terapia trabajamos para identificar esos patrones y desarrollar formas más flexibles de responder.</strong> El objetivo es que puedas hacer más lugar a experiencias internas difíciles cuando aparezcan, sin que eso implique quedar atrapado en ellas, y recuperar capacidad para actuar en función de lo que realmente te importa.
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y las terapias conductuales contextuales. En terapia buscamos entender qué está pasando en tu caso y trabajar sobre aquello que necesitás empezar a hacer de otra manera.
             </p>
 
-            <div className="flex justify-center">
-              <Link
-                href="/terapia-act"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-              >
-                Conocer más sobre mi forma de trabajar
-              </Link>
-            </div>
+            <Link href="/terapia-act" className={textLinkClassName}>
+              Conocer mi forma de trabajar →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Approach */}
+      {/* About me */}
       <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
-              Mi orientación terapéutica
-            </h2>
-
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y <strong>las terapias conductuales contextuales.</strong>
-            </p>
-
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Esto significa que no vamos a trabajar solamente sobre qué pensás, sino también sobre qué hacés cuando aparecen determinados pensamientos, emociones o sensaciones y qué consecuencias tiene eso en tu vida.
-            </p>
-
-            <p className="text-gray-700 mb-8 leading-relaxed">
-              No trabajo con recetas idénticas para todo el mundo. Primero necesitamos entender tu situación, qué querés cambiar y qué patrones pueden estar alejándote de la vida que querés construir.
-            </p>
-
-            <div className="flex justify-center">
-              <Link
-                href="/terapia-act"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-              >
-                Conocer mi forma de trabajar
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About me snippet */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
@@ -267,97 +171,74 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Trabajo principalmente con adultos que consultan por <strong>ansiedad, sobrepensamiento, autoexigencia, perfeccionismo, procrastinación, bloqueo y dificultades en sus relaciones.</strong>
+              Soy Esteban Siracusa, psicólogo. Me interesa entender con precisión <strong>qué está manteniendo un problema y qué tendría que empezar a cambiar para que algo sea diferente fuera de la sesión.</strong>
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Me interesa una terapia en la que podamos entender con precisión qué está pasando, pero que <strong>no se quede solamente en entender.</strong> Busco que lo que trabajemos en sesión pueda traducirse en cambios concretos en tu manera de relacionarte con tus pensamientos, tus emociones y las situaciones difíciles de tu vida.
+              Viví varios años en Dinamarca y España antes de volver a Argentina. Esa experiencia despertó en mí un interés particular por los desafíos de vivir entre países.
             </p>
 
-            <p className="text-gray-700 mb-8 leading-relaxed">
-              Viví varios años en Europa y actualmente atiendo online a personas en Argentina y en el exterior.
-            </p>
-
-            <Link
-              href="/sobre-mi"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-gray-400 text-gray-900 font-medium hover:bg-gray-50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-            >
-              Conocer más sobre mí
-            </Link>
+            <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-8">
+              <Link href="/sobre-mi" className={textLinkClassName}>
+                Conocer más sobre mí →
+              </Link>
+              <Link href="/psicologo-migrantes" className={textLinkClassName}>
+                Psicólogo para personas en el exterior →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Sessions */}
-      <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
               ¿Cómo son las sesiones?
             </h2>
 
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              <strong>La terapia es 100% online, mediante videollamada.</strong>
+            <p className="text-sm font-semibold text-teal-700 mb-8">
+              Videollamada · 50 minutos
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Las primeras sesiones están orientadas a entender <strong>qué te está pasando y qué te gustaría cambiar</strong> y cómo funcionan actualmente las dificultades que te traen a consulta.
+              En los primeros encuentros buscamos entender qué te está pasando, qué te gustaría cambiar y qué puede estar manteniendo el problema. A partir de ahí definimos objetivos y empezamos a trabajar sobre situaciones concretas.
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              A partir de ahí definimos objetivos y vamos evaluando juntos qué intervenciones pueden ser útiles para acercarte a ellos.
+            <p className="text-gray-700 leading-relaxed">
+              <strong>No necesitás llegar sabiendo exactamente qué te pasa ni tener una explicación perfectamente ordenada.</strong>
             </p>
-
-            <p className="text-gray-700">
-              <strong>No necesitás llegar sabiendo exactamente "qué te pasa" ni tener un diagnóstico para consultar.</strong>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Starting is simple */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto mb-10 sm:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6 sm:mb-8">
-              Empezar es simple
-            </h2>
-          </div>
-
-          <Steps items={startingSteps} />
-
-          <div className="flex justify-center mt-10 sm:mt-12">
-            <HomeWhatsAppCTA ctaLocation="hero" text="Consultar disponibilidad por WhatsApp" />
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8" style={{ scrollMarginTop: '5rem' }}>
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-12">
-              Preguntas frecuentes
-            </h2>
-
-            <Accordion items={faqItems} />
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-white pb-12 sm:pb-16 lg:pb-20">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto text-center border-t border-gray-200 pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
               ¿Querés empezar terapia?
             </h2>
 
-            <p className="text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              Si sentís que alguno de estos problemas está ocupando demasiado espacio en tu vida, podés escribirme y contarme brevemente qué estás buscando.
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y qué te gustaría trabajar.
             </p>
 
-            <HomeWhatsAppCTA ctaLocation="final_cta" text="Consultar por WhatsApp" />
+            <div className="lg:-mx-28 mb-8 sm:mb-10">
+              <ol className="inline-flex flex-col md:flex-row gap-3 md:gap-8 lg:gap-10 lg:pl-0! text-left text-gray-800">
+                {startingSteps.map((step, index) => (
+                  <li key={step} className="flex gap-2 lg:whitespace-nowrap">
+                    <span className="text-teal-700 font-semibold">{index + 1}.</span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <div>
+              <HomeWhatsAppCTA ctaLocation="final_cta" text="Consultar por WhatsApp" />
+            </div>
           </div>
         </div>
       </section>
