@@ -8,169 +8,142 @@ export const metadata = generatePageMetadata({
   pathname: '/problemas-relacionales',
 });
 
-export default function ProblemasRelacionales() {
+const patterns = [
+  'Decís que sí cuando en realidad querías decir que no.',
+  'Evitás expresar una opinión o desacuerdo por miedo a generar conflicto.',
+  'Te cuesta pedir lo que necesitás o marcar un límite cuando podría molestar al otro.',
+  'Necesitás saber que la otra persona está bien con vos para poder quedarte tranquilo.',
+  'Cedés durante mucho tiempo y después aparece enojo o resentimiento.',
+];
 
+const textLinkClassName =
+  'inline-flex items-center text-teal-700 font-medium hover:text-teal-800 hover:underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700 rounded-sm';
+
+export default function ProblemasRelacionales() {
   return (
     <>
-
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Psicólogo online para problemas relacionales</h1>
-          <p className="text-xl text-gray-600">
+
+          <p className="text-xl text-gray-600 mb-6">
             A veces las dificultades no aparecen solamente en cómo te sentís cuando estás solo, sino en lo que te pasa cuando estás con otros.
+          </p>
 
-Puede costarte poner límites, decir que no, expresar un desacuerdo, pedir lo que necesitás o tolerar que otra persona se moleste con vos.
-
-En terapia podemos trabajar para entender qué patrones se repiten en tus relaciones y qué te impide actuar de una manera diferente cuando aparecen.
+          <p className="text-lg text-gray-600">
+            Puede costarte decir que no, expresar un desacuerdo, pedir lo que necesitás o sostener tu posición cuando hacerlo podría generar conflicto, culpa o rechazo.
           </p>
         </div>
       </section>
 
-      {/* Cuando relacionarte */}
+      {/* Recognition */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cuando relacionarte implica dejarte de lado</h2>
+          <h2 className="text-left mb-8">Cuando relacionarte implica dejarte de lado</h2>
 
-          <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Decís que sí cuando en realidad querías decir que no.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te cuesta poner límites por miedo a generar conflicto o decepcionar.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Necesitás saber que la otra persona está bien con vos para poder quedarte tranquilo.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Evitás expresar una opinión cuando pensás que puede generar desacuerdo.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Buscás aprobación o validación antes de confiar en tus propias decisiones.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te cuesta pedir ayuda o expresar lo que necesitás.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Cedés durante mucho tiempo y después aparece enojo o resentimiento.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Terminás repitiendo dinámicas que racionalmente sabés que no te hacen bien.</span>
-            </li>
+          <ul className="space-y-4 pl-0! mb-8! text-gray-700">
+            {patterns.map((pattern) => (
+              <li key={pattern} className="flex gap-3">
+                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
+                <span>{pattern}</span>
+              </li>
+            ))}
           </ul>
 
-          <p className="text-gray-700 font-semibold mt-8">
+          <p className="text-gray-900 mb-0">
             <strong>El problema no siempre es no saber qué límite poner. Muchas veces es qué aparece cuando intentás ponerlo y qué hacés frente a eso.</strong>
           </p>
         </div>
       </section>
 
-      {/* Límites, aprobación, conflicto */}
+      {/* When expressing yourself has a cost */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Límites, aprobación y conflicto</h2>
+          <h2 className="text-left mb-8">Cuando expresarte puede tener un costo</h2>
 
-          <p className="text-gray-700 mb-8">
-            Saber racionalmente que 'deberías poner límites' no significa que sea fácil hacerlo cuando aparece culpa, miedo al rechazo, inseguridad o la posibilidad de un conflicto.
+          <p className="text-gray-700 mb-6">
+            Decir que no, expresar una necesidad o sostener un desacuerdo puede traer culpa, miedo a decepcionar al otro o preocupación por cómo va a reaccionar.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Algo similar puede ocurrir con la búsqueda de aprobación. Preguntar qué piensa otra persona, pedir consejo o buscar apoyo no tiene nada de problemático en sí mismo. La dificultad aparece cuando necesitás esa validación para poder confiar en lo que pensás, sentís o decidís.
+          <p className="text-gray-700 mb-6">
+            Ceder, callarte o explicar de más puede reducir esa incomodidad en el momento. Pero si se convierte en la forma habitual de manejar tus relaciones, los demás pueden terminar sabiendo poco sobre lo que necesitás y vos acumulando malestar.
           </p>
 
-          <p className="text-gray-700">
-            En terapia podemos trabajar para que tengas más posibilidades de elegir cómo relacionarte, en lugar de responder automáticamente para evitar el malestar del momento.
+          <p className="text-gray-700 mb-0">
+            Pedir una opinión o buscar apoyo no tiene nada de problemático en sí mismo. La dificultad aparece cuando necesitás la aprobación de otra persona para poder confiar en tu propia posición.
           </p>
         </div>
       </section>
 
-      {/* Cuando el mismo patrón */}
+      {/* Recurring patterns */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cuando el mismo patrón aparece con distintas personas</h2>
+          <h2 className="text-left mb-8">Cuando el mismo patrón aparece con distintas personas</h2>
 
-          <p className="text-gray-700 mb-8">
-            A veces cambian las parejas, amistades, compañeros de trabajo o contextos, pero algunas dificultades vuelven a aparecer.
+          <p className="text-gray-700 mb-6">
+            A veces cambian las personas y las situaciones, pero terminás ocupando un lugar parecido: quien cede, quien intenta tranquilizar al otro, quien evita discutir o quien acumula malestar hasta explotar.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Tal vez terminás ocupando siempre el lugar de quien cede, quien necesita tranquilizar al otro, quien evita discutir o quien acumula malestar hasta explotar.
-          </p>
-
-          <p className="text-gray-700">
-            Identificar estos patrones no significa asumir que todo problema relacional depende de vos. Significa observar qué parte de esa dinámica sí está dentro de tu posibilidad de cambiar.
+          <p className="text-gray-700 mb-0">
+            Mirar estas repeticiones no significa asumir que todos los problemas de una relación dependen de vos. Significa identificar <strong className="text-gray-900">qué parte de esa dinámica sí está dentro de tu posibilidad de cambiar.</strong>
           </p>
         </div>
       </section>
 
-      {/* La relación terapéutica */}
+      {/* How we work on this */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">La relación terapéutica también puede ser parte del trabajo</h2>
+          <h2 className="text-left mb-8">¿Cómo trabajamos esto en terapia?</h2>
 
-          <p className="text-gray-700 mb-8">
-            Existe una orientación terapéutica llamada FAP (Psicoterapia Analítica Funcional) donde parte del trabajo acontece dentro de la relación con el terapeuta.
+          <p className="text-gray-700 mb-6">
+            En terapia podemos observar situaciones concretas: qué pasó, qué necesitabas, qué apareció cuando intentaste expresarlo y qué terminaste haciendo.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Si en la sesión aparecen patrones similares a los que experimentás en otras relaciones, podemos trabajar directamente con lo que ocurre entre nosotros. Esto permite que el aprendizaje sea más directo y contextualizado.
+          <p className="text-gray-700 mb-6">
+            Algunos de esos patrones también pueden aparecer en la propia terapia. Por ejemplo, puede costarte decirme que no estás de acuerdo conmigo, que algo que dije te molestó o que una intervención no te sirvió. Cuando eso ocurre, también podemos trabajar con lo que está pasando en ese momento.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Trabajo en psicoterapia individual online. El foco está en comprender tu experiencia y aquello sobre lo que vos podés intervenir.
+          <p className="text-gray-700 mb-6">
+            El trabajo es individual: no buscamos cambiar a las otras personas, sino ampliar tus posibilidades de actuar de otra manera dentro de tus relaciones.
           </p>
+
+          <Link href="/terapia-act" className={textLinkClassName}>
+            Conocer mi forma de trabajar →
+          </Link>
         </div>
       </section>
 
-      {/* Links contextuales */}
+      {/* Relationships and overthinking */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Relaciones y sobrepensamiento</h2>
+          <h2 className="text-left mb-8">Relaciones y sobrepensamiento</h2>
 
-          <p className="text-gray-700 mb-8">
-            Los problemas relacionales también pueden continuar mucho después de que una conversación terminó: repasar qué dijiste, interpretar mensajes, preguntarte si la otra persona se molestó o pensar durante horas qué deberías responder.
+          <p className="text-gray-700 mb-6">
+            Las dificultades relacionales también pueden continuar mucho después de una conversación: repasando qué dijiste, interpretando mensajes o preguntándote si la otra persona se molestó.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Cuando esto ocupa demasiado espacio, el sobrepensamiento también puede convertirse en parte del problema.
+          <p className="text-gray-700 mb-6">
+            Cuando ese análisis empieza a repetirse sin darte información nueva, el sobrepensamiento puede convertirse en otro problema a trabajar.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <Link
-              href="/ansiedad"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Leer sobre ansiedad
-            </Link>
-            <Link
-              href="/sobrepensamiento"
-              className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-            >
-              Leer sobre sobrepensamiento
-            </Link>
-          </div>
+          <Link href="/sobrepensamiento" className={textLinkClassName}>
+            Leer sobre sobrepensamiento →
+          </Link>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-8">Relacionarte con los demás no debería requerir desaparecer vos de la relación</h2>
+          <h2 className="mb-8">Relacionarte con los demás no debería implicar dejarte de lado</h2>
 
           <p className="text-lg text-gray-700 mb-8">
-            Si te cuesta poner límites, sostener tus necesidades o sentís que repetís patrones que te generan malestar en tus vínculos, podemos trabajar sobre ello.
+            Si te cuesta poner límites, expresar lo que necesitás o sentís que repetís formas de relacionarte que terminan generándote malestar, podemos trabajar sobre ello.
           </p>
 
           <CTAWhatsApp
-            location="footer_cta"
+            location="final_cta"
             text="Consultar por WhatsApp"
           />
         </div>
