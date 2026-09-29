@@ -1,6 +1,5 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
-import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Terapia ACT Online | Aceptación y Compromiso',
@@ -9,154 +8,126 @@ export const metadata = generatePageMetadata({
 });
 
 export default function TerapiaACT() {
-
   return (
     <>
-
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Terapia ACT online</h1>
-          <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
+
+          <p className="text-xl text-gray-600 mb-6">
             La Terapia de Aceptación y Compromiso (ACT) parte de una idea sencilla: muchas veces no podemos elegir qué pensamientos, emociones o sensaciones aparecen, pero sí podemos desarrollar mayor libertad para decidir qué hacemos cuando aparecen.
           </p>
 
-          <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
-            En lugar de centrar todo el trabajo en sentirte mejor o eliminar experiencias incómodas, también nos preguntamos:
+          <p className="text-lg text-gray-600">
+            El objetivo no es esperar a sentirte de determinada manera para empezar a vivir diferente, sino ampliar tus posibilidades de actuar en direcciones que tengan sentido para vos.
           </p>
-
-          <div className="bg-white p-6 sm:p-8 border border-gray-200 rounded mb-8 text-center">
-            <p className="text-lg font-semibold text-gray-900">
-              ¿Qué tipo de vida querés construir y qué está interfiriendo actualmente con que avances hacia ella?
-            </p>
-          </div>
         </div>
       </section>
 
-      {/* Aceptar */}
+      {/* Acceptance */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Aceptar no significa resignarse</h2>
+          <h2 className="text-left mb-8">Aceptar no significa resignarse</h2>
 
-          <p className="text-gray-700 mb-8">
-            En ACT, aceptar no significa aprobar lo que ocurre, conformarte ni dejar de intentar cambiar aquello que puede cambiarse.
+          <p className="text-gray-700 mb-6">
+            En ACT, aceptar no significa que algo te guste, que estés de acuerdo con ello o que tengas que quedarte en una situación que te hace daño.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Significa aprender a hacer lugar a determinadas experiencias internas cuando luchar constantemente contra ellas termina costándote más que tenerlas.
+          <p className="text-gray-700 mb-6">
+            Significa aprender a hacer espacio para determinadas experiencias internas cuando intentar controlarlas o eliminarlas termina interfiriendo con lo que necesitás hacer.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Podés sentir ansiedad y tener una conversación importante. Podés tener dudas y tomar una decisión. Podés sentir inseguridad y probar algo nuevo.
+          <p className="text-gray-700 mb-6">
+            Podés sentir ansiedad y tener una conversación importante. Podés tener dudas y tomar una decisión. Podés sentir incomodidad y poner un límite.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            La aceptación no es el objetivo final. Es una herramienta para recuperar libertad de acción.
+          <p className="text-gray-900 mb-0">
+            <strong>La aceptación no es un fin en sí mismo. Tiene sentido cuando te permite recuperar posibilidades de acción.</strong>
           </p>
         </div>
       </section>
 
-      {/* No todo lo que pensás */}
+      {/* Thoughts */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">No todo lo que pensás necesita ser resuelto</h2>
+          <h2 className="text-left mb-8">No todo lo que pensás necesita ser resuelto</h2>
 
-          <p className="text-gray-700 mb-8">
-            Cuando aparece un pensamiento difícil, solemos tratarlo como un problema que necesita una respuesta.
+          <p className="text-gray-700 mb-6">
+            Pensar puede ayudarte a resolver problemas, tomar decisiones y entender una situación. Pero no todos los pensamientos plantean un problema que pueda resolverse pensando más.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Analizamos si es cierto, buscamos argumentos en contra, intentamos tranquilizarnos o seguimos pensando hasta sentir que quedó resuelto.
+          <p className="text-gray-700 mb-6">
+            En esos casos, podemos trabajar en aprender a notar un pensamiento sin que necesariamente tengas que resolverlo, eliminarlo u obedecerlo antes de seguir adelante.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            ACT permite trabajar otra posibilidad: observar un pensamiento sin que necesariamente tengas que resolverlo, obedecerlo o eliminarlo antes de seguir adelante.
-          </p>
-
-          <p className="text-gray-700">
-            No se trata de pensar positivo, sino de desarrollar una relación más flexible con lo que pasa por tu cabeza.
+          <p className="text-gray-900 mb-0">
+            <strong>No se trata de pensar en positivo ni de reemplazar pensamientos “negativos” por otros más agradables. Se trata de ampliar la forma en que podés responder cuando aparecen.</strong>
           </p>
         </div>
       </section>
 
-      {/* Lo que hacés para no sentir */}
+      {/* Short-term relief, longer-term cost, values */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Lo que hacés para no sentir también importa</h2>
+          <h2 className="text-left mb-8">Cuando sentirte mejor ahora empieza a limitarte después</h2>
 
-          <p className="text-gray-700 mb-8">
-            Evitar una situación. Postergar una decisión. Buscar tranquilidad. Revisar algo varias veces. Distraerte constantemente. Esperar a sentirte preparado.
+          <p className="text-gray-700 mb-6">
+            Frente a algo difícil es natural intentar reducir el malestar. Podés evitar una situación, postergar una decisión, buscar tranquilidad en otra persona o seguir pensando hasta sentir más certeza.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Todas estas respuestas pueden tener sentido y, muchas veces, funcionan en el corto plazo.
+          <p className="text-gray-700 mb-6">
+            Esas respuestas pueden tener sentido y muchas veces alivian en el momento. El problema aparece cuando ese alivio empieza a tener un costo: dejás de hacer cosas importantes, tus decisiones se organizan cada vez más alrededor de evitar determinadas experiencias o tu vida se va volviendo más limitada.
           </p>
 
-          <div className="max-w-2xl mx-auto bg-white p-6 sm:p-8 border border-gray-200 rounded text-center mb-8">
-            <p className="text-gray-700 font-medium">
-              ¿Esta estrategia está ayudándote a construir la vida que querés o solamente está funcionando para sentirte mejor durante los próximos minutos?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ACT, FAP y mindfulness */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">ACT, FAP y mindfulness en mi forma de trabajar</h2>
-
-          <p className="text-gray-700 mb-8">
-            ACT es mi orientación terapéutica principal, dentro de un enfoque conductual contextual y funcional.
+          <p className="text-gray-700 mb-6">
+            Por eso no miramos solamente si una estrategia te hace sentir mejor ahora, sino también <strong className="text-gray-900">qué efecto tiene sobre la vida que querés construir.</strong>
           </p>
 
-          <p className="text-gray-700 mb-8">
-            También integro herramientas de Psicoterapia Analítico Funcional (FAP) y mindfulness cuando resultan útiles.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            FAP nos permite prestar especial atención a patrones que pueden aparecer dentro de la propia relación terapéutica: buscar aprobación, evitar un desacuerdo, exigirte encontrar la respuesta correcta o tener dificultad para mostrar lo que necesitás.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            El mindfulness puede ayudarnos a entrenar la capacidad de notar pensamientos, emociones y sensaciones mientras están ocurriendo sin reaccionar automáticamente frente a ellos. Esto no implica necesariamente sentarse a meditar.
-          </p>
-
-          <p className="text-gray-700">
-            No aplico estas herramientas como protocolos idénticos para todo el mundo. Primero necesitamos entender qué está ocurriendo en tu situación particular y qué querés que sea diferente.
+          <p className="text-gray-700 mb-0">
+            En ACT, los valores funcionan como direcciones: ayudan a orientar cómo querés actuar y qué querés cuidar en tu vida, incluso cuando no podés garantizar un resultado determinado.
           </p>
         </div>
       </section>
 
-      {/* Cómo se ve en sesión */}
+      {/* ACT, FAP and mindfulness */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Cómo se ve esto en una sesión?</h2>
+          <h2 className="text-left mb-8">ACT, FAP y mindfulness en mi forma de trabajar</h2>
 
-          <p className="text-gray-700 mb-8">
-            Trabajamos sobre situaciones reales de tu semana, observando qué pensaste o sentiste, qué hiciste frente a eso y qué consecuencias tuvo.
+          <p className="text-gray-700 mb-6">
+            ACT es mi orientación terapéutica principal y forma parte de un enfoque conductual contextual: además de qué pensás o sentís, prestamos atención a qué ocurre en determinadas situaciones, cómo respondés y qué consecuencias tienen esas respuestas.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Algunas veces vamos a conversar y analizar un patrón. Otras podemos hacer un ejercicio durante la sesión, prestar atención a algo que está ocurriendo entre nosotros o acordar una acción concreta para probar afuera.
+          <p className="text-gray-700 mb-6">
+            También incorporo elementos de la Psicoterapia Analítico Funcional (FAP), que presta especial atención a los patrones que pueden aparecer dentro de la propia relación terapéutica. Por ejemplo, buscar aprobación, evitar un desacuerdo o tener dificultad para expresar algo que te molestó.
           </p>
 
-          <p className="text-gray-700">
-            El objetivo es que la terapia no quede solamente en comprender lo que te pasa, sino que lo que trabajamos pueda trasladarse a tu vida cotidiana.
+          <p className="text-gray-700 mb-6">
+            El mindfulness puede formar parte del trabajo como una manera de aprender a observar con mayor claridad pensamientos, emociones y sensaciones mientras están ocurriendo. <strong className="text-gray-900">Eso no implica necesariamente meditar.</strong>
+          </p>
+
+          <p className="text-gray-700 mb-0">
+            No trabajo aplicando el mismo protocolo a todas las personas. El punto de partida es entender qué está ocurriendo en tu caso y qué necesitamos trabajar.
           </p>
         </div>
       </section>
 
-      {/* Ansiedad, sobrepensamiento y bloqueo */}
+      {/* What a session looks like */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Ansiedad, sobrepensamiento y bloqueo</h2>
+          <h2 className="text-left mb-8">¿Cómo se ve esto en una sesión?</h2>
 
-          <p className="text-gray-700 mb-8">
-            Este enfoque puede ser especialmente útil para trabajar situaciones en las que la ansiedad, el sobrepensamiento, la autoexigencia o el intento de evitar determinadas emociones empiezan a limitar lo que hacés.
+          <p className="text-gray-700 mb-6">
+            Podemos partir de una situación concreta que haya ocurrido durante la semana y mirar qué estaba pasando, qué pensamientos o emociones aparecieron, qué hiciste frente a ellos y qué ocurrió después.
           </p>
 
-          <p className="text-gray-700">
-            Podés conocer más sobre cómo trabajo <Link href="/ansiedad" className="text-teal-700 hover:underline no-underline">la ansiedad</Link>, <Link href="/sobrepensamiento" className="text-teal-700 hover:underline no-underline">el sobrepensamiento</Link> y <Link href="/falta-de-motivacion" className="text-teal-700 hover:underline no-underline">el bloqueo y la procrastinación</Link>.
+          <p className="text-gray-700 mb-6">
+            A veces alcanza con conversar y analizar la situación. Otras veces podemos hacer un ejercicio, probar una manera diferente de responder o trabajar con algo que está ocurriendo en la propia sesión.
+          </p>
+
+          <p className="text-gray-700 mb-0">
+            También podemos acordar algo para observar o probar fuera de terapia y revisar después qué pasó. <strong className="text-gray-900">La idea es que lo que trabajamos en sesión pueda producir diferencias en situaciones reales de tu vida.</strong>
           </p>
         </div>
       </section>
@@ -171,7 +142,7 @@ export default function TerapiaACT() {
           </p>
 
           <CTAWhatsApp
-            location="footer_cta"
+            location="final_cta"
             text="Consultar por WhatsApp"
           />
         </div>
