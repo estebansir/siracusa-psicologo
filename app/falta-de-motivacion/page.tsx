@@ -8,163 +8,97 @@ export const metadata = generatePageMetadata({
   pathname: '/falta-de-motivacion',
 });
 
-export default function FaltaDeMotivacion() {
+const patterns = [
+  'Postergás una tarea hasta que la urgencia finalmente te obliga a hacerla.',
+  'Planificás, investigás u organizás mucho más tiempo del que pasás haciendo.',
+  'Esperás a tener más ganas, energía o sentirte preparado para empezar.',
+  'Querés hacer algo bien y terminás postergándolo por miedo a hacerlo mal.',
+  'Empezás proyectos o cambios con entusiasmo, pero después te cuesta sostenerlos.',
+];
 
+const textLinkClassName =
+  'inline-flex items-center text-teal-700 font-medium hover:text-teal-800 hover:underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700 rounded-sm';
+
+export default function FaltaDeMotivacion() {
   return (
     <>
-
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Psicólogo online para falta de motivación y bloqueo</h1>
-          <p className="text-xl text-gray-600">
-            A veces sabés perfectamente qué querés hacer y, sin embargo, te cuesta empezar, concentrarte o sostener lo que te proponés.
 
-Postergás tareas, te distraés, planificás más de lo que hacés o esperás a tener más energía, claridad o motivación para empezar.
+          <p className="text-xl text-gray-600 mb-6">
+            A veces sabés qué querés hacer y, sin embargo, cuando llega el momento te cuesta empezar, sostenerlo o terminarlo.
+          </p>
 
-En terapia podemos trabajar para entender qué está interfiriendo entre lo que querés hacer y lo que finalmente terminás haciendo.
+          <p className="text-lg text-gray-600">
+            Podés postergar hasta que aparece la urgencia, prepararte durante horas sin empezar o esperar a sentirte más motivado o preparado para actuar.
           </p>
         </div>
       </section>
 
-      {/* Manifestaciones */}
+      {/* Recognition */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cuando sabés qué hacer, pero no conseguís hacerlo</h2>
+          <h2 className="text-left mb-8">Cuando sabés qué hacer, pero no conseguís hacerlo</h2>
 
-          <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Postergás tareas importantes hasta que la urgencia te obliga a hacerlas.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Empezás algo y rápidamente terminás haciendo otra cosa.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te cuesta concentrarte o sostener la atención durante suficiente tiempo.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Planificás, investigás u organizás mucho, pero te cuesta pasar a la acción.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Esperás a sentirte con más ganas, energía o claridad.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Una tarea parece tan grande que no sabés por dónde empezar.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Querés hacer algo bien y terminás postergándolo por miedo a hacerlo mal.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Empezás proyectos con entusiasmo pero te cuesta sostenerlos.</span>
-            </li>
+          <ul className="space-y-4 pl-0! mb-8! text-gray-700">
+            {patterns.map((pattern) => (
+              <li key={pattern} className="flex gap-3">
+                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
+                <span>{pattern}</span>
+              </li>
+            ))}
           </ul>
 
-          <p className="text-gray-700 font-semibold mt-8">
-            <strong>No todos estos problemas tienen la misma causa. Entender qué está pasando en tu caso es parte del trabajo.</strong>
+          <p className="text-gray-900 mb-0">
+            <strong>Que algo te importe no garantiza que sea fácil ponerte en movimiento. Y que te cueste hacerlo no nos dice todavía por qué está pasando.</strong>
           </p>
         </div>
       </section>
 
-      {/* Procrastinación */}
+      {/* Central distinction */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Procrastinación: no siempre es falta de organización</h2>
+          <h2 className="text-left mb-8">No todas las dificultades para actuar significan lo mismo</h2>
 
-          <p className="text-gray-700 mb-8">
-            A veces procrastinar parece un problema de agenda, disciplina o productividad. Pero organizarse mejor no siempre alcanza.
+          <p className="text-gray-700 mb-6">
+            A veces empezar una tarea implica encontrarte con aburrimiento, incertidumbre, frustración o la posibilidad de equivocarte. Postergarla puede aliviar esa incomodidad en el momento, aunque después aparezcan presión, culpa o más ansiedad.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Una tarea puede generar aburrimiento, ansiedad, inseguridad, frustración o miedo a equivocarte. Postergarla produce alivio inmediato, aunque después aparezcan culpa, presión o más ansiedad.
+          <p className="text-gray-700 mb-6">
+            Otras veces, planificar, investigar o seguir preparándote puede sentirse como estar avanzando y, al mismo tiempo, permitirte postergar el momento de exponerte a hacer. Esto puede aparecer especialmente cuando algo te importa mucho y querés hacerlo bien.
           </p>
 
-          <p className="text-gray-700">
-            Por eso no trabajamos solamente sobre cómo organizar tu tiempo. También intentamos entender qué hace tan difícil empezar o sostener determinadas acciones.
+          <p className="text-gray-700 mb-6">
+            Pero no toda dificultad para actuar es evitación. También puede haber cansancio real, sobrecarga o falta de descanso y recursos.
+          </p>
+
+          <p className="text-gray-900 mb-0">
+            <strong>Parte del trabajo es distinguir qué está pasando en tu caso, en lugar de asumir de entrada que te falta motivación o disciplina.</strong>
           </p>
         </div>
       </section>
 
-      {/* Perfeccionismo y sobrepensamiento */}
+      {/* How we work */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Perfeccionismo, sobrepensamiento y bloqueo</h2>
+          <h2 className="text-left mb-8">¿Cómo trabajamos esto en terapia?</h2>
 
-          <p className="text-gray-700 mb-8">
-            A veces el bloqueo no aparece porque algo te importe poco, sino precisamente porque te importa demasiado hacerlo bien.
+          <p className="text-gray-700 mb-6">
+            En terapia podemos mirar situaciones concretas: qué querías hacer, qué ocurrió justo antes de postergarlo, qué hiciste en ese momento y qué pasó después.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Revisar, investigar, planificar o esperar a encontrar la mejor manera de empezar puede parecer preparación. Pero también puede convertirse en otra forma de no exponerte a equivocarte, frustrarte o descubrir que el resultado no es perfecto.
+          <p className="text-gray-700 mb-6">
+            A partir de ahí podemos probar formas diferentes de responder y observar qué ocurre. A veces eso implica aprender a empezar sin esperar a sentirte completamente motivado o preparado; otras veces, reconocer que necesitás reducir exigencias o recuperar descanso.
           </p>
 
-          <div className="max-w-2xl mx-auto bg-white p-6 sm:p-8 border border-gray-200 rounded text-center mb-8">
-            <p className="text-gray-700 font-medium">
-              ¿Necesito seguir pensando esto o necesito probar algo y obtener información de la experiencia?
-            </p>
-          </div>
-
-          <Link
-            href="/sobrepensamiento"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Leer sobre sobrepensamiento
-          </Link>
-        </div>
-      </section>
-
-      {/* No siempre necesitás */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">No siempre necesitás sentirte motivado para actuar</h2>
-
-          <p className="text-gray-700 mb-8">
-            Es fácil imaginar una secuencia: primero aparecen las ganas y después actuamos.
+          <p className="text-gray-700 mb-6">
+            También importa para qué querés hacer algo. Podemos diferenciar entre acciones que tienen sentido para vos y objetivos que sostenés principalmente porque sentís que deberías cumplirlos.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Pero muchas veces ocurre también al revés: empezamos a actuar sin demasiadas ganas y la motivación aparece después, cuando entramos en contacto con la actividad, avanzamos o vemos algún resultado.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Esto no significa obligarte constantemente a hacer más. También necesitamos distinguir entre estar evitando algo difícil y estar realmente agotado, saturado o necesitando descanso.
-          </p>
-
-          <p className="text-gray-700">
-            El objetivo no es convertirte en una máquina productiva. Es depender menos de sentirte exactamente de determinada manera para poder hacer cosas que son importantes para vos.
-          </p>
-        </div>
-      </section>
-
-      {/* Cómo lo trabajamos */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cómo lo trabajamos</h2>
-
-          <p className="text-gray-700 mb-8">
-            Desde ACT y las terapias conductuales contextuales podemos observar qué ocurre justo antes de postergar, distraerte o abandonar una tarea, qué obtenés en ese momento y qué consecuencias aparecen después.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Dependiendo del caso, podemos trabajar sobre procrastinación, atención, hábitos, perfeccionismo, miedo al fracaso, evitación, organización o dificultad para sostener acciones.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            También prestamos atención a algo fundamental: si lo que estás intentando hacer realmente importa para vos o si estás intentando cumplir expectativas que ya no tienen demasiado sentido en tu vida.
-          </p>
-
-          <Link
-            href="/terapia-act"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Conocer mi enfoque
+          <Link href="/terapia-act" className={textLinkClassName}>
+            Conocer mi forma de trabajar →
           </Link>
         </div>
       </section>
@@ -172,14 +106,14 @@ En terapia podemos trabajar para entender qué está interfiriendo entre lo que 
       {/* Final CTA */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-8">No siempre necesitás sentirte motivado para empezar a moverte</h2>
+          <h2 className="mb-8">Que te cueste avanzar no significa que necesites exigirte más</h2>
 
           <p className="text-lg text-gray-700 mb-8">
-            Si te cuesta empezar, concentrarte o sostener lo que te proponés y sentís que eso está limitando áreas importantes de tu vida, podemos trabajar para entender qué está interfiriendo.
+            Si postergar, bloquearte o abandonar lo que empezás está interfiriendo con cosas importantes para vos, podemos trabajar sobre lo que está pasando.
           </p>
 
           <CTAWhatsApp
-            location="footer_cta"
+            location="final_cta"
             text="Consultar por WhatsApp"
           />
         </div>
