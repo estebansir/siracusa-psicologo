@@ -8,184 +8,126 @@ export const metadata = generatePageMetadata({
   pathname: '/sobrepensamiento',
 });
 
-export default function Sobrepensamiento() {
+const patterns = [
+  'Repasás conversaciones intentando determinar qué quisiste decir, qué entendió la otra persona o qué podrías haber hecho distinto.',
+  'Volvés una y otra vez sobre una decisión aunque ya hayas considerado las opciones principales.',
+  'Imaginás distintos escenarios intentando anticiparte a todas las posibilidades.',
+  'Postergás una decisión o una acción porque todavía no sentís suficiente claridad.',
+];
 
+const textLinkClassName =
+  'inline-flex items-center text-teal-700 font-medium hover:text-teal-800 hover:underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700 rounded-sm';
+
+export default function Sobrepensamiento() {
   return (
     <>
-
       {/* Hero */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="mb-6">Cuando no podés dejar de pensar</h1>
-          <div className="space-y-6">
-            <p className="text-xl text-gray-600">
-              Pensar puede ayudarte a resolver problemas, anticiparte y tomar mejores decisiones. Pero a veces cuanto más pensás, menos claridad encontrás.
-            </p>
+          <h1 className="mb-6">Terapia para sobrepensamiento</h1>
 
-            <p className="text-xl text-gray-600">
-              Repasás conversaciones, imaginás escenarios, analizás todas las opciones o intentás encontrar la decisión correcta. Y aun después de horas pensando, seguís sin sentir que el tema está resuelto.
-            </p>
+          <p className="text-xl text-gray-600 mb-6">
+            Pensar puede ayudarte a resolver problemas y tomar decisiones. Pero a veces seguís analizando sin encontrar información nueva ni sentir que el tema está resuelto.
+          </p>
 
-            <p className="text-xl text-gray-600">
-              En terapia podemos trabajar para entender qué función está cumpliendo ese sobrepensamiento y desarrollar otras formas de responder cuando aparece la duda o la incertidumbre.
-            </p>
-          </div>
+          <p className="text-lg text-gray-600">
+            Repasás conversaciones, imaginás escenarios o evaluás una y otra vez las mismas opciones. Cuanto más intentás encontrar certeza, más difícil se vuelve salir del análisis y avanzar.
+          </p>
         </div>
       </section>
 
-      {/* ¿Pensar mucho o quedar atrapado pensando? */}
+      {/* Recognition */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Pensar mucho o quedar atrapado pensando?</h2>
+          <h2 className="text-left mb-8">Cuando pensar deja de ayudarte a resolver</h2>
 
-          <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Repasando conversaciones, analizando qué dijiste, qué quisiera haber dicho, qué quiso decir la otra persona.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Imaginando cómo podrían desarrollarse los eventos, qué podría salir mal, cómo reaccionarías.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Comparando opciones sin terminar de decidir porque cada opción tiene pro y contras.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Buscando constantemente señales de que elegiste la opción correcta.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Revisando errores del pasado, pensando cómo hubieras podido hacerlo diferente.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Intentando resolver preguntas que no tienen una respuesta clara: ¿qué pasa si...? ¿y si...? ¿debería...?</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Postergando decisiones esperando que llegue la certeza.</span>
-            </li>
+          <ul className="space-y-4 pl-0! mb-8! text-gray-700">
+            {patterns.map((pattern) => (
+              <li key={pattern} className="flex gap-3">
+                <span className="text-teal-700 font-bold flex-shrink-0">•</span>
+                <span>{pattern}</span>
+              </li>
+            ))}
           </ul>
 
-          <p className="text-gray-700 font-semibold mt-8">
+          <p className="text-gray-900 mb-0">
             <strong>Más pensamiento no necesariamente produce más claridad.</strong>
           </p>
         </div>
       </section>
 
-      {/* Cuando entenderte no alcanza */}
+      {/* Useful thinking vs certainty-seeking */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cuando entenderte no alcanza para cambiar</h2>
+          <h2 className="text-left mb-8">Pensar para resolver y pensar para sentir certeza</h2>
 
-          <p className="text-gray-700 mb-8">
-            Podés conocer tus patrones, leer psicología y comprender racionalmente lo que ocurre.
+          <p className="text-gray-700 mb-6">
+            Pensar es útil cuando te permite obtener información nueva, evaluar alternativas o decidir un próximo paso.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Y seguir quedando atrapado en el mismo patrón de pensamiento.
+          <p className="text-gray-700 mb-6">
+            Pero algunas preguntas no tienen una respuesta capaz de darte certeza completa. En esos casos, seguir analizando puede dejar de acercarte a una solución y convertirse en una forma de intentar sentirte seguro antes de actuar.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Esto ocurre porque la solución no está solamente en comprender mejor. También necesitás cambiar qué hacés cuando aparecen esos pensamientos.
+          <p className="text-gray-700 mb-6">
+            El problema no es pensar mucho en sí mismo, sino quedar atrapado repitiendo un proceso que ya no está produciendo información nueva.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            <strong>Comprender un patrón y modificarlo son dos cosas diferentes.</strong>
-          </p>
-
-          <p className="text-gray-700">
-            En terapia no trabajamos solamente en lo que pensás. También observamos qué hacés frente a eso que pensás.
+          <p className="text-gray-900 mb-0">
+            <strong>A veces avanzar implica tomar una decisión o dar un paso sin sentir que el tema quedó completamente resuelto.</strong>
           </p>
         </div>
       </section>
 
-      {/* No necesitás resolver todo */}
+      {/* How we work on overthinking */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">No necesitás resolver todo para poder avanzar</h2>
+          <h2 className="text-left mb-8">¿Cómo trabajamos el sobrepensamiento en terapia?</h2>
 
-          <p className="text-gray-700 mb-8">
-            Una pregunta importante es: ¿realmente necesito seguir pensando sobre esto ahora, o puedo actuar aunque todavía haya incertidumbre?
+          <p className="text-gray-700 mb-6">
+            En terapia buscamos identificar en qué situaciones empezás a quedar atrapado pensando, qué intentás conseguir a través de ese análisis y qué termina pasando después.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            A veces el mayor progreso viene no de tener todo pensado, sino de reconocer cuándo es momento de pasar a la acción a pesar de la incertidumbre.
+          <p className="text-gray-700 mb-6">
+            A partir de ahí podemos trabajar sobre situaciones concretas, aprendiendo a distinguir cuándo seguir pensando puede ayudarte y cuándo necesitás actuar aunque todavía haya dudas o incertidumbre.
           </p>
 
-          <div className="max-w-2xl mx-auto bg-white p-6 sm:p-8 border border-gray-200 rounded text-center mb-8">
-            <p className="text-gray-700 font-medium">
-              ¿Necesito resolver este pensamiento para poder seguir con lo que estaba haciendo?
-            </p>
-          </div>
-
-          <p className="text-gray-700">
-            Muchas veces la respuesta es no. Y actuar a pesar de eso es donde empieza el cambio.
-          </p>
-        </div>
-      </section>
-
-      {/* Cómo lo trabajamos */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Cómo lo trabajamos</h2>
-
-          <p className="text-gray-700 mb-8">
-            Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Podemos trabajar sobre rumiación, preocupación, indecisión, búsqueda de certeza, perfeccionismo y procrastinación, observando qué función cumple el pensamiento en cada situación.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Parte del trabajo consiste en aprender a distinguir cuándo seguir pensando puede ayudarte a resolver algo y cuándo es más útil actuar aunque el tema todavía no se sienta completamente resuelto.
-          </p>
-
-          <Link
-            href="/terapia-act"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Conocer mi enfoque
+          <Link href="/terapia-act" className={textLinkClassName}>
+            Conocer mi forma de trabajar →
           </Link>
         </div>
       </section>
 
-      {/* Ansiedad y sobrepensamiento */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+      {/* Overthinking and anxiety */}
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Ansiedad y sobrepensamiento</h2>
+          <h2 className="text-left mb-8">Sobrepensamiento y ansiedad</h2>
 
-          <p className="text-gray-700 mb-8">
-            Ante la incertidumbre, pensar puede convertirse en una forma de intentar conseguir seguridad.
+          <p className="text-gray-700 mb-6">
+            A veces el sobrepensamiento funciona como un intento de reducir la ansiedad: si logro anticipar todos los escenarios o encontrar la decisión correcta, quizás pueda sentirme tranquilo.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            El problema es que algunas preguntas no tienen una respuesta que produzca certeza absoluta.
+          <p className="text-gray-700 mb-6">
+            El problema aparece cuando buscar esa certeza te lleva a seguir pensando sin llegar a sentirla.
           </p>
 
-          <Link
-            href="/ansiedad"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Leer sobre ansiedad
+          <Link href="/ansiedad" className={textLinkClassName}>
+            Leer sobre ansiedad →
           </Link>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-8">No necesitás tener todo resuelto para poder avanzar</h2>
+          <h2 className="mb-8">No necesitás estar completamente seguro para empezar a moverte</h2>
 
           <p className="text-lg text-gray-700 mb-8">
-            Si sentís que pasás demasiado tiempo dentro de tu cabeza y eso está interfiriendo con tus decisiones, actividades o relaciones, podemos trabajar sobre ello.
+            Si sentís que pasás demasiado tiempo analizando, dudando o repasando situaciones y eso está interfiriendo con tus decisiones o actividades, podemos trabajar sobre ello.
           </p>
 
           <CTAWhatsApp
-            location="footer_cta"
+            location="final_cta"
             text="Consultar por WhatsApp"
           />
         </div>
