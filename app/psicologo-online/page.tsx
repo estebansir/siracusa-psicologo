@@ -8,6 +8,32 @@ export const metadata = generatePageMetadata({
   pathname: '/psicologo-online',
 });
 
+const workAreas = [
+  {
+    title: 'Ansiedad',
+    description: 'Cuando la preocupación, la anticipación o la necesidad de control empiezan a condicionar lo que hacés.',
+    href: '/ansiedad',
+  },
+  {
+    title: 'Sobrepensamiento',
+    description: 'Cuando pensar más ya no te ayuda a resolver y terminás atrapado entre dudas, análisis e indecisión.',
+    href: '/sobrepensamiento',
+  },
+  {
+    title: 'Bloqueo y procrastinación',
+    description: 'Cuando sabés qué querés hacer, pero postergás, evitás o esperás a sentirte preparado.',
+    href: '/falta-de-motivacion',
+  },
+  {
+    title: 'Dificultades relacionales',
+    description: 'Cuando te cuesta poner límites, expresar lo que necesitás o sostener tu posición frente a otros.',
+    href: '/problemas-relacionales',
+  },
+];
+
+const textLinkClassName =
+  'inline-flex items-center text-teal-700 font-medium hover:text-teal-800 hover:underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700 rounded-sm';
+
 export default function PsicologoOnline() {
   return (
     <>
@@ -15,89 +41,56 @@ export default function PsicologoOnline() {
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="mb-6">Psicólogo online para adultos</h1>
-          
-          <p className="text-xl text-gray-600 mb-8">
-            Si estás buscando empezar terapia, trabajo online con adultos que atraviesan ansiedad, sobrepensamiento, autoexigencia, procrastinación, bloqueo emocional o dificultades en sus relaciones.
+
+          <p className="text-xl text-gray-600 mb-6">
+            Trabajo online con adultos que quieren entender y cambiar patrones relacionados con la ansiedad, el sobrepensamiento, la autoexigencia, el bloqueo o sus relaciones.
           </p>
 
           <p className="text-lg text-gray-600">
-            Las sesiones son por videollamada y atiendo a personas en Argentina y en el exterior.
+            La terapia es por videollamada y podés hacerla desde Argentina o desde el exterior.
           </p>
         </div>
       </section>
 
-      {/* When to start therapy */}
+      {/* What we can work on */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Cuándo puede tener sentido empezar terapia?</h2>
-          
-          <ul className="space-y-4 mb-10 text-gray-700">
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Pensás demasiado una decisión o situación y cada vez terminás con menos claridad.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>La ansiedad empieza a condicionar cosas que hacés o evitás.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te exigís mucho y sentís que nunca terminás de estar conforme.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Postergás tareas o decisiones aunque sabés que son importantes para vos.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te cuesta concentrarte o sostener lo que te proponés porque quedás atrapado entre distracciones, preocupaciones o pensamientos.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Sabés qué querés hacer, pero algo te frena cuando llega el momento de hacerlo.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Te cuesta poner límites, tolerar un desacuerdo o dejar de buscar aprobación.</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-teal-700 font-bold">•</span>
-              <span>Hay patrones que entendés racionalmente, pero seguís repitiendo.</span>
-            </li>
-          </ul>
+          <h2 className="text-left mb-8">¿Qué podemos trabajar?</h2>
 
-          <p className="text-gray-700">
-            No necesitás tener un diagnóstico ni saber exactamente qué te pasa para empezar terapia. Parte del trabajo inicial consiste justamente en entenderlo.
-          </p>
+          <ul className="divide-y divide-gray-200 border-y border-gray-200 pl-0! mb-0! list-none">
+            {workAreas.map((area) => (
+              <li key={area.href} className="py-5 mb-0!">
+                <Link href={area.href} className="group block no-underline rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700">
+                  <span className="block text-lg font-semibold text-gray-900 group-hover:text-teal-800 transition-colors">
+                    {area.title} <span className="text-teal-700" aria-hidden="true">→</span>
+                  </span>
+                  <span className="block mt-1 text-gray-700">{area.description}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       {/* How I work */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Cómo trabajo en terapia?</h2>
-          
-          <p className="text-gray-700 mb-8">
+          <h2 className="text-left mb-8">¿Cómo trabajo en terapia?</h2>
+
+          <p className="text-gray-700 mb-6">
             Además de hablar sobre lo que te pasa, prestamos atención a qué hacés frente a eso que te pasa.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Por ejemplo: ¿qué hacés cuando aparece ansiedad? ¿Qué pasa cuando no tenés certeza sobre una decisión? ¿Cómo respondés cuando pensás que podrías equivocarte? ¿Qué hacés cuando una tarea te genera incomodidad, aburrimiento o inseguridad?
+          <p className="text-gray-700 mb-6">
+            A veces evitamos, postergamos, buscamos tranquilidad o seguimos pensando hasta sentir que tenemos una respuesta. Esas estrategias pueden ayudar en el momento y, al mismo tiempo, terminar manteniendo el problema.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            A veces evitamos, postergamos, buscamos tranquilidad, pensamos durante horas o esperamos a sentirnos preparados. Esas respuestas pueden aliviar en el momento y, al mismo tiempo, mantener el problema a largo plazo.
+          <p className="text-gray-700 mb-6">
+            Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y las terapias conductuales contextuales.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            <strong>Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT) y las terapias conductuales contextuales.</strong>
-          </p>
-
-          <Link 
-            href="/terapia-act"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Conocer mi enfoque
+          <Link href="/terapia-act" className={textLinkClassName}>
+            Conocer mi forma de trabajar →
           </Link>
         </div>
       </section>
@@ -105,82 +98,67 @@ export default function PsicologoOnline() {
       {/* How sessions work */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Cómo son las sesiones?</h2>
-          
-          <p className="text-gray-700 mb-8">
-            Las sesiones duran aproximadamente 50 minutos y se realizan por videollamada.
+          <h2 className="text-left mb-4">¿Cómo son las sesiones?</h2>
+
+          <p className="text-sm font-semibold text-teal-700 mb-8">
+            Videollamada · 50 minutos
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Las primeras entrevistas están orientadas a entender qué te está pasando, qué querés cambiar y qué factores pueden estar manteniendo actualmente el problema.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            A partir de ahí definimos objetivos y vamos trabajando sobre situaciones concretas de tu vida, utilizando la conversación, ejercicios durante la sesión y, cuando resulte útil, prácticas o acciones para probar entre sesiones.
+          <p className="text-gray-700 mb-6">
+            En los primeros encuentros buscamos entender qué te está pasando, qué te gustaría cambiar y qué puede estar manteniendo el problema. A partir de ahí definimos objetivos y empezamos a trabajar sobre situaciones concretas.
           </p>
 
           <p className="text-gray-700">
-            La idea es que lo que descubrimos en terapia pueda trasladarse a tu vida cotidiana.
+            Durante la primera sesión también podés preguntarme lo que necesites sobre mi forma de trabajar. Al final podemos evaluar si tiene sentido continuar y cómo hacerlo.
           </p>
         </div>
       </section>
 
-      {/* Online from anywhere */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+      {/* Argentina / abroad */}
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">Terapia online en Argentina y en el exterior</h2>
-          
-          <p className="text-gray-700 mb-8">
-            Atiendo online a adultos que viven en Argentina y en otros países, incluyendo argentinos y otros hispanohablantes que viven en el exterior.
+          <h2 className="text-left mb-8">Terapia online desde Argentina o el exterior</h2>
+
+          <p className="text-gray-700 mb-6">
+            Atiendo a adultos en Argentina y a personas de habla hispana que viven en otros países.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Haber vivido varios años fuera de Argentina también despertó en mí un interés particular por los desafíos que pueden aparecer al migrar: adaptación, vínculos a distancia, pertenencia, decisiones sobre quedarse o volver y la sensación de estar construyendo una vida entre distintos lugares.
+          <p className="text-gray-700 mb-6">
+            Viví varios años en Dinamarca y España, y tengo un interés particular por las dificultades que pueden aparecer al construir una vida entre países, vínculos y lugares de pertenencia.
           </p>
 
-          <Link 
-            href="/psicologo-migrantes"
-            className="inline-flex items-center px-5 py-2.5 border border-gray-400 text-teal-700 rounded font-medium hover:bg-gray-50 transition-colors no-underline"
-          >
-            Terapia para personas que viven en el exterior
+          <Link href="/psicologo-migrantes" className={textLinkClassName}>
+            Psicólogo para personas en el exterior →
           </Link>
         </div>
       </section>
 
-      {/* First session */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+      {/* About me */}
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-12">¿Qué pasa en la primera sesión?</h2>
-          
-          <p className="text-gray-700 mb-8">
-            La primera sesión es una oportunidad para entender qué te trae a consulta y qué te gustaría que fuera diferente.
+          <h2 className="text-left mb-8">Sobre mí</h2>
+
+          <p className="text-gray-700 mb-6">
+            Soy Esteban Siracusa, psicólogo. Trabajo principalmente desde terapias conductuales contextuales y me interesa que la terapia permita no solo entender un problema, sino también empezar a producir cambios concretos fuera de la sesión.
           </p>
 
-          <p className="text-gray-700 mb-8">
-            Voy a hacerte preguntas para conocer mejor tu situación y también vas a poder preguntarme lo que necesites sobre mi forma de trabajar.
-          </p>
-
-          <p className="text-gray-700 mb-8">
-            Al finalizar podemos evaluar si tiene sentido continuar y cuáles podrían ser los primeros objetivos del proceso.
-          </p>
-
-          <p className="text-gray-700">
-            No necesitás preparar nada ni llegar con una explicación perfectamente ordenada de lo que te pasa.
-          </p>
+          <Link href="/sobre-mi" className={textLinkClassName}>
+            Conocer más sobre mí →
+          </Link>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-8">¿Querés empezar terapia?</h2>
-          
+
           <p className="text-lg text-gray-700 mb-8">
             Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y qué estás buscando trabajar. Vemos si puedo ayudarte y coordinamos una primera sesión.
           </p>
 
-          <CTAWhatsApp 
-            location="footer_cta"
+          <CTAWhatsApp
+            location="final_cta"
             text="Consultar por WhatsApp"
           />
         </div>
