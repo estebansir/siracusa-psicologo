@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Esteban Siracusa | Psicólogo Online',
-  description: 'Conocé a Esteban Siracusa, psicólogo especializado en terapias conductuales contextuales, ACT y FAP. Atención online a adultos.',
+  description: 'Conocé a Esteban Siracusa, psicólogo. Trabajo desde terapias conductuales contextuales, principalmente ACT, con formación en FAP y Psicoterapia Cognitiva Integrativa.',
   pathname: '/sobre-mi',
 });
 
@@ -23,31 +23,29 @@ const textLinkClassName =
 export default function SobreMi() {
   return (
     <>
-      {/* Hero: mobile order H1 → photo → text; desktop text left, portrait right */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto grid gap-y-6 lg:grid-cols-2 lg:gap-x-12 items-start">
-          <h1 className="mb-0! lg:col-span-2">Soy Esteban Siracusa, psicólogo</h1>
+      {/* Hero: mobile order H1 → photo → text; desktop text left (vertically centered), portrait right */}
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 grid gap-y-6 lg:grid-cols-2 lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-16">
+          <h1 className="mb-0! lg:col-start-1 lg:row-start-2">Soy Esteban Siracusa, psicólogo</h1>
 
-          <div className="lg:col-start-2 lg:row-start-2 lg:flex lg:justify-end">
-            <div className="relative w-full aspect-[3/4] sm:w-72 sm:mx-auto lg:mx-0">
-              <Image
-                src="/images/esteban-siracusa-psicologo.jpg"
-                alt="Esteban Siracusa, psicólogo"
-                fill
-                sizes="(min-width: 640px) 288px, calc(100vw - 40px)"
-                className="object-cover rounded-lg"
-                style={{
-                  objectPosition: 'center 15%',
-                }}
-              />
-            </div>
+          <div className="relative w-full aspect-[4/5] sm:w-80 sm:mx-auto lg:w-full lg:max-w-md lg:mx-0 lg:justify-self-end lg:col-start-2 lg:row-start-1 lg:row-span-4">
+            <Image
+              src="/images/fotoperfil.png"
+              alt="Esteban Siracusa, psicólogo"
+              fill
+              sizes="(min-width: 1024px) 448px, (min-width: 640px) 320px, calc(100vw - 48px)"
+              className="object-cover rounded-lg"
+              style={{
+                objectPosition: '50% 15%',
+              }}
+            />
           </div>
 
-          <div className="lg:col-start-1 lg:row-start-2">
+          <div className="lg:col-start-1 lg:row-start-3">
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
               Trabajo online con adultos desde una orientación principalmente conductual contextual.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed mb-0!">
               Me interesa una terapia que permita entender con precisión qué está pasando y, a partir de ahí, trabajar sobre aquello que necesitás empezar a hacer de manera diferente en tu vida.
             </p>
           </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Argentinos en el Exterior',
-  description: 'Psicólogo online para argentinos y latinoamericanos en el exterior. Terapia en español para migración, vínculos, pertenencia y decisiones sobre dónde vivir.',
+  description: 'Psicólogo online para personas que viven en el exterior. Terapia en español para trabajar migración, vínculos, pertenencia y decisiones sobre dónde vivir.',
   pathname: '/psicologo-migrantes',
 });
 

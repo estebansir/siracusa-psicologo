@@ -2,6 +2,7 @@
 
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 interface CTAProps {
   text?: string;
@@ -37,6 +38,7 @@ export default function CTAWhatsApp({
       className={`${baseClasses} ${variantClasses} ${className}`}
       style={variant === 'primary' ? { color: 'white' } : undefined}
     >
+      <WhatsAppIcon className="w-5 h-5 mr-2" />
       {text}
     </a>
   );

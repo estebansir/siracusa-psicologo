@@ -90,7 +90,7 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Pensar, anticipar y exigirte probablemente te haya servido muchas veces. <strong>El problema aparece cuando esas mismas estrategias empiezan a ocupar demasiado espacio.</strong>
+              Pensar, anticipar y exigirte probablemente te haya servido muchas veces.<br className="hidden md:inline" /> <strong>El&nbsp;problema aparece cuando esas mismas estrategias empiezan a ocupar demasiado espacio.</strong>
             </p>
 
             <ul className="space-y-4 text-gray-700">
@@ -102,12 +102,14 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="max-w-lg mx-auto text-center mt-14 sm:mt-16 space-y-4">
-              <p className="text-xl text-gray-900 text-center! leading-relaxed!">
-                <strong>La terapia no busca que dejes de pensar ni que nunca vuelvas a sentir ansiedad.</strong>
+            <div className="mt-12 sm:mt-14 bg-gray-50 border border-gray-200 rounded-lg px-6 py-7 sm:px-10 sm:py-9 space-y-3">
+              <p className="text-lg text-gray-800 text-center! leading-relaxed! mb-4! mx-auto">
+                La terapia no busca que dejes de pensar
+                <br className="hidden lg:inline" /> ni que nunca vuelvas a sentir ansiedad.
               </p>
-              <p className="text-xl text-gray-900 text-center! leading-relaxed!">
-                <strong>Busca que esos pensamientos y emociones dejen de decidir tanto por vos.</strong>
+              <p className="text-lg text-gray-800 text-center! leading-relaxed! mb-0! mx-auto">
+                Busca que esos pensamientos y emociones
+                <br className="hidden lg:inline" /> dejen de decidir tanto por vos.
               </p>
             </div>
           </div>
@@ -221,7 +223,7 @@ export default function Home() {
               ¿Querés empezar terapia?
             </h2>
 
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-8! sm:mb-10! leading-relaxed">
               Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y qué te gustaría trabajar.
             </p>
 
