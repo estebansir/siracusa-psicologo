@@ -111,6 +111,10 @@ export default function PsicologoOnline() {
           <p className="text-gray-700">
             Durante la primera sesión también podés preguntarme lo que necesites sobre mi forma de trabajar. Al final podemos evaluar si tiene sentido continuar y cómo hacerlo.
           </p>
+
+          <p className="text-sm text-gray-600 mt-8 pt-6 border-t border-gray-200">
+            Honorarios: $45.000 ARS por sesión. La atención es particular.
+          </p>
         </div>
       </section>
 
