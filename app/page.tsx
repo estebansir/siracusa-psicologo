@@ -180,16 +180,9 @@ export default function Home() {
               Soy Esteban Siracusa, psicólogo. Me interesa entender con precisión <strong>qué está manteniendo un problema y qué tendría que empezar a cambiar para que algo sea diferente fuera de la sesión.</strong>
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Viví varios años en Dinamarca y España antes de volver a Argentina. Esa experiencia despertó en mí un interés particular por los desafíos de vivir entre países.
-            </p>
-
             <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-8">
               <Link href="/sobre-mi" className={textLinkClassName}>
                 Conocer más sobre mí →
-              </Link>
-              <Link href="/psicologo-migrantes" className={textLinkClassName}>
-                Psicólogo para personas en el exterior →
               </Link>
             </div>
           </div>
@@ -208,12 +201,8 @@ export default function Home() {
               Videollamada · 50 minutos
             </p>
 
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              En los primeros encuentros buscamos entender qué te está pasando, qué te gustaría cambiar y qué puede estar manteniendo el problema. A partir de ahí definimos objetivos y empezamos a trabajar sobre situaciones concretas.
-            </p>
-
             <p className="text-gray-700 leading-relaxed">
-              <strong>No necesitás llegar sabiendo exactamente qué te pasa ni tener una explicación perfectamente ordenada.</strong>
+              En los primeros encuentros buscamos entender qué te está pasando, qué te gustaría cambiar y qué puede estar manteniendo el problema. A partir de ahí definimos objetivos y empezamos a trabajar sobre situaciones concretas.
             </p>
           </div>
         </div>
