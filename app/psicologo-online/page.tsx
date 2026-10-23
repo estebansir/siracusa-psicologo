@@ -112,9 +112,13 @@ export default function PsicologoOnline() {
             Durante la primera sesión también podés preguntarme lo que necesites sobre mi forma de trabajar. Al final podemos evaluar si tiene sentido continuar y cómo hacerlo.
           </p>
 
-          <p className="text-sm text-gray-600 mt-8 pt-6 border-t border-gray-200">
-            Honorarios: $45.000 ARS por sesión. La atención es particular.
-          </p>
+          <div className="text-sm text-gray-600 mt-8 pt-6 border-t border-gray-200">
+            <p className="mb-2! font-medium text-gray-700">Honorarios por sesión:</p>
+            <ul className="list-none p-0! mb-0! space-y-1">
+              <li className="mb-0!">Argentina: <span className="whitespace-nowrap">$45.000 ARS</span></li>
+              <li className="mb-0!">Exterior: <span className="whitespace-nowrap">35 €</span></li>
+            </ul>
+          </div>
         </div>
       </section>
 

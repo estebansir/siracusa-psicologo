@@ -12,6 +12,7 @@ type HeroSectionV3Props = {
   primaryCtaText?: string;
   primaryCtaMessage?: string;
   microcopy?: string;
+  fees?: { label: string; amount: string }[];
 };
 
 export default function HeroSectionV3({
@@ -20,6 +21,7 @@ export default function HeroSectionV3({
   primaryCtaText = 'Consultar por WhatsApp',
   primaryCtaMessage = WHATSAPP_MESSAGE_DEFAULT,
   microcopy = 'Terapia individual online para adultos en Argentina y en el exterior.',
+  fees,
 }: HeroSectionV3Props) {
   const pathname = usePathname();
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(primaryCtaMessage)}`;
@@ -62,10 +64,30 @@ export default function HeroSectionV3({
           </div>
 
           {/* Microcopy: spans the full hero grid on desktop so it sits on the central axis of the whole composition */}
-          {microcopy && (
-            <p className="microcopy text-sm text-gray-600 text-center! mt-2 mb-0! max-w-none! lg:col-span-2 lg:col-start-1 lg:row-start-2">
-              {microcopy}
-            </p>
+          {(microcopy || fees) && (
+            <div className="mt-2 lg:col-span-2 lg:col-start-1 lg:row-start-2">
+              {microcopy && (
+                <p className="microcopy text-sm text-gray-600 text-center! mb-0! max-w-none!">
+                  {microcopy}
+                </p>
+              )}
+
+              {/* Fees: discreet, same small scale as the microcopy */}
+              {fees && fees.length > 0 && (
+                <div className="mt-3 text-center text-sm text-gray-600">
+                  <p className="text-center! mb-1! max-w-none! font-medium text-gray-700">
+                    Honorarios por sesión:
+                  </p>
+                  <ul className="list-none p-0! mb-0! flex flex-col sm:flex-row sm:justify-center gap-y-0.5 sm:gap-x-6">
+                    {fees.map((fee) => (
+                      <li key={fee.label} className="mb-0!">
+                        {fee.label}: <span className="whitespace-nowrap">{fee.amount}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           )}
 
           {/* Right column: photo */}

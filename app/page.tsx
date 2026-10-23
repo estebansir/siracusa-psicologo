@@ -79,6 +79,10 @@ export default function Home() {
         description="Si la ansiedad, la autoexigencia o darle vueltas a todo te están frenando, en terapia podemos entender qué está manteniendo ese patrón y empezar a responder de otra manera."
         primaryCtaText="Consultar por WhatsApp"
         microcopy="Atiendo online a adultos en Argentina y a personas de habla hispana en todo el mundo."
+        fees={[
+          { label: 'Argentina', amount: '$45.000 ARS' },
+          { label: 'Exterior', amount: '35 €' },
+        ]}
       />
 
       {/* Identification */}
