@@ -43,12 +43,12 @@ export default function HeroSectionV3({
           </h1>
 
           {/* Description */}
-          <p className="sm:text-lg text-gray-700 mb-8 max-w-2xl leading-relaxed lg:col-start-1 lg:row-start-2">
+          <p className="sm:text-lg text-gray-700 mb-8 lg:mb-[2.125rem]! max-w-2xl leading-relaxed lg:col-start-1 lg:row-start-2">
             {description}
           </p>
 
           {/* Right column: photo */}
-          <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full mb-8 lg:mb-0 lg:col-start-2 lg:row-start-1 lg:row-span-3">
+          <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full mb-5 lg:mb-0 lg:col-start-2 lg:row-start-1 lg:row-span-3">
             <Image
               src="/images/fotoperfil.png"
               alt="Esteban Siracusa, psicólogo"
@@ -66,14 +66,14 @@ export default function HeroSectionV3({
           {(microcopy || fees) && (
             <div className="mb-6 lg:mb-0 text-center lg:text-left lg:col-start-1 lg:row-start-3">
               {microcopy && (
-                <p className="microcopy text-sm text-gray-600 text-center! lg:text-left! mb-0! max-w-none!">
+                <p className="microcopy text-sm lg:text-[17px]! text-gray-600 text-center! lg:text-left! mb-0! max-w-none!">
                   {microcopy}
                 </p>
               )}
 
               {/* Fees: discreet, same small scale as the microcopy */}
               {fees && fees.length > 0 && (
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm lg:text-base text-gray-600">
                   <p className="text-center! lg:text-left! mb-1! max-w-none! font-medium text-gray-700">
                     Honorarios por sesión (50 minutos):
                   </p>
