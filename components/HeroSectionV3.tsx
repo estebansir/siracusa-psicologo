@@ -74,14 +74,22 @@ export default function HeroSectionV3({
 
               {/* Fees: discreet, same small scale as the microcopy */}
               {fees && fees.length > 0 && (
-                <div className="mt-3 text-center text-sm text-gray-600">
+                <div className="mt-1.5 text-center text-sm text-gray-600">
                   <p className="text-center! mb-1! max-w-none! font-medium text-gray-700">
-                    Honorarios por sesión:
+                    Honorarios por sesión (50 minutos):
                   </p>
-                  <ul className="list-none p-0! mb-0! flex flex-col sm:flex-row sm:justify-center gap-y-0.5 sm:gap-x-6">
-                    {fees.map((fee) => (
-                      <li key={fee.label} className="mb-0!">
-                        {fee.label}: <span className="whitespace-nowrap">{fee.amount}</span>
+                  {/* Mobile: one value per line. sm+: single centered line with a discreet separator */}
+                  <ul className="list-none p-0! mb-0! flex flex-col sm:flex-row sm:justify-center gap-y-0.5 sm:gap-x-2">
+                    {fees.map((fee, index) => (
+                      <li key={fee.label} className="mb-0! flex justify-center sm:gap-x-2">
+                        {index > 0 && (
+                          <span aria-hidden="true" className="hidden sm:inline text-gray-400">
+                            ·
+                          </span>
+                        )}
+                        <span>
+                          {fee.label}: <span className="whitespace-nowrap">{fee.amount}</span>
+                        </span>
                       </li>
                     ))}
                   </ul>
