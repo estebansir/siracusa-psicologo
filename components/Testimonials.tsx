@@ -5,6 +5,7 @@ import { useRef, useState } from 'react';
 type Testimonial = {
   id: string;
   name: string;
+  excerpt: string;
   text: string;
 };
 
@@ -12,16 +13,19 @@ const testimonials: Testimonial[] = [
   {
     id: 'priscila',
     name: 'Priscila',
+    excerpt: 'Me ayudó mucho a bajar un cambio, a ordenar ideas y, sobre todo, a incorporar herramientas concretas que pude aplicar en mi día a día',
     text: 'Mi experiencia en relación a la terapia con Esteban es excelente. Durante este último año me acompañó en temas personales y laborales, y siempre sentí que podía llevarle lo que me pasaba sin sentirme incómoda. Es muy amable, súper comprensivo y tiene una forma de acompañar que te hace sentir en confianza y da tranquilidad. Me ayudó mucho a bajar un cambio, a ordenar ideas y, sobre todo, a incorporar herramientas concretas que pude aplicar en mi día a día. También valoro mucho que haya sido flexible con los horarios, porque eso hizo que pudiera sostener la terapia sin que se me complique. Siento que no fue solo hablar, sino que realmente hubo un proceso y cambios que puedo notar en mí.',
   },
   {
     id: 'julieta',
     name: 'Julieta',
+    excerpt: 'Con su acompañamiento fui pudiendo darle espacio a las emociones, reconocer y diferenciarme de mis pensamientos, y también abrir la posibilidad de cuestionar dinámicas aprendidas',
     text: 'Esteban me acompaña hace más de un año, y el proceso terapéutico con él me fue ayudando a comprender que muchos asuntos internos requieren tiempo, paciencia y disposición para ser sencillamente habitados. Con su acompañamiento fui pudiendo darle espacio a las emociones, reconocer y diferenciarme de mis pensamientos, y también abrir la posibilidad de cuestionar dinámicas aprendidas, observarme con más honestidad y ejercitar activamente nuevas formas de vincularme conmigo misma y con los demás. Valoro profundamente su interés genuino y su manera de acompañar desde la escucha, la presencia y el compromiso.',
   },
   {
     id: 'juan',
     name: 'Juan',
+    excerpt: 'Cada sesión es desafiante y productiva: a veces trabajando herramientas o estrategias para aplicarlas en el día a día, y otras veces simplemente desentrañando lo que está ahí trabado',
     text: 'Tengo la suerte de llevar ya un poco más de un año haciendo terapia con Esteban. Un excelente profesional, agradable y atento. Cada sesión es desafiante y productiva: a veces trabajando herramientas o estrategias para aplicarlas en el día a día, y otras veces simplemente desentrañando lo que está ahí trabado. Sin dudas, su trabajo me ha ayudado a estar mejor. Altamente recomendado.',
   },
 ];
@@ -101,9 +105,9 @@ export default function Testimonials({ background = 'muted' }: TestimonialsProps
                 <blockquote className="m-0">
                   <p
                     id={`testimonial-${item.id}`}
-                    className={`text-base text-gray-700 leading-relaxed! mb-0! ${isExpanded ? '' : 'line-clamp-6'}`}
+                    className={`text-base text-gray-700 leading-relaxed! mb-0! ${isExpanded ? '' : 'min-h-[9.75rem]'}`}
                   >
-                    {item.text}
+                    {isExpanded ? item.text : item.excerpt}
                   </p>
                 </blockquote>
 
