@@ -3,6 +3,7 @@ import Link from 'next/link';
 import HeroSectionV3 from '@/components/HeroSectionV3';
 import ProblemCard from '@/components/ProblemCard';
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
+import Testimonials from '@/components/Testimonials';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online | Esteban Siracusa',
@@ -207,6 +208,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Final CTA */}
       <section className="bg-white pb-12 sm:pb-16 lg:pb-20">
