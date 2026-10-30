@@ -80,7 +80,7 @@ export default function Home() {
         primaryCtaText="Consultar por WhatsApp"
         microcopy="Atiendo online a adultos en Argentina y a personas de habla hispana en todo el mundo."
         fees={[
-          { label: 'Argentina', amount: '$45.000 ARS' },
+          { label: 'Argentina', amount: '$50.000 ARS' },
           { label: 'Exterior', amount: '35 € / 40 USD' },
         ]}
       />
