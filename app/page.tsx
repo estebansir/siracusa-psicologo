@@ -87,7 +87,7 @@ export default function Home() {
       />
 
       {/* Identification */}
-      <section className="bg-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-14 lg:pt-24 lg:pb-18">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-8">
@@ -106,17 +106,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-
-            <div className="mt-12 sm:mt-14 bg-gray-50 border border-gray-200 rounded-lg px-6 py-7 sm:px-10 sm:py-9 space-y-3">
-              <p className="text-lg text-gray-800 text-center! leading-relaxed! mb-4! mx-auto">
-                La terapia no busca que dejes de pensar
-                <br className="hidden lg:inline" /> ni que nunca vuelvas a sentir ansiedad.
-              </p>
-              <p className="text-lg text-gray-800 text-center! leading-relaxed! mb-0! mx-auto">
-                Busca que esos pensamientos y emociones
-                <br className="hidden lg:inline" /> dejen de decidir tanto por vos.
-              </p>
-            </div>
           </div>
         </div>
       </section>
