@@ -110,14 +110,14 @@ export default function HeroSectionV3({
 
           {/* Credential + reimbursement note: fine print below the mobile CTA; on desktop, under the fees in the left column */}
           {(credential || reimbursementNote) && (
-            <div className="mt-4 lg:mt-3 text-sm lg:text-base text-gray-600 text-center lg:text-left lg:col-start-1 lg:row-start-4">
+            <div className="mt-4 lg:mt-3 text-[13px] lg:text-sm leading-snug text-gray-600 text-center lg:text-left lg:col-start-1 lg:row-start-4">
               {credential && (
-                <p className="text-center! lg:text-left! mb-1! max-w-none! font-medium text-gray-700">
+                <p className="text-center! lg:text-left! mb-0.5! max-w-none! leading-snug!">
                   {credential}
                 </p>
               )}
               {reimbursementNote && (
-                <p className="text-center! lg:text-left! mb-0! max-w-none!">
+                <p className="text-center! lg:text-left! mb-0! max-w-none! leading-snug! text-balance">
                   {reimbursementNote}
                 </p>
               )}

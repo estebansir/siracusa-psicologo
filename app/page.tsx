@@ -86,7 +86,7 @@ export default function Home() {
           { label: 'Exterior', amount: '35 € / 40 USD' },
         ]}
         credential="Lic. en Psicología · MN 85046"
-        reimbursementNote="Emito factura para que puedas solicitar el reintegro a tu obra social o prepaga, según las condiciones de tu plan."
+        reimbursementNote="Emito factura para solicitar reintegros a obras sociales y prepagas."
       />
 
       {/* Identification */}
