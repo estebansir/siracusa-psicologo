@@ -10,6 +10,21 @@ export const metadata = generatePageMetadata({
   pathname: '/psicologo-online',
 });
 
+const steps = [
+  {
+    title: 'Coordinamos por WhatsApp.',
+    text: 'Me escribís, me contás brevemente qué te está pasando y acordamos día y horario.',
+  },
+  {
+    title: 'Nos encontramos por Google Meet.',
+    text: 'Las sesiones duran 50 minutos. Podés conectarte desde la computadora o el celular, desde un lugar donde puedas hablar con tranquilidad y privacidad.',
+  },
+  {
+    title: 'Empezamos a trabajar.',
+    text: 'En la primera sesión conversamos sobre lo que te está pasando y lo que esperás de la terapia, y podés preguntarme lo que necesites. Al final evaluamos juntos si tiene sentido continuar y cómo hacerlo.',
+  },
+];
+
 const workAreas = [
   {
     title: 'Ansiedad',
@@ -45,21 +60,79 @@ export default function PsicologoOnline() {
           <h1 className="mb-6">Psicólogo online para adultos</h1>
 
           <p className="text-xl text-gray-600 mb-6">
-            Trabajo online con adultos que quieren entender y cambiar patrones relacionados con la ansiedad, el sobrepensamiento, la autoexigencia, el bloqueo o sus relaciones.
+            Atiendo a adultos en Argentina y a personas de habla hispana que viven en otros países.
           </p>
 
           <p className="text-lg text-gray-600">
-            La terapia es por videollamada y podés hacerla desde Argentina o desde el exterior.
+            Acá te cuento cómo funcionan las sesiones, cómo coordinamos horarios y cuáles son las formas de pago.
           </p>
 
           <IntroWhatsAppBlock />
         </div>
       </section>
 
-      {/* What we can work on */}
+      {/* How online therapy works */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-8">¿Qué podemos trabajar?</h2>
+          <h2 className="text-left mb-8">¿Cómo funciona la terapia online?</h2>
+
+          <ol className="list-none pl-0! mb-0! flex flex-col gap-5 text-gray-700">
+            {steps.map((step, index) => (
+              <li key={step.title} className="flex gap-3 mb-0!">
+                <span className="text-teal-700 font-semibold flex-shrink-0 w-5 tabular-nums">{index + 1}.</span>
+                <span>
+                  <strong className="text-gray-900">{step.title}</strong> {step.text}
+                </span>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 pt-8 border-t border-gray-200">
+            <h3 className="text-left mb-4">Honorarios y formas de pago</h3>
+
+            <div className="text-sm text-gray-600 grid gap-6 sm:grid-cols-2">
+              <div>
+                <p className="mb-2! font-medium text-gray-700">Honorarios por sesión:</p>
+                <ul className="list-none p-0! mb-0! space-y-1">
+                  <li className="mb-0!">Argentina: <span className="whitespace-nowrap">$50.000 ARS</span></li>
+                  <li className="mb-0!">Exterior: <span className="whitespace-nowrap">35 € / 40 USD</span></li>
+                </ul>
+              </div>
+              <div>
+                <p className="mb-2! font-medium text-gray-700">Formas de pago:</p>
+                <ul className="list-none p-0! mb-0! space-y-1">
+                  <li className="mb-0!">Argentina: transferencia bancaria o Mercado Pago</li>
+                  <li className="mb-0!">Exterior: Revolut, Wise, transferencia IBAN o PayPal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Argentina / abroad */}
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-8">Terapia online desde Argentina o el exterior</h2>
+
+          <p className="text-gray-700 mb-6">
+            Si vivís fuera de Argentina, buscamos un horario que funcione con la diferencia horaria de tu país.
+          </p>
+
+          <p className="text-gray-700 mb-6">
+            Viví varios años en Dinamarca y España, y tengo un interés particular por las dificultades que pueden aparecer al construir una vida entre países, vínculos y lugares de pertenencia.
+          </p>
+
+          <Link href="/psicologo-migrantes" className={textLinkClassName}>
+            Psicólogo para personas en el exterior →
+          </Link>
+        </div>
+      </section>
+
+      {/* Common reasons for consultation */}
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-8">Motivos frecuentes de consulta</h2>
 
           <ul className="divide-y divide-gray-200 border-y border-gray-200 pl-0! mb-0! list-none">
             {workAreas.map((area) => (
@@ -76,97 +149,37 @@ export default function PsicologoOnline() {
         </div>
       </section>
 
-      {/* How I work */}
+      {/* About me and how I work */}
       <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-8">¿Cómo trabajo en terapia?</h2>
+          <h2 className="text-left mb-8">Sobre mí y mi forma de trabajar</h2>
 
           <p className="text-gray-700 mb-6">
-            Además de hablar sobre lo que te pasa, prestamos atención a qué hacés frente a eso que te pasa.
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            A veces evitamos, postergamos, buscamos tranquilidad o seguimos pensando hasta sentir que tenemos una respuesta. Esas estrategias pueden ayudar en el momento y, al mismo tiempo, terminar manteniendo el problema.
+            Soy Esteban Siracusa, psicólogo. Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y las terapias conductuales contextuales.
           </p>
 
           <p className="text-gray-700 mb-6">
-            Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y las terapias conductuales contextuales.
+            Además de hablar sobre lo que te pasa, analizamos en qué situaciones aparece, qué hacés frente a eso y qué consecuencias tiene. A veces evitamos, postergamos, buscamos tranquilidad o seguimos pensando hasta sentir que tenemos una respuesta. Esas estrategias pueden ayudar en el momento y, al mismo tiempo, terminar manteniendo el problema.
           </p>
 
-          <Link href="/terapia-act" className={textLinkClassName}>
-            Conocer mi forma de trabajar →
-          </Link>
-        </div>
-      </section>
-
-      {/* How sessions work */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-4">¿Cómo son las sesiones?</h2>
-
-          <p className="text-sm font-semibold text-teal-700 mb-8">
-            Videollamada · 50 minutos
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            En los primeros encuentros buscamos entender qué te está pasando, qué te gustaría cambiar y qué puede estar manteniendo el problema. A partir de ahí definimos objetivos y empezamos a trabajar sobre situaciones concretas.
-          </p>
-
-          <p className="text-gray-700">
-            Durante la primera sesión también podés preguntarme lo que necesites sobre mi forma de trabajar. Al final podemos evaluar si tiene sentido continuar y cómo hacerlo.
-          </p>
-
-          <div className="text-sm text-gray-600 mt-8 pt-6 border-t border-gray-200">
-            <p className="mb-2! font-medium text-gray-700">Honorarios por sesión:</p>
-            <ul className="list-none p-0! mb-0! space-y-1">
-              <li className="mb-0!">Argentina: <span className="whitespace-nowrap">$50.000 ARS</span></li>
-              <li className="mb-0!">Exterior: <span className="whitespace-nowrap">35 € / 40 USD</span></li>
-            </ul>
+          <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-8">
+            <Link href="/terapia-act" className={textLinkClassName}>
+              Conocer mi forma de trabajar →
+            </Link>
+            <Link href="/sobre-mi" className={textLinkClassName}>
+              Conocer más sobre mí →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Argentina / abroad */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-8">Terapia online desde Argentina o el exterior</h2>
-
-          <p className="text-gray-700 mb-6">
-            Atiendo a adultos en Argentina y a personas de habla hispana que viven en otros países.
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            Viví varios años en Dinamarca y España, y tengo un interés particular por las dificultades que pueden aparecer al construir una vida entre países, vínculos y lugares de pertenencia.
-          </p>
-
-          <Link href="/psicologo-migrantes" className={textLinkClassName}>
-            Psicólogo para personas en el exterior →
-          </Link>
-        </div>
-      </section>
-
-      {/* About me */}
-      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-left mb-8">Sobre mí</h2>
-
-          <p className="text-gray-700 mb-6">
-            Soy Esteban Siracusa, psicólogo. Trabajo principalmente desde terapias conductuales contextuales y me interesa que la terapia permita no solo entender un problema, sino también empezar a producir cambios concretos fuera de la sesión.
-          </p>
-
-          <Link href="/sobre-mi" className={textLinkClassName}>
-            Conocer más sobre mí →
-          </Link>
-        </div>
-      </section>
-
       {/* Final CTA */}
-      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-8">¿Querés empezar terapia?</h2>
 
           <p className="text-lg text-gray-700 mb-8">
-            Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y qué estás buscando trabajar. Vemos si puedo ayudarte y coordinamos una primera sesión.
+            Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y, si vivís fuera de Argentina, desde qué país me escribís. Vemos si puedo ayudarte y coordinamos una primera sesión.
           </p>
 
           <div data-wa-anchor="final">
