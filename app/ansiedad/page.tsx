@@ -1,6 +1,8 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
+import IntroWhatsAppBlock from '@/components/IntroWhatsAppBlock';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Ansiedad | Esteban Siracusa',
@@ -33,6 +35,8 @@ export default function Ansiedad() {
           <p className="text-lg text-gray-600">
             En terapia podemos trabajar sobre qué pasa cuando aparece la ansiedad y cómo respondés frente a ella.
           </p>
+
+          <IntroWhatsAppBlock />
         </div>
       </section>
 
@@ -126,12 +130,16 @@ export default function Ansiedad() {
             Si sentís que la ansiedad está condicionando demasiado tus decisiones, relaciones o actividades, podemos evaluar juntos qué está pasando y cómo trabajarlo.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }

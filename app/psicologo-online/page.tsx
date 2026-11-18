@@ -1,6 +1,8 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
 import Link from 'next/link';
+import IntroWhatsAppBlock from '@/components/IntroWhatsAppBlock';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Adultos | Esteban Siracusa',
@@ -49,6 +51,8 @@ export default function PsicologoOnline() {
           <p className="text-lg text-gray-600">
             La terapia es por videollamada y podés hacerla desde Argentina o desde el exterior.
           </p>
+
+          <IntroWhatsAppBlock />
         </div>
       </section>
 
@@ -165,12 +169,16 @@ export default function PsicologoOnline() {
             Podés escribirme por WhatsApp y contarme brevemente qué te está pasando y qué estás buscando trabajar. Vemos si puedo ayudarte y coordinamos una primera sesión.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }
