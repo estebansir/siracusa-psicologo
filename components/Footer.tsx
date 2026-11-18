@@ -76,7 +76,10 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="py-6 text-center">
           <p className="text-xs text-gray-400">
-            © {currentYear} Esteban Siracusa
+            © {currentYear} Esteban Siracusa ·{' '}
+            <Link href="/privacidad" className={`font-normal! ${footerLinkClassName}`}>
+              Política de privacidad
+            </Link>
           </p>
         </div>
       </div>

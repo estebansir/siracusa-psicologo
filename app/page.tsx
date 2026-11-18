@@ -4,6 +4,7 @@ import HeroSectionV3 from '@/components/HeroSectionV3';
 import ProblemCard from '@/components/ProblemCard';
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
 import Testimonials from '@/components/Testimonials';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online | Esteban Siracusa',
@@ -79,11 +80,13 @@ export default function Home() {
         title="Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional"
         description="Si la ansiedad, la autoexigencia o darle vueltas a todo te están frenando, en terapia podemos entender qué está manteniendo ese patrón y empezar a responder de otra manera."
         primaryCtaText="Consultar por WhatsApp"
-        microcopy="Atiendo online a adultos en Argentina y a personas de habla hispana en todo el mundo."
+        microcopy="Psicoterapia online por videollamada para adultos en Argentina y para personas de habla hispana en todo el mundo."
         fees={[
           { label: 'Argentina', amount: '$50.000 ARS' },
           { label: 'Exterior', amount: '35 € / 40 USD' },
         ]}
+        credential="Lic. en Psicología · MN 85046"
+        reimbursementNote="Emito factura para que puedas solicitar el reintegro a tu obra social o prepaga, según las condiciones de tu plan."
       />
 
       {/* Identification */}
@@ -224,12 +227,14 @@ export default function Home() {
               </ol>
             </div>
 
-            <div>
+            <div data-wa-anchor="final">
               <HomeWhatsAppCTA ctaLocation="final_cta" text="Consultar por WhatsApp" />
             </div>
           </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }

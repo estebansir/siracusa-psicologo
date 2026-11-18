@@ -13,6 +13,8 @@ type HeroSectionV3Props = {
   primaryCtaMessage?: string;
   microcopy?: string;
   fees?: { label: string; amount: string }[];
+  credential?: string;
+  reimbursementNote?: string;
 };
 
 export default function HeroSectionV3({
@@ -22,6 +24,8 @@ export default function HeroSectionV3({
   primaryCtaMessage = WHATSAPP_MESSAGE_DEFAULT,
   microcopy = 'Terapia individual online para adultos en Argentina y en el exterior.',
   fees,
+  credential,
+  reimbursementNote,
 }: HeroSectionV3Props) {
   const pathname = usePathname();
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(primaryCtaMessage)}`;
@@ -48,7 +52,7 @@ export default function HeroSectionV3({
           </p>
 
           {/* Right column: photo */}
-          <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full mb-5 lg:mb-0 lg:col-start-2 lg:row-start-1 lg:row-span-3">
+          <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full mb-5 lg:mb-0 lg:col-start-2 lg:row-start-1 lg:row-span-4">
             <Image
               src="/images/fotoperfil.png"
               alt="Esteban Siracusa, psicólogo"
@@ -89,8 +93,8 @@ export default function HeroSectionV3({
             </div>
           )}
 
-          {/* CTA - mobile only */}
-          <div className="flex flex-col sm:flex-row sm:justify-center lg:hidden">
+          {/* CTA - mobile only. data-wa-anchor lets the floating mobile button know when this CTA is on screen. */}
+          <div data-wa-anchor="hero" className="flex flex-col sm:flex-row sm:justify-center lg:hidden">
             <a
               href={whatsappUrl}
               target="_blank"
@@ -103,6 +107,22 @@ export default function HeroSectionV3({
               {primaryCtaText}
             </a>
           </div>
+
+          {/* Credential + reimbursement note: fine print below the mobile CTA; on desktop, under the fees in the left column */}
+          {(credential || reimbursementNote) && (
+            <div className="mt-4 lg:mt-3 text-sm lg:text-base text-gray-600 text-center lg:text-left lg:col-start-1 lg:row-start-4">
+              {credential && (
+                <p className="text-center! lg:text-left! mb-1! max-w-none! font-medium text-gray-700">
+                  {credential}
+                </p>
+              )}
+              {reimbursementNote && (
+                <p className="text-center! lg:text-left! mb-0! max-w-none!">
+                  {reimbursementNote}
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </section>
