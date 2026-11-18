@@ -6,7 +6,7 @@ import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online para Adultos | Esteban Siracusa',
-  description: 'Psicólogo online para adultos en Argentina y el exterior. Terapia para ansiedad, sobrepensamiento, procrastinación, bloqueo y dificultades relacionales.',
+  description: 'Psicoterapia online para adultos en Argentina y el exterior. Sesiones de 50 minutos por Google Meet. Conocé cómo funciona y coordiná tu primera consulta.',
   pathname: '/psicologo-online',
 });
 
