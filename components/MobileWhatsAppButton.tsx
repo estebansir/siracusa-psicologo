@@ -7,39 +7,50 @@ import { trackWhatsAppClick } from '@/lib/analytics';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 // Mobile-only floating WhatsApp button (the header CTA is desktop-only).
-// Shows after a short scroll and stays put; it only hides while another WhatsApp CTA
-// ([data-wa-anchor] elements) or the footer is on screen.
+// Visible only between the two large WhatsApp CTAs: it appears once the hero CTA
+// ([data-wa-anchor="hero"]) has fully left the screen upwards, and hides as soon as the
+// final CTA ([data-wa-anchor="final"]) enters the screen, staying hidden below it (footer
+// included). Works the same when scrolling back up.
 export default function MobileWhatsAppButton() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    let frame = 0;
+    const hero = document.querySelector('[data-wa-anchor="hero"]');
+    const finalCta = document.querySelector('[data-wa-anchor="final"]');
+    if (!hero || !finalCta) return;
 
-    const onScreen = (el: Element | null) => {
-      if (!el) return false;
-      const r = el.getBoundingClientRect();
-      return r.top < window.innerHeight && r.bottom > 0;
-    };
+    let heroPassed = false; // hero CTA is entirely above the viewport
+    let finalReached = false; // final CTA is on screen or already above it
+    const update = () => setVisible(heroPassed && !finalReached);
 
-    const update = () => {
-      frame = 0;
-      const otherCtaOnScreen = Array.from(document.querySelectorAll('[data-wa-anchor]')).some(onScreen);
-      const footerOnScreen = onScreen(document.querySelector('footer'));
-      setVisible(window.scrollY > 160 && !otherCtaOnScreen && !footerOnScreen);
-    };
+    // Each observer watches a half-open band instead of the visible viewport, so a big jump
+    // (tap on the status bar, anchor link, restored scroll position) can't skip a change.
+    const FAR = '100000px';
+    // Band: from the viewport's top edge down to the end of the page.
+    const heroObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[entries.length - 1];
+        heroPassed = !entry.isIntersecting;
+        update();
+      },
+      { rootMargin: `0px 0px ${FAR} 0px` },
+    );
+    // Band: from the start of the page down to the viewport's bottom edge.
+    const finalObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[entries.length - 1];
+        finalReached = entry.isIntersecting;
+        update();
+      },
+      { rootMargin: `${FAR} 0px 0px 0px` },
+    );
 
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
+    heroObserver.observe(hero);
+    finalObserver.observe(finalCta);
     return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-      if (frame) cancelAnimationFrame(frame);
+      heroObserver.disconnect();
+      finalObserver.disconnect();
     };
   }, []);
 
