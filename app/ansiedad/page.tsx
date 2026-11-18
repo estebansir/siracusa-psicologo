@@ -100,6 +100,10 @@ export default function Ansiedad() {
             A partir de ahí podemos trabajar sobre situaciones concretas, probando otras formas de responder y observando qué pasa cuando dejás de organizar tus decisiones alrededor de evitar la ansiedad.
           </p>
 
+          <p className="text-gray-700 mb-6">
+            Trabajo desde la Terapia de Aceptación y Compromiso (ACT), un enfoque dentro de las terapias conductuales contextuales. En lugar de intentar controlar cada pensamiento ansioso o esperar a que la ansiedad desaparezca para actuar, buscamos desarrollar una relación diferente con esas experiencias y avanzar hacia lo que es importante para vos.
+          </p>
+
           <Link href="/terapia-act" className={textLinkClassName}>
             Conocer mi forma de trabajar →
           </Link>
@@ -118,6 +122,28 @@ export default function Ansiedad() {
           <Link href="/sobrepensamiento" className={textLinkClassName}>
             Leer sobre sobrepensamiento →
           </Link>
+        </div>
+      </section>
+
+      {/* Panic attacks and physical symptoms */}
+      <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-8">Ataques de pánico y síntomas físicos de ansiedad</h2>
+
+          <p className="text-gray-700 mb-0">
+            La ansiedad también se siente en el cuerpo. En un ataque de pánico pueden aparecer de golpe palpitaciones, falta de aire, mareos y miedo a perder el control. Después de una crisis, es frecuente quedar pendiente de que vuelva a pasar. Ese miedo puede llevarte a vigilar cada sensación del cuerpo y a evitar lugares o situaciones donde podría repetirse. Son respuestas comprensibles, pero con el tiempo pueden ir reduciendo cada vez más lo que hacés.
+          </p>
+        </div>
+      </section>
+
+      {/* First session */}
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-8">¿Cómo es la primera sesión?</h2>
+
+          <p className="text-gray-700 mb-0">
+            Me escribís por WhatsApp y coordinamos un día y horario. La sesión se realiza por Google Meet y dura 50 minutos. En ese primer encuentro conversamos sobre lo que te está pasando, cómo está afectando tu vida cotidiana y qué esperás del proceso terapéutico. También podés preguntarme lo que necesites sobre mi forma de trabajar. Al final vemos juntos cómo seguir.
+          </p>
         </div>
       </section>
 
