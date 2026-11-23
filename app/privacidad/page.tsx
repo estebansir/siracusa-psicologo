@@ -6,7 +6,7 @@ export const metadata = generatePageMetadata({
   pathname: '/privacidad',
 });
 
-const LAST_UPDATED = '17 de noviembre de 2026';
+const LAST_UPDATED = '23 de noviembre de 2026';
 
 export default function Privacidad() {
   return (
@@ -72,7 +72,12 @@ export default function Privacidad() {
           </li>
           <li>
             <strong>WhatsApp</strong> (WhatsApp LLC, del grupo Meta): los botones de contacto abren WhatsApp con un
-            mensaje prellenado. Lo que escribas por WhatsApp queda sujeto también a las políticas de WhatsApp.
+            mensaje prellenado. Ese mensaje termina con un código breve, por ejemplo «(ref. C1)», que indica por qué vía
+            llegaste al sitio: un anuncio, un buscador, un asistente de inteligencia artificial, un directorio, una red
+            social, o ninguna referencia detectable. El código no incluye tu nombre ni otros datos tuyos, pero si enviás
+            el mensaje queda en la conversación de WhatsApp, junto con tu número y lo que escribas. Lo uso solo para
+            saber qué canales generan consultas, y podés borrarlo antes de enviar el mensaje. Lo que escribas por
+            WhatsApp queda sujeto también a las políticas de WhatsApp.
           </li>
         </ul>
         <p className="text-gray-700">
@@ -90,8 +95,10 @@ export default function Privacidad() {
 
         <h2 className="text-left">Cookies y cómo evitarlas</h2>
         <p className="text-gray-700">
-          El sitio no guarda cookies propias ni datos en tu navegador. Las únicas cookies son las de Google Analytics
-          mencionadas arriba.
+          El sitio no usa cookies propias. Para armar el código del mensaje de WhatsApp guarda en tu navegador, en el
+          almacenamiento de sesión, un dato de dos caracteres con la vía de llegada, que se borra al cerrar la pestaña.
+          Ese código no se agrega a los datos que el sitio envía a Google Analytics. Las únicas cookies son las de
+          Google Analytics mencionadas arriba.
         </p>
         <p className="text-gray-700">
           Podés bloquear o borrar las cookies desde la configuración de tu navegador, o instalar el complemento de

@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import { useWhatsAppUrl } from '@/lib/useWhatsAppUrl';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 // Mobile-only floating WhatsApp button (the header CTA is desktop-only).
@@ -54,7 +54,7 @@ export default function MobileWhatsAppButton() {
     };
   }, []);
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE_DEFAULT)}`;
+  const whatsappUrl = useWhatsAppUrl();
 
   return (
     <a

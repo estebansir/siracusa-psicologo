@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
+import { WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import { useWhatsAppUrl } from '@/lib/useWhatsAppUrl';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 import { usePathname } from 'next/navigation';
 
@@ -28,7 +29,7 @@ export default function HeroSectionV3({
   reimbursementNote,
 }: HeroSectionV3Props) {
   const pathname = usePathname();
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(primaryCtaMessage)}`;
+  const whatsappUrl = useWhatsAppUrl(primaryCtaMessage);
 
   const handleWhatsAppClick = () => {
     trackWhatsAppClick('hero', pathname);

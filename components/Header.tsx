@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { NAV_LINKS, WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
+import { NAV_LINKS } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import { useWhatsAppUrl } from '@/lib/useWhatsAppUrl';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 import { useState } from 'react';
 
@@ -15,7 +16,7 @@ export default function Header() {
     trackWhatsAppClick('header', pathname);
   };
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE_DEFAULT)}`;
+  const whatsappUrl = useWhatsAppUrl();
 
   const isActive = (href: string) => {
     if (href === '/' && pathname === '/') return true;

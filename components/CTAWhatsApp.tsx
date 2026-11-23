@@ -1,7 +1,8 @@
 'use client';
 
-import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
+import { WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import { useWhatsAppUrl } from '@/lib/useWhatsAppUrl';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 interface CTAProps {
@@ -23,7 +24,7 @@ export default function CTAWhatsApp({
     trackWhatsAppClick(location, typeof window !== 'undefined' ? window.location.pathname : '/');
   };
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = useWhatsAppUrl(message);
 
   const baseClasses = 'inline-flex items-center justify-center px-6 py-3 rounded font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2';
   const variantClasses =

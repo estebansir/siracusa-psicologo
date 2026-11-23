@@ -1,8 +1,8 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE_DEFAULT } from '@/lib/constants';
 import { trackWhatsAppClick } from '@/lib/analytics';
+import { useWhatsAppUrl } from '@/lib/useWhatsAppUrl';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 interface HomeWhatsAppCTAProps {
@@ -20,7 +20,7 @@ export default function HomeWhatsAppCTA({
     trackWhatsAppClick(ctaLocation, pathname);
   };
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE_DEFAULT)}`;
+  const whatsappUrl = useWhatsAppUrl();
 
   return (
     <a
