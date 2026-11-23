@@ -5,6 +5,87 @@ import ProblemCard from '@/components/ProblemCard';
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
 import Testimonials from '@/components/Testimonials';
 import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
+import Schema from '@/components/Schema';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
+
+// Structured data, published only on the home page. Every fact must match visible
+// site content; no reviews, ratings or street address (therapy is online only).
+const PERSON_ID = `${SITE_URL}/#persona`;
+const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#sitio-web`,
+      url: `${SITE_URL}/`,
+      name: SITE_NAME,
+      inLanguage: 'es-AR',
+      publisher: { '@id': PERSON_ID },
+    },
+    {
+      '@type': 'Person',
+      '@id': PERSON_ID,
+      name: 'Esteban Siracusa',
+      jobTitle: 'Psicólogo',
+      url: `${SITE_URL}/sobre-mi`,
+      image: `${SITE_URL}/images/fotoperfil.png`,
+      // City the professional works from; not a consulting room open to the public.
+      workLocation: {
+        '@type': 'Place',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Buenos Aires',
+          addressCountry: 'AR',
+        },
+      },
+      alumniOf: { '@type': 'CollegeOrUniversity', name: 'Universidad de Palermo' },
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Licenciatura en Psicología',
+          credentialCategory: 'degree',
+          recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Universidad de Palermo' },
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Especialización en Psicoterapia Cognitiva Integrativa',
+          credentialCategory: 'certificate',
+          recognizedBy: { '@type': 'Organization', name: 'Fundación AIGLÉ' },
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Matrícula Nacional N.º 85046',
+          credentialCategory: 'license',
+        },
+      ],
+      knowsAbout: [
+        'Terapia de Aceptación y Compromiso (ACT)',
+        'Psicoterapia Analítico Funcional (FAP)',
+        'Terapias conductuales contextuales',
+        'Ansiedad',
+        'Sobrepensamiento',
+        'Bloqueo emocional',
+      ],
+      knowsLanguage: 'es',
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE_URL}/#psicoterapia-online`,
+      name: 'Psicoterapia online',
+      serviceType: 'Psicoterapia',
+      description:
+        'Psicoterapia online por videollamada para adultos en Argentina y para personas de habla hispana en todo el mundo.',
+      url: `${SITE_URL}/psicologo-online`,
+      provider: { '@id': PERSON_ID },
+      audience: { '@type': 'PeopleAudience', audienceType: 'Adultos' },
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        name: 'Videollamada por Google Meet',
+        availableLanguage: { '@type': 'Language', name: 'Español', alternateName: 'es' },
+      },
+    },
+  ],
+};
 
 export const metadata = generatePageMetadata({
   title: 'Psicólogo Online | Esteban Siracusa',
@@ -235,6 +316,7 @@ export default function Home() {
       </section>
 
       <MobileWhatsAppButton />
+      <Schema schema={homeJsonLd} />
     </>
   );
 }
