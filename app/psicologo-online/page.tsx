@@ -87,26 +87,6 @@ export default function PsicologoOnline() {
             ))}
           </ol>
 
-          <div className="mt-10 pt-8 border-t border-gray-200">
-            <h3 className="text-left mb-4">Honorarios y formas de pago</h3>
-
-            <div className="text-sm text-gray-600 grid gap-6 sm:grid-cols-2">
-              <div>
-                <p className="mb-2! font-medium text-gray-700">Honorarios por sesión:</p>
-                <ul className="list-none p-0! mb-0! space-y-1">
-                  <li className="mb-0!">Argentina: <span className="whitespace-nowrap">$50.000 ARS</span></li>
-                  <li className="mb-0!">Exterior: <span className="whitespace-nowrap">35 € / 40 USD</span></li>
-                </ul>
-              </div>
-              <div>
-                <p className="mb-2! font-medium text-gray-700">Formas de pago:</p>
-                <ul className="list-none p-0! mb-0! space-y-1">
-                  <li className="mb-0!">Argentina: transferencia bancaria o Mercado Pago</li>
-                  <li className="mb-0!">Exterior: Revolut, Wise, transferencia IBAN o PayPal</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -173,8 +153,32 @@ export default function PsicologoOnline() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Fees and payment methods */}
       <section className="prose-section-full bg-gray-50 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-left mb-8">Honorarios y formas de pago</h2>
+
+          <div className="text-gray-600 grid gap-6 sm:grid-cols-2">
+            <div>
+              <p className="mb-2! font-medium text-gray-700">Honorarios por sesión:</p>
+              <ul className="list-none p-0! mb-0! space-y-1">
+                <li className="mb-0!">Argentina: <span className="whitespace-nowrap">$50.000 ARS</span></li>
+                <li className="mb-0!">Exterior: <span className="whitespace-nowrap">35 € / 40 USD</span></li>
+              </ul>
+            </div>
+            <div>
+              <p className="mb-2! font-medium text-gray-700">Formas de pago:</p>
+              <ul className="list-none p-0! mb-0! space-y-1">
+                <li className="mb-0!">Argentina: transferencia bancaria o Mercado Pago</li>
+                <li className="mb-0!">Exterior: Revolut, Wise, transferencia IBAN o PayPal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="prose-section-full py-12 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-8">¿Querés empezar terapia?</h2>
 

@@ -1,20 +1,17 @@
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
 
 // Practical info + primary WhatsApp CTA for the first section of inner landing pages.
-// Mirrors the home hero hierarchy: modality and fees (small, gray) → CTA → credential and
+// Mirrors the home hero hierarchy: modality (small, gray) → CTA → credential and
 // reimbursement fine print. Like on the home, the CTA is mobile-only (the header CTA covers
 // desktop); data-wa-anchor="hero" lets the floating mobile button know when it is on screen.
 export default function IntroWhatsAppBlock() {
   return (
     <div className="mt-8 text-center">
       <div className="text-sm lg:text-base text-gray-600">
-        <p className="text-center! mb-1! max-w-none!">
+        <p className="text-center! mb-0! max-w-none!">
           <span className="block sm:inline">Psicoterapia online por videollamada</span>
           <span className="hidden sm:inline" aria-hidden="true"> · </span>
           <span className="block sm:inline">Sesiones de 50 minutos</span>
-        </p>
-        <p className="text-center! mb-0! max-w-none! font-medium text-gray-700">
-          Honorarios: <span className="whitespace-nowrap">$50.000 ARS</span>
         </p>
       </div>
 
