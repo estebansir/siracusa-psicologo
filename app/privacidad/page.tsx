@@ -97,8 +97,10 @@ export default function Privacidad() {
         <p className="text-gray-700">
           El sitio no usa cookies propias. Para armar el código del mensaje de WhatsApp guarda en tu navegador, en el
           almacenamiento de sesión, un dato de dos caracteres con la vía de llegada, que se borra al cerrar la pestaña.
-          Ese código no se agrega a los datos que el sitio envía a Google Analytics. Las únicas cookies son las de
-          Google Analytics mencionadas arriba.
+          Ese código no se agrega a los datos que el sitio envía a Google Analytics. Además, los navegadores que uso
+          para administrar el sitio pueden guardar una marca para que mis propias visitas se distingan en las
+          estadísticas; a los visitantes no se les guarda. Las únicas cookies son las de Google Analytics mencionadas
+          arriba.
         </p>
         <p className="text-gray-700">
           Podés bloquear o borrar las cookies desde la configuración de tu navegador, o instalar el complemento de

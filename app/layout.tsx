@@ -31,6 +31,17 @@ export default function RootLayout({
                 __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
+                  // Owner's browsers: ?ga_interno=es-7q4m sets a flag, ?ga_interno=quitar removes it.
+                  // Flagged browsers send traffic_type=internal (GA4 "Internal Traffic" data filter).
+                  // Not a security measure: it only labels the owner's own visits.
+                  (function () {
+                    try {
+                      var v = new URLSearchParams(location.search).get('ga_interno');
+                      if (v === 'es-7q4m') localStorage.setItem('es_interno', '1');
+                      else if (v === 'quitar') localStorage.removeItem('es_interno');
+                      if (localStorage.getItem('es_interno') === '1') gtag('set', { traffic_type: 'internal' });
+                    } catch (e) {}
+                  })();
                   gtag('js', new Date());
                   gtag('config', '${ga4MeasurementId}');
                 `,
