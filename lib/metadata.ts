@@ -60,8 +60,8 @@ export function generatePageMetadata({
 export const DEFAULT_METADATA: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'Psicólogo Online | Esteban Siracusa',
-  description: 'Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional. Terapia de Aceptación y Compromiso (ACT) para adultos en Argentina y exterior.',
-  keywords: ['psicólogo online', 'terapia online', 'ansiedad', 'sobrepensamiento', 'ACT', 'psicoterapia'],
+  description: 'Psicólogo online especializado en ansiedad, sobrepensamiento y bloqueo emocional. Orientación contextual (ACT y FAP) para adultos en Argentina y exterior.',
+  keywords: ['psicólogo online', 'terapia online', 'ansiedad', 'sobrepensamiento', 'ACT', 'FAP', 'terapias contextuales', 'psicoterapia'],
   formatDetection: {
     telephone: true,
     email: true,

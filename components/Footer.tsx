@@ -39,16 +39,16 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-8 py-6 sm:py-10">
+        <div className="grid grid-cols-2 md:grid-cols-[1.45fr_1fr_1fr_1fr] gap-x-4 gap-y-6 sm:gap-8 py-6 sm:py-10">
           {/* About section */}
-          <div>
-            <h3 className="text-sm font-semibold mb-3" style={{ color: 'white' }}>Esteban Siracusa</h3>
-            <p className="text-xs text-gray-400 leading-relaxed mb-1!">
+          <div className="col-span-2 md:col-span-1">
+            <h3 className="text-base! font-semibold mb-2!" style={{ color: 'white' }}>Esteban Siracusa</h3>
+            <p className="text-sm text-gray-400 leading-relaxed mb-1!">
               Lic. en Psicología · MN 85046
             </p>
             <a
               href="mailto:esteban.siracusa@gmail.com"
-              className={`text-xs ${footerLinkClassName}`}
+              className={`text-sm inline-block py-3 lg:py-1 ${footerLinkClassName}`}
             >
               esteban.siracusa@gmail.com
             </a>
@@ -56,11 +56,11 @@ export default function Footer() {
 
           {FOOTER_GROUPS.map((group) => (
             <div key={group.title}>
-              <h3 className="text-xs font-semibold mb-4 uppercase tracking-wide" style={{ color: 'white' }}>{group.title}</h3>
-              <ul className="space-y-2 text-xs pl-0! mb-0!">
+              <h3 className="text-sm! font-semibold mb-1! lg:mb-3!" style={{ color: 'white' }}>{group.title}</h3>
+              <ul className="text-sm pl-0! mb-0!">
                 {group.links.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className={footerLinkClassName}>
+                  <li key={link.href} className="mb-0!">
+                    <Link href={link.href} className={`inline-block py-3 lg:py-1 ${footerLinkClassName}`}>
                       {link.label}
                     </Link>
                   </li>
@@ -74,10 +74,10 @@ export default function Footer() {
         <div className="border-t border-gray-800"></div>
 
         {/* Bottom section */}
-        <div className="py-6 text-center">
-          <p className="text-xs text-gray-400">
+        <div className="py-3 text-center">
+          <p className="text-sm text-gray-400 text-center! max-w-none! mb-0!">
             © {currentYear} Esteban Siracusa ·{' '}
-            <Link href="/privacidad" className={`font-normal! ${footerLinkClassName}`}>
+            <Link href="/privacidad" className={`inline-block py-3 font-normal! ${footerLinkClassName}`}>
               Política de privacidad
             </Link>
           </p>

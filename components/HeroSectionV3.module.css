@@ -1,0 +1,98 @@
+/* Home hero. Phone: H1, photo, credential, CTA, description, info. Desktop: text left, portrait right, CTA only in the header. */
+.hero{background:#fff}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1fr)}
+.hero h1{grid-area:h1;margin:0;color:#2a2622;font-weight:600}
+.hero p{margin:0;max-width:none}
+.hero ul{margin:0;padding:0;list-style:none}
+.hero li{margin:0}
+.hero .description{grid-area:desc;color:#364153;line-height:1.6}
+.hero .photo{grid-area:ph;position:relative;overflow:hidden;border-radius:8px;background:#f5f3f0}
+.hero .credential{grid-area:cred}
+.hero .credential .credentialText{color:#2a2622;font-weight:600}
+.hero .training{grid-area:train;font-size:14px;line-height:1.4;color:#5a5550;border-left:3px solid #0b7a70;padding-left:12px;text-wrap:balance}
+.hero .training li+li{margin-top:6px}
+.hero .cta{grid-area:cta;display:flex}
+.hero .button{display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px 24px;border-radius:8px;background:#0b7a70;font-weight:500}
+.hero .button:hover{background:#084f47}
+.hero .modality{grid-area:mod;color:#5a5550}
+.hero .fees{grid-area:fees;color:#5a5550}
+.hero .feesLabel{color:#364153;font-weight:500}
+.hero .reimbursement{grid-area:reimb;color:#5a5550}
+.hero .feeAmount{white-space:nowrap}
+
+/* Fees in two columns: phone and tablet */
+@media (max-width:1023.98px){
+  .hero .modality{font-size:14px;line-height:1.4;margin-top:16px;padding-top:14px;border-top:1px solid #ede9e3;text-wrap:pretty}
+  .hero .fees{margin-top:12px}
+  .hero .feesLabel{font-size:15px;line-height:1.35}
+  .hero .fees ul{display:grid;grid-template-columns:1fr 1fr;margin-top:6px}
+  .hero .fees li{line-height:1.35}
+  .hero .fees li+li{border-left:1px solid #ede9e3;padding-left:20px}
+  .hero .feeLabel{display:block;font-size:14px;line-height:1.25}
+  .hero .separator{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .hero .feeAmount{display:block;font-size:17px;line-height:1.3;font-weight:600;color:#2a2622}
+  .hero .reimbursement{font-size:14px;line-height:1.35;margin-top:8px;text-wrap:pretty}
+}
+
+/* PHONE */
+@media (max-width:639.98px){
+  .hero{padding-top:20px}
+  .hero .grid{grid-template-areas:'h1' 'ph' 'cred' 'cta' 'desc' 'train' 'mod' 'fees' 'reimb'}
+  .hero h1{font-size:28px;line-height:1.18;margin-bottom:14px}
+  .hero .photo{height:clamp(188px,36svh,280px)}
+  .hero .credential{text-align:center;margin:9px 0 11px}
+  .hero .credential .credentialText{font-size:16px;line-height:1.4;text-align:center}
+  .hero .description{font-size:17px;margin-top:18px}
+  /* Title and description stay left-aligned; the secondary blocks are centered. */
+  .hero .training{margin-top:16px;padding-left:0;border-left:0;text-align:center}
+  .hero .modality,.hero .feesLabel,.hero .reimbursement{text-align:center;text-wrap:balance}
+  .hero .fees li{text-align:center}
+  .hero .fees li+li{padding-left:0}
+}
+@media (max-width:374.98px){
+  .hero h1{font-size:26px}
+}
+@media (max-width:339.98px){
+  .hero h1{font-size:24px}
+}
+
+/* TABLET */
+@media (min-width:640px) and (max-width:1023.98px){
+  .hero{padding-top:40px}
+  .hero .grid{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);column-gap:32px;grid-template-rows:repeat(7,auto) 1fr;grid-template-areas:'h1 ph' 'desc ph' 'cred ph' 'cta ph' 'train ph' 'mod ph' 'fees ph' 'reimb ph'}
+  .hero h1{font-size:34px;line-height:1.18;margin-bottom:16px}
+  .hero .description{font-size:17px}
+  .hero .credential{margin:18px 0 14px}
+  .hero .training{margin-top:18px}
+  .hero .credential .credentialText{font-size:17px;line-height:1.4}
+  .hero .photo{height:100%}
+}
+
+/* DESKTOP */
+@media (min-width:1024px){
+  .hero{padding-top:44px}
+  .hero .grid{grid-template-columns:minmax(0,.59fr) minmax(0,.59fr) minmax(0,1fr);grid-template-rows:repeat(6,auto) 1fr;grid-template-areas:'h1 h1 ph' 'desc desc ph' 'cred cred ph' 'train train ph' 'mod fees ph' 'reimb reimb ph' '. . ph'}
+  .hero h1{font-size:42px;line-height:1.16;margin-bottom:20px;text-wrap:balance}
+  .hero .description{font-size:20px;line-height:1.55;max-width:590px}
+  .hero .cta{display:none}
+  .hero .photo{height:100%;min-height:470px;margin-left:64px}
+  .hero .credential{margin:18px 0 0;padding-left:16px;border-left:3px solid #0b7a70}
+  .hero .credential .credentialText{font-size:20px;line-height:1.35}
+  .hero .training{padding:4px 0 0 16px;margin-bottom:20px;font-size:15px}
+  .hero .training li{line-height:1.45}
+  .hero .training li+li{margin-top:0}
+  .hero .modality{font-size:16px;line-height:1.5;padding:18px 28px 0 0;border-top:1px solid #ede9e3;text-wrap:pretty}
+  .hero .fees{font-size:16px;line-height:1.55;padding-top:18px;border-top:1px solid #ede9e3}
+  .hero .fees li{line-height:1.55}
+  .hero .reimbursement{font-size:15px;line-height:1.45;margin-top:10px}
+}
+/* Narrow desktop: same composition, 5% smaller type and narrower gutter, so the H1 stays at 3 lines */
+@media (min-width:1024px) and (max-width:1151.98px){
+  .hero{padding-top:36px}
+  .hero .grid{grid-template-columns:minmax(0,.29fr) minmax(0,.29fr) minmax(0,.42fr)}
+  .hero h1{font-size:40px}
+  .hero .description{font-size:19px}
+  .hero .photo{margin-left:40px}
+  .hero .modality{font-size:15px;padding-right:20px}
+  .hero .fees{font-size:15px}
+}

@@ -1,19 +1,20 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import Image from 'next/image';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
   title: 'Esteban Siracusa | Psicólogo Online',
-  description: 'Conocé a Esteban Siracusa, psicólogo. Trabajo desde terapias conductuales contextuales, principalmente ACT, con formación en FAP y Psicoterapia Cognitiva Integrativa.',
+  description: 'Conocé a Esteban Siracusa, psicólogo de orientación conductual contextual, principalmente ACT y FAP. Psicoterapia online para adultos.',
   pathname: '/sobre-mi',
 });
 
 const training = [
   'Licenciatura en Psicología — Universidad de Palermo',
-  'Especialización en Psicoterapia Cognitiva Integrativa — Fundación AIGLÉ',
   'Formación en Terapia de Aceptación y Compromiso — CATC',
   'Formación en Psicoterapia Analítico Funcional — CATC',
+  'Especialización en Psicoterapia Cognitiva Integrativa — Fundación AIGLÉ',
   'Matrícula Nacional N.º 85046',
 ];
 
@@ -43,7 +44,7 @@ export default function SobreMi() {
 
           <div className="lg:col-start-1 lg:row-start-3">
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              Trabajo online con adultos desde una orientación principalmente conductual contextual.
+              Trabajo online con adultos desde una orientación conductual contextual, principalmente ACT y FAP.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-0!">
               Me interesa una terapia que permita entender con precisión qué está pasando y, a partir de ahí, trabajar sobre aquello que necesitás empezar a hacer de manera diferente en tu vida.
@@ -100,7 +101,7 @@ export default function SobreMi() {
           <h2 className="text-left mb-8">Mi enfoque y formación</h2>
 
           <p className="text-gray-700 mb-6">
-            Mi orientación principal es la Terapia de Aceptación y Compromiso (ACT), dentro de las terapias conductuales contextuales. También incorporo elementos de FAP y mindfulness cuando resultan pertinentes para el trabajo.
+            Trabajo desde las terapias conductuales contextuales, principalmente la Terapia de Aceptación y Compromiso (ACT) y la Psicoterapia Analítico Funcional (FAP). También incorporo elementos de mindfulness cuando resultan pertinentes para el trabajo.
           </p>
 
           <p className="text-gray-900 mb-6">
@@ -152,12 +153,16 @@ export default function SobreMi() {
             Si sentís que mi forma de trabajar puede encajar con lo que estás buscando, podés escribirme y contarme brevemente qué te está pasando. En una primera conversación también podemos evaluar juntos si tiene sentido trabajar juntos.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }

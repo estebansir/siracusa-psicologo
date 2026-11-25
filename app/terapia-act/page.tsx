@@ -1,5 +1,6 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 
 export const metadata = generatePageMetadata({
   title: 'Terapia ACT Online | Aceptación y Compromiso',
@@ -96,11 +97,11 @@ export default function TerapiaACT() {
           <h2 className="text-left mb-8">ACT, FAP y mindfulness en mi forma de trabajar</h2>
 
           <p className="text-gray-700 mb-6">
-            ACT es mi orientación terapéutica principal y forma parte de un enfoque conductual contextual: además de qué pensás o sentís, prestamos atención a qué ocurre en determinadas situaciones, cómo respondés y qué consecuencias tienen esas respuestas.
+            ACT y la Psicoterapia Analítico Funcional (FAP) son mis orientaciones terapéuticas principales y forman parte de un enfoque conductual contextual: además de qué pensás o sentís, prestamos atención a qué ocurre en determinadas situaciones, cómo respondés y qué consecuencias tienen esas respuestas.
           </p>
 
           <p className="text-gray-700 mb-6">
-            También incorporo elementos de la Psicoterapia Analítico Funcional (FAP), que presta especial atención a los patrones que pueden aparecer dentro de la propia relación terapéutica. Por ejemplo, buscar aprobación, evitar un desacuerdo o tener dificultad para expresar algo que te molestó.
+            La FAP presta especial atención a los patrones que pueden aparecer dentro de la propia relación terapéutica. Por ejemplo, buscar aprobación, evitar un desacuerdo o tener dificultad para expresar algo que te molestó.
           </p>
 
           <p className="text-gray-700 mb-6">
@@ -141,12 +142,16 @@ export default function TerapiaACT() {
             Si esta forma de entender la terapia te resulta cercana, podemos evaluar qué está pasando en tu situación y cómo trabajarlo.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }

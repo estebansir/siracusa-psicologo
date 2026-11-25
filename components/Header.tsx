@@ -52,10 +52,11 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors ${
+                  aria-current={active ? 'page' : undefined}
+                  className={`text-[15px] py-3 border-b-2 transition-colors ${
                     active
-                      ? 'text-gray-900'
-                      : 'text-gray-700 hover:text-gray-900'
+                      ? 'text-gray-900! font-semibold! border-teal-700'
+                      : 'text-gray-700! border-transparent hover:text-teal-700!'
                   }`}
                 >
                   {link.label}
@@ -70,7 +71,7 @@ export default function Header() {
             onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-teal-700 font-medium text-sm hover:bg-teal-800 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
+            className="hidden lg:inline-flex items-center gap-2 px-5 min-h-11 rounded-md bg-teal-700 font-medium text-sm hover:bg-teal-800 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
             style={{ color: 'white' }}
           >
             <WhatsAppIcon className="w-4 h-4" />
@@ -80,8 +81,8 @@ export default function Header() {
           {/* Hamburger Menu - Mobile */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-md text-gray-900 hover:bg-gray-100 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-            aria-label="Abrir menú"
+            className="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-gray-900 hover:bg-gray-100 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? (
@@ -108,10 +109,11 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block px-4 py-2 rounded transition-colors ${
+                    aria-current={active ? 'page' : undefined}
+                    className={`block px-4 py-2.5 rounded transition-colors ${
                       active
-                        ? 'bg-gray-100 text-gray-900 font-medium'
-                        : 'text-gray-700 hover:bg-gray-50'
+                        ? 'bg-gray-100 text-gray-900! font-semibold!'
+                        : 'text-gray-700! hover:bg-gray-50'
                     }`}
                   >
                     {link.label}
@@ -119,6 +121,17 @@ export default function Header() {
                 );
               })}
             </div>
+            <a
+              href={whatsappUrl}
+              onClick={() => trackWhatsAppClick('mobile_menu', pathname)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-teal-700 font-medium hover:bg-teal-800 transition-colors"
+              style={{ color: 'white' }}
+            >
+              <WhatsAppIcon className="w-5 h-5" />
+              Consultar por WhatsApp
+            </a>
           </nav>
         )}
       </div>

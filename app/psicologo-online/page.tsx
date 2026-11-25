@@ -135,7 +135,7 @@ export default function PsicologoOnline() {
           <h2 className="text-left mb-8">Sobre mí y mi forma de trabajar</h2>
 
           <p className="text-gray-700 mb-6">
-            Soy Esteban Siracusa, psicólogo. Mi orientación principal es la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y las terapias conductuales contextuales.
+            Soy Esteban Siracusa, psicólogo. Trabajo desde las terapias conductuales contextuales, principalmente la <strong>Terapia de Aceptación y Compromiso (ACT)</strong> y la <strong>Psicoterapia Analítico Funcional (FAP)</strong>.
           </p>
 
           <p className="text-gray-700 mb-6">

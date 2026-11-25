@@ -18,15 +18,17 @@ export default function MobileWhatsAppButton() {
   useEffect(() => {
     const hero = document.querySelector('[data-wa-anchor="hero"]');
     const finalCta = document.querySelector('[data-wa-anchor="final"]');
-    if (!hero || !finalCta) return;
+    if (!finalCta) return;
 
-    let heroPassed = false; // hero CTA is entirely above the viewport
+    // Pages without a hero CTA: the button is the only contact until the final CTA.
+    let heroPassed = !hero; // hero CTA is entirely above the visible area (below the sticky header)
     let finalReached = false; // final CTA is on screen or already above it
     const update = () => setVisible(heroPassed && !finalReached);
 
     // Each observer watches a half-open band instead of the visible viewport, so a big jump
     // (tap on the status bar, anchor link, restored scroll position) can't skip a change.
     const FAR = '100000px';
+    const HEADER = document.querySelector('header')?.offsetHeight ?? 0;
     // Band: from the viewport's top edge down to the end of the page.
     const heroObserver = new IntersectionObserver(
       (entries) => {
@@ -34,7 +36,7 @@ export default function MobileWhatsAppButton() {
         heroPassed = !entry.isIntersecting;
         update();
       },
-      { rootMargin: `0px 0px ${FAR} 0px` },
+      { rootMargin: `-${HEADER}px 0px ${FAR} 0px` },
     );
     // Band: from the start of the page down to the viewport's bottom edge.
     const finalObserver = new IntersectionObserver(
@@ -46,7 +48,7 @@ export default function MobileWhatsAppButton() {
       { rootMargin: `${FAR} 0px 0px 0px` },
     );
 
-    heroObserver.observe(hero);
+    if (hero) heroObserver.observe(hero);
     finalObserver.observe(finalCta);
     return () => {
       heroObserver.disconnect();

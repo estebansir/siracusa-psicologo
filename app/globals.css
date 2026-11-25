@@ -9,8 +9,8 @@
   
   --color-teal-50: #f0fdf9;
   --color-teal-100: #ccf5f0;
-  --color-teal-600: #0d8b7f;
-  --color-teal-700: #0d8b7f;
+  --color-teal-600: #0b7a70;
+  --color-teal-700: #0b7a70;
   --color-teal-800: #084f47;
   
   --color-gray-50: #fafaf9;
@@ -24,7 +24,7 @@
   /* Text colors (critical for Tailwind v4) */
   --text-white: #ffffff;
   --text-black: #0a0a0a;
-  --text-teal-700: #0d8b7f;
+  --text-teal-700: #0b7a70;
   --text-gray-900: #1a1a1a;
 
   --spacing-0: 0;
@@ -150,7 +150,7 @@ p {
 
 /* Links */
 a {
-  color: #0d8b7f;
+  color: #0b7a70;
   font-weight: 500;
   transition: color 150ms ease;
   text-decoration: none;
@@ -161,7 +161,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 2px solid #0d8b7f;
+  outline: 2px solid #0b7a70;
   outline-offset: 2px;
 }
 
@@ -239,7 +239,7 @@ h1 {
 
 /* H2 Mobile: 22-26px, mejor escala en mobile */
 h2 {
-  font-size: clamp(1.375rem, 3.5vw, 2.25rem); /* 22px to 36px fluid (reducido de 1.75rem = 28px) */
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem); /* 26px to 36px fluid */
   line-height: 1.25;
   font-weight: 600;
   color: var(--color-gray-800, #2a2622);

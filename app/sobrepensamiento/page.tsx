@@ -1,5 +1,6 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
@@ -126,12 +127,16 @@ export default function Sobrepensamiento() {
             Si sentís que pasás demasiado tiempo analizando, dudando o repasando situaciones y eso está interfiriendo con tus decisiones o actividades, podemos trabajar sobre ello.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }

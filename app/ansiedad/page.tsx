@@ -101,7 +101,7 @@ export default function Ansiedad() {
           </p>
 
           <p className="text-gray-700 mb-6">
-            Trabajo desde la Terapia de Aceptación y Compromiso (ACT), un enfoque dentro de las terapias conductuales contextuales. En lugar de intentar controlar cada pensamiento ansioso o esperar a que la ansiedad desaparezca para actuar, buscamos desarrollar una relación diferente con esas experiencias y avanzar hacia lo que es importante para vos.
+            Trabajo desde las terapias conductuales contextuales, principalmente la Terapia de Aceptación y Compromiso (ACT) y la Psicoterapia Analítico Funcional (FAP). En lugar de intentar controlar cada pensamiento ansioso o esperar a que la ansiedad desaparezca para actuar, buscamos desarrollar una relación diferente con esas experiencias y avanzar hacia lo que es importante para vos.
           </p>
 
           <Link href="/terapia-act" className={textLinkClassName}>

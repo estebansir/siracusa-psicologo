@@ -1,5 +1,6 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import CTAWhatsApp from '@/components/CTAWhatsApp';
+import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 import Link from 'next/link';
 
 export const metadata = generatePageMetadata({
@@ -142,12 +143,16 @@ export default function ProblemasRelacionales() {
             Si te cuesta poner límites, expresar lo que necesitás o sentís que repetís formas de relacionarte que terminan generándote malestar, podemos trabajar sobre ello.
           </p>
 
-          <CTAWhatsApp
-            location="final_cta"
-            text="Consultar por WhatsApp"
-          />
+          <div data-wa-anchor="final">
+            <CTAWhatsApp
+              location="final_cta"
+              text="Consultar por WhatsApp"
+            />
+          </div>
         </div>
       </section>
+
+      <MobileWhatsAppButton />
     </>
   );
 }
