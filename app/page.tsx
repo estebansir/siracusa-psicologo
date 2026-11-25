@@ -2,6 +2,7 @@ import { generatePageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
 import HeroSectionV3 from '@/components/HeroSectionV3';
 import HomeWhatsAppCTA from '@/components/HomeWhatsAppCTA';
+import Testimonials from '@/components/Testimonials';
 import MobileWhatsAppButton from '@/components/MobileWhatsAppButton';
 import Schema from '@/components/Schema';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
@@ -197,8 +198,8 @@ export default function Home() {
         ]}
         credential="Lic. en Psicología · MN 85046"
         training={[
-          'Formación en Terapia de Aceptación y Compromiso (ACT)',
-          'Formación en Psicoterapia Analítico Funcional (FAP)',
+          'Terapia de Aceptación y Compromiso (ACT)',
+          'Psicoterapia Analítico Funcional (FAP)',
         ]}
         reimbursementNote="Emito factura para solicitar reintegros a obras sociales y prepagas."
       />
@@ -274,8 +275,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* Sessions */}
-      <section className="bg-white py-10 lg:py-18">
+      <section className="bg-gray-100 py-10 lg:py-18">
         <div className={twoCol}>
           <div>
             <h2 className={h2}>¿Cómo son las sesiones de terapia online?</h2>
@@ -303,13 +307,13 @@ export default function Home() {
       </section>
 
       {/* Reasons for consultation */}
-      <section className="bg-gray-100 py-10 lg:py-18">
+      <section className="bg-white py-10 lg:py-18">
         <div className={twoCol}>
           <h2 className={h2}>¿Qué podemos trabajar?</h2>
           <div>
-            <ul className="pl-0! mb-0! border-t border-gray-400/60">
+            <ul className="pl-0! mb-0! border-t border-gray-200">
               {problemAreas.map((area) => (
-                <li key={area.href} className="mb-0! border-b border-gray-400/60">
+                <li key={area.href} className="mb-0! border-b border-gray-200">
                   <Link href={area.href} className="group flex items-center gap-4 py-3 rounded-sm focus-visible:outline-2 focus-visible:outline-teal-700">
                     <span className="shrink-0 inline-flex items-center justify-center w-10 h-10 rounded-md bg-teal-50 text-teal-700" aria-hidden="true">
                       {area.icon}
@@ -331,7 +335,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white py-10 lg:py-18">
+      <section className="bg-gray-100 py-10 lg:py-18">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="mb-4!">¿Querés empezar terapia?</h2>
           <p className="text-gray-700 text-center! mx-auto mb-6!">
