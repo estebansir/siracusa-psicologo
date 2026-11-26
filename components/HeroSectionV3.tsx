@@ -27,20 +27,17 @@ export default function HeroSectionV3(p: HeroSectionV3Props) {
     <section className={styles.hero}>
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className={styles.grid}>
-          <h1>{p.title}</h1>
-          <div className={styles.photo}>
-            <Image src="/images/fotoperfil.png" alt="Esteban Siracusa, psicólogo" fill preload sizes="(min-width: 1024px) 440px, (min-width: 640px) 520px, calc(100vw - 48px)" className="object-cover object-[50%_12%] sm:object-[62%_15%]" />
+          {/* Phone: first screen (title, description, photo, credential); fees and the CTA close the hero. Tablet and desktop: display:contents, so its children stay grid items. */}
+          <div className={styles.top}>
+            <h1>{p.title}</h1>
+            <p className={styles.description}>{p.description}</p>
+            <div className={styles.photo}>
+              <Image src="/images/fotoperfil.png" alt="Esteban Siracusa, psicólogo" fill preload sizes="(min-width: 1024px) 440px, (min-width: 640px) 520px, calc(100vw - 48px)" className="object-cover object-[50%_12%] sm:object-[62%_15%]" />
+            </div>
+            <div className={styles.credential}>
+              <p className={styles.credentialText}>{p.credential}</p>
+            </div>
           </div>
-          <div className={styles.credential}>
-            <p className={styles.credentialText}>{p.credential}</p>
-          </div>
-          <div className={styles.cta} data-wa-anchor="hero">
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick('hero', pathname)} className={styles.button} style={{ color: 'white' }}>
-              <WhatsAppIcon className="w-5 h-5 mr-2" />
-              {p.primaryCtaText ?? 'Consultar por WhatsApp'}
-            </a>
-          </div>
-          <p className={styles.description}>{p.description}</p>
           {p.training && (
             <ul className={styles.training}>
               {p.training.map((t) => (
@@ -50,7 +47,11 @@ export default function HeroSectionV3(p: HeroSectionV3Props) {
           )}
           <p className={styles.modality}>{p.microcopy}</p>
           <div className={styles.fees}>
-            <p className={styles.feesLabel}>Honorarios por sesión (50 minutos):</p>
+            <p className={styles.feesLabel}>
+              {/* Phones drop the modality line, so the label carries "videollamada". */}
+              <span className={styles.feesLabelPhone}>Sesión por videollamada (50 minutos)</span>
+              <span className={styles.feesLabelWide}>Honorarios por sesión (50 minutos):</span>
+            </p>
             <ul>
               {p.fees?.map((f) => (
                 <li key={f.label}>
@@ -62,6 +63,12 @@ export default function HeroSectionV3(p: HeroSectionV3Props) {
             </ul>
           </div>
           <p className={styles.reimbursement}>{p.reimbursementNote}</p>
+          <div className={styles.cta} data-wa-anchor="hero">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick('hero', pathname)} className={styles.button} style={{ color: 'white' }}>
+              <WhatsAppIcon className="w-5 h-5 mr-2" />
+              {p.primaryCtaText ?? 'Consultar por WhatsApp'}
+            </a>
+          </div>
         </div>
       </div>
     </section>

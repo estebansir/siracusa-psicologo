@@ -296,6 +296,10 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+            {/* On tablet and desktop this note is already in the hero. */}
+            <p className="sm:hidden text-gray-700 mt-5! mb-0! text-base">
+              Emito factura para solicitar reintegros a obras sociales y prepagas.
+            </p>
             <p className="text-gray-700 mt-5! mb-0! text-base lg:text-[17px]">
               Lo que conversamos en las sesiones está protegido por el secreto profesional.
             </p>
